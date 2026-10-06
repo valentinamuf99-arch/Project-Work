@@ -1,6 +1,6 @@
 # Interview script · Redesigning the commute
 
-Semi-structured interview for the research defined in [plan.md](plan.md).
+Semi-structured interview for the research defined in [research/plan.md](research/plan.md).
 **Duration:** 30 min · **Format:** remote, video call, recorded with consent · **Participants:** commuters in the Vicenza–Padova area who travel by train to work or university (P1–P5).
 
 ## Before you start
@@ -12,7 +12,7 @@ Semi-structured interview for the research defined in [plan.md](plan.md).
 
 ## Section map
 
-| # | Section | Time | Questions | Priority questions (plan.md) |
+| # | Section | Time | Questions | Priority questions (research/plan.md) |
 |---|---|---|---|---|
 | 1 | Intro | 2 min | — | — |
 | 2 | Warm-up | 2 min | 1 | Context (A1, A2) |
@@ -87,4 +87,11 @@ If the participant has no such episode, ask: *"Who do you turn to when something
 
 > Thank you, this has been really helpful. If you know someone else who commutes in the area and might like to talk to me, I'd be grateful for an introduction.
 
-Stop the recording. Write the notes the same day in `research/interviews/P#.md`.
+Stop the recording. Then, the same day:
+
+1. **Recording:** save it in `research/raw/`.
+2. **Transcript:** write the verbatim transcript in `research/transcripts/`, for example `research/transcripts/2026-10-07-transcript-p1.md`. Use the participant code, never real names. Once written, the transcript is never edited.
+3. **Note:** write the derived note in `research/notes/`, for example `research/notes/2026-10-07-interview-p1.md`, following [structure.md](structure.md) exactly. Use tags from the list in [research/plan.md](research/plan.md), section 7.
+4. **Index:** add both the transcript and the note to [research/index.md](research/index.md).
+
+Interview dates: P1 and P2 on 2026-10-07, P3 on 2026-10-08, P4 on 2026-10-09, P5 on 2026-10-10 if recruited.

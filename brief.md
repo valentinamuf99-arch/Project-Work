@@ -6,7 +6,7 @@ Master project, individual. This brief is the shared starting point for the rese
 
 - **Area:** Vicenza–Padova (Veneto), a corridor served by regional trains.
 - **Who travels it:** people who commute by train to work or university, several days a week, on a route they know well.
-- **Research window:** one week, 05/10 → 12/10/2026. Details in `plan.md`.
+- **Research window:** one week, 05/10 → 12/10/2026. Details in `research/plan.md`.
 
 ## Who is the user?
 
@@ -51,7 +51,7 @@ This comes from **a single personal experience**, on a bus and in a different ci
 
 ## Assumptions
 
-All the assumptions behind this brief are listed as A1–A11 in `questions.md`, section "Assumptions in the brief". A1–A9 come from the brief, while A10 and A11 are implicit in the project framing. They are treated as **hypotheses** until the research confirms or rejects them. The ones the research must test first are in `plan.md`, section 2.
+All the assumptions behind this brief are listed as A1–A11 in `questions.md`, section "Assumptions in the brief". A1–A9 come from the brief, while A10 and A11 are implicit in the project framing. They are treated as **hypotheses** until the research confirms or rejects them. The ones the research must test first are in `research/plan.md`, section 2.
 
 ## Key terms
 

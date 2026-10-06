@@ -6,7 +6,7 @@
 **Selected brief:** [Brief 01 · Redesigning the commute](https://aandreetto.me/tag/brief-01.html)
 **Status:** Draft v0.3 · 05/10/2026
 
-Short version of the brief: `brief.md`. Research plan: `plan.md`.
+Short version of the brief: `brief.md`. Research plan: `research/plan.md`.
 
 ---
 
@@ -93,7 +93,7 @@ Note: realtime feeds are snapshots. Estimating reliability requires collecting t
 
 ## 11. Research
 
-I do not commute myself, so research is essential, not optional. Details, participants and timeline are in `plan.md`.
+I do not commute myself, so research is essential, not optional. Details, participants and timeline are in `research/plan.md`.
 
 - **Human-led:** remote interviews with commuters (bus and train), 3 confirmed and 2 optional.
 - **AI-led:** desk research, starting with a benchmark of the apps commuters actually use.
@@ -131,4 +131,4 @@ I do not commute myself, so research is essential, not optional. Details, partic
 
 - **Sample:** 4 confirmed participants (P1–P4), all train commuters, to work or university. P5 is still to recruit.
 - **Interviews:** moved to 07–10/10/2026 (P5 on 10/10, only if recruited).
-- **Train vs bus:** the comparison is dropped, since there are no bus commuters in the sample. Earlier mentions of bus commuters in these notes are out of date. See `plan.md` for the current plan.
+- **Train vs bus:** the comparison is dropped, since there are no bus commuters in the sample. Earlier mentions of bus commuters in these notes are out of date. See `research/plan.md` for the current plan.

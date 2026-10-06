@@ -2,7 +2,7 @@
 
 Based on [brief.md](brief.md) and [questions.md](questions.md).
 Research window: **one week, 05/10 → 12/10/2026**.
-Context: **Vicenza–Padova area (Veneto)**. Participants commute there by train and bus.
+Context: **Vicenza–Padova area (Veneto)**. Participants commute there by train, to work or university.
 
 > Every assumption from the brief (A1–A11) is treated as a **hypothesis** until the research confirms or rejects it. Nothing in this plan proposes a design solution.
 
@@ -37,17 +37,17 @@ These 6 questions test the core of the brief. If they fail, the problem framing 
 
 **Required question on apps:** *"Which apps or sources do you use for your commute, and which one did you open during that last disrupted journey?"* (Q6). The answers are used to adjust the benchmark to what participants actually use.
 
-**Sample:** 3 required interviews and 2 optional ones. Only participant codes are used, never real names.
+**Sample:** 4 confirmed participants (P1–P4), plus a fifth (P5) still to recruit. P5 is a target, not a certainty. Only participant codes are used, never real names.
 
 | Code | Commute | Mode | Status |
 |---|---|---|---|
-| P1 | Work | Bus | Required |
-| P2 | Work | Train | Required |
-| P3 | Work | Train | Required |
-| P4 | University | Train | Optional |
-| P5 | Work, ideally | Bus, ideally | Optional |
+| P1 | Work | Train | Confirmed |
+| P2 | Work | Train | Confirmed |
+| P3 | Work | Train | Confirmed |
+| P4 | University | Train | Confirmed |
+| P5 | Work or university | Train | To recruit |
 
-The sample covers **both bus and train commuting**, so findings must be **compared across the two modes**. They differ in how often services run, how disruptions are announced, and which alternatives exist. If P5 is not recruited, P1 is the only bus commuter, and bus findings will be weaker.
+The sample includes **work and university commuters**. Note any differences between the two groups, but treat them as **hypotheses**: with only one confirmed university commuter (P4), a difference is a lead to follow up, not a finding. Points worth checking, not assumed: how fixed their route and timetable are (Q2) and what being late costs them (Q8).
 
 Notes for each interview go in `research/interviews/P1.md` and so on, written the same day.
 
@@ -59,6 +59,7 @@ Notes for each interview go in `research/interviews/P1.md` and so on, written th
   - **Apps:** Trenitalia (train), Busitalia Veneto (bus, Padova), Google Maps and Moovit. This covers one train operator, one bus operator and two apps that aggregate several operators.
   - **Vicenza bus:** SVT, the Vicenza bus operator, has no confirmed journey-planning app. The only verified SVT app is ChiamaBus, an evening on-demand service, so it is left out for now. Swap it in if participants say they use an SVT app.
   - **Adjust after the interviews:** if participants rely on an app that is not in the list, replace Google Maps or Moovit with it.
+  - **Bus operators kept for now:** Busitalia Veneto and SVT stay in the benchmark and the open data check until Fri 09/10, when the P1–P4 app answers decide. All participants commute by train, but they may still have a bus leg (for example from the station to work).
   - **Focus:** how each app signals delays, cancellations and disruptions, and how it shows alternatives.
   - **Questions:** Q17, Q24.
   - **Limit:** the AI may describe features that are outdated or invented, so every claim is checked on a phone.
@@ -78,13 +79,13 @@ Notes for each interview go in `research/interviews/P1.md` and so on, written th
 
 | Day | Human-led | AI-led |
 |---|---|---|
-| **Mon 05/10** | Write [interview-script.md](interview-script.md). Confirm slots with P1–P3. | Set up `research/`. Start the benchmark. |
-| **Tue 06/10** | Interview **P1** (bus). Write notes. | Finish the benchmark draft. |
-| **Wed 07/10** | Interview **P2** (train). Write notes. | Check the benchmark on a phone. |
-| **Thu 08/10** | Interview **P3** (train). Write notes. | *If time allows:* app store reviews. |
-| **Fri 09/10** | *Optional:* interview **P4** (train). | *Low priority:* open data availability check. Adjust the benchmark list using the app answers from P1–P3. |
-| **Sat 10/10** | *Optional:* interview **P5** (bus). | — |
-| **Sun 11/10** | Tag the findings against Q9–Q24 and A3–A9. Compare bus and train. | Cross-check the desk research against the interviews. |
+| **Mon 05/10** | Write [interview-script.md](interview-script.md). Confirm slots with P1–P4. | Set up `research/`. Start the benchmark. |
+| **Tue 06/10** | No interviews. Rehearse the script aloud and time it. Recruit P5. | Finish the benchmark draft and check it on a phone. |
+| **Wed 07/10** | Interview **P1** and **P2**. Write notes. | No AI-led work: interview day. |
+| **Thu 08/10** | Interview **P3**. Write notes. | *If time allows:* app store reviews. |
+| **Fri 09/10** | Interview **P4**. Write notes. | Adjust the benchmark list using the app answers from P1–P4. |
+| **Sat 10/10** | Interview **P5**, only if recruited. Otherwise, backup slot. | *Low priority:* open data availability check. |
+| **Sun 11/10** | Tag the findings against Q9–Q24 and A3–A9. Note possible differences between work and university commuters, as hypotheses. | Cross-check the desk research against the interviews. |
 | **Mon 12/10** | **Research closed.** Tidy all files in `research/`. | |
 
 ---
@@ -93,8 +94,8 @@ Notes for each interview go in `research/interviews/P1.md` and so on, written th
 
 | Risk | Mitigation |
 |---|---|
-| The optional participants do not happen | 3 interviews are enough to test the core hypotheses. Note the gap in bus coverage. |
-| A required interview gets cancelled | Use Fri or Sat as a backup slot, or move P4 into the required group. |
+| P5 is not recruited | 4 interviews are enough to test the core hypotheses. Report the sample as 4 participants. |
+| A confirmed interview gets cancelled | Move it to Sat 10/10, the only free backup slot. Two interviews fit in one day, as on Wed 07/10, so P5 can still take place. |
 | AI hallucination in the desk research | Ask for a source for every claim. Spot-check the apps on a phone. Mark anything unverified. |
 | Leading participants toward the brief's own story (A8) | Ask about behaviour during the last incident. Do not mention "uncertainty" first. |
 | Not enough time to analyse | Write notes the same day as each interview. Keep Sun 11/10 for synthesis prep only. |

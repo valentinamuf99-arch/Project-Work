@@ -126,3 +126,9 @@ I do not commute myself, so research is essential, not optional. Details, partic
 - Demonstrably reduces friction or anxiety
 - Uses AI substantively, not decoratively
 - Can be prototyped within the course timeline
+
+## Update · 06/10/2026
+
+- **Sample:** 4 confirmed participants (P1–P4), all train commuters, to work or university. P5 is still to recruit.
+- **Interviews:** moved to 07–10/10/2026 (P5 on 10/10, only if recruited).
+- **Train vs bus:** the comparison is dropped, since there are no bus commuters in the sample. Earlier mentions of bus commuters in these notes are out of date. See `plan.md` for the current plan.

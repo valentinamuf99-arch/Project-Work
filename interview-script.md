@@ -1,7 +1,7 @@
 # Interview script · Redesigning the commute
 
 Semi-structured interview for the research defined in [plan.md](plan.md).
-**Duration:** 30 min · **Format:** remote, video call, recorded with consent · **Participants:** commuters in the Vicenza–Padova area, by train or bus (P1–P5).
+**Duration:** 30 min · **Format:** remote, video call, recorded with consent · **Participants:** commuters in the Vicenza–Padova area who travel by train to work or university (P1–P5).
 
 ## Before you start
 
@@ -38,7 +38,7 @@ Start recording only after verbal consent. Repeat the consent question on the re
 
 ## 2. Warm-up · 2 min
 
-1. Tell me a little about yourself and your commute: from where to where, by which train or bus, and how many days a week.
+1. Tell me a little about yourself and your commute: from where to where, how you get there, and how many days a week.
 
 ---
 

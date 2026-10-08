@@ -27,17 +27,25 @@ Every note in this repository, with type and status. Updated with every commit. 
 
 ## Notes
 
-- [2026-10-07-interview-p1.md](2026-10-07-interview-p1.md): interview, P1, commuter to work from the Lido di Venezia to Torri di Quartesolo by boat, train and bus; train cancelled between Padova and Mestre, alternative found by chance. **needs-review**
+- [2026-10-07-interview-p1.md](notes/2026-10-07-interview-p1.md): interview, P1, commuter to work from the Lido di Venezia to Torri di Quartesolo by boat, train and bus; train cancelled between Padova and Mestre, alternative found by chance. **needs-review**
 
 ## Transcripts
 
-- [2026-10-07-transcript-p1.md](../raw/transcripts/2026-10-07-transcript-p1.md): transcript, P1, automatic (WhisperKit), no timestamps, kept in `raw/`. **complete**
+- [2026-10-07-transcript-p1.md](transcripts/2026-10-07-transcript-p1.md): transcript, P1, automatic (WhisperKit), no timestamps. **complete**
+- [2026-10-07-transcript-p2.md](transcripts/2026-10-07-transcript-p2.md): transcript, P2, automatic (WhisperKit), no timestamps, joined from two recordings (Pt.2 and Pt.2.1). **complete**
+- [2026-10-07-transcript-p3.md](transcripts/2026-10-07-transcript-p3.md): transcript, P3, automatic (WhisperKit), no timestamps. **complete**
+- [2026-10-07-transcript-p4.md](transcripts/2026-10-07-transcript-p4.md): transcript, P4, automatic (WhisperKit), no timestamps; the recording metadata says 2026-10-08. **complete**
+
+## Raw material
+
+- [2026-10-07-notes-p1.md](raw/2026-10-07-notes-p1.md): spontaneous notes in Italian, P1, three apps (AVM, Trenitalia, SVT), cancellation email with no reason or alternative. **complete**
+- [2026-10-07-notes-p2.md](raw/2026-10-07-notes-p2.md): spontaneous notes in Italian, P2, two trains and a lift by car, frequent strikes, no alternative except calling family. **complete**
+- [2026-10-07-notes-p3.md](raw/2026-10-07-notes-p3.md): spontaneous notes in Italian, P3, university commute with a possible change at Castelfranco, delay announced by speaker before the email. **complete**
+- [2026-10-07-notes-p4.md](raw/2026-10-07-notes-p4.md): spontaneous notes in Italian, P4, university commute to Padova, train stopped with no announcement, missed connection solved at the station information desk. **complete**
 
 ## Scheduled (not yet collected)
 
-- Interview, P2, train commuter to work: 2026-10-07. Note `notes/2026-10-07-notes-p2.md`, transcript `transcripts/2026-10-07-transcript-p2.md`.
-- Interview, P3, train commuter to work: 2026-10-08. Note `notes/2026-10-08-notes-p3.md`, transcript `transcripts/2026-10-08-transcript-p3.md`.
-- Interview, P4, train commuter to university: 2026-10-09. Note `notes/2026-10-09-notes-p4.md`, transcript `transcripts/2026-10-09-transcript-p4.md`.
+- Derived notes for P2, P3 and P4: interviews collected, transcripts and raw notes in place, notes in `notes/` not yet written.
 - Interview, P5, train commuter to work or university, only if recruited: 2026-10-10. Note `notes/2026-10-10-notes-p5.md`, transcript `transcripts/2026-10-10-transcript-p5.md`.
 - Desk research, benchmark of the apps participants mention: starts after P4 on 2026-10-09, complete and verified on a phone by 2026-10-11. Note `notes/YYYY-MM-DD-desk-research-benchmark.md`, dated on completion.
 - Desk research, app store reviews of the benchmarked apps: if time allows, after the interviews, no fixed day. Note `notes/YYYY-MM-DD-desk-research-app-reviews.md`, dated on completion.

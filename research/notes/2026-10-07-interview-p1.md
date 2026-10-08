@@ -12,12 +12,12 @@ tags: [boat, train, bus, venezia, padova, vicenza, work-commute, routine, ordina
 confidence: medium
 grade: primary
 status: needs-review
-related: [research/plan.md, raw/transcripts/2026-10-07-transcript-p1.md, raw/notes/2026-10-07-notes-p1.md]
+related: [research/plan.md, research/transcripts/2026-10-07-transcript-p1.md, research/raw/2026-10-07-notes-p1.md]
 ---
 
 # Interview · P1, commuter from the Lido di Venezia to Torri di Quartesolo by boat, train and bus
 
-Phone interview, remote, about twenty-two minutes, recorded with the participant's consent. Verbatim transcript: `raw/transcripts/2026-10-07-transcript-p1.md`. The transcript is automatic (WhisperKit): it does not separate speakers and has no time markers. For this reason quotes carry `[--:--:--]` instead of a timestamp, and transcription errors are kept as they are. Quotes are in the original Italian.
+Phone interview, remote, about twenty-two minutes, recorded with the participant's consent. Verbatim transcript: `research/transcripts/2026-10-07-transcript-p1.md`. The transcript is automatic (WhisperKit): it does not separate speakers and has no time markers. For this reason quotes carry `[--:--:--]` instead of a timestamp, and transcription errors are kept as they are. Quotes are in the original Italian.
 
 ## Who she is and what her commute looks like
 

@@ -27,15 +27,14 @@ Every note in this repository, with type and status. Updated with every commit. 
 
 ## Notes
 
-None yet.
+- [2026-10-07-interview-p1.md](2026-10-07-interview-p1.md): interview, P1, commuter to work from the Lido di Venezia to Torri di Quartesolo by boat, train and bus; train cancelled between Padova and Mestre, alternative found by chance. **needs-review**
 
 ## Transcripts
 
-None yet.
+- [2026-10-07-transcript-p1.md](../raw/transcripts/2026-10-07-transcript-p1.md): transcript, P1, automatic (WhisperKit), no timestamps, kept in `raw/`. **complete**
 
 ## Scheduled (not yet collected)
 
-- Interview, P1, train commuter to work: 2026-10-07. Note `notes/2026-10-07-notes-p1.md`, transcript `transcripts/2026-10-07-transcript-p1.md`.
 - Interview, P2, train commuter to work: 2026-10-07. Note `notes/2026-10-07-notes-p2.md`, transcript `transcripts/2026-10-07-transcript-p2.md`.
 - Interview, P3, train commuter to work: 2026-10-08. Note `notes/2026-10-08-notes-p3.md`, transcript `transcripts/2026-10-08-transcript-p3.md`.
 - Interview, P4, train commuter to university: 2026-10-09. Note `notes/2026-10-09-notes-p4.md`, transcript `transcripts/2026-10-09-transcript-p4.md`.

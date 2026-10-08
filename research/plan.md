@@ -145,8 +145,10 @@ The controlled vocabulary for the `tags` field of every note in `research/`. Rul
 |---|---|
 | `train` | Regional train legs of the commute. |
 | `bus` | Bus legs, for example from the station to work or university. |
+| `boat` | Boat legs, for example from the Lido di Venezia to the mainland. |
 | `vicenza` | Evidence specific to Vicenza or its stations and lines. |
 | `padova` | Evidence specific to Padova or its stations and lines. |
+| `venezia` | Evidence specific to Venezia, including Mestre and the Lido, or its stations and lines. |
 | `work-commute` | Commuting to work (A1). |
 | `university-commute` | Commuting to university (A1). |
 
@@ -201,6 +203,7 @@ The controlled vocabulary for the `tags` field of every note in `research/`. Rul
 | `trenitalia` | Trenitalia app, site or announcements. |
 | `busitalia-veneto` | Busitalia Veneto (Padova bus). |
 | `svt` | SVT (Vicenza bus). |
+| `avm-venezia` | AVM Venezia app (tickets for Venezia public transport, including boats). |
 | `google-maps` | Google Maps. |
 | `moovit` | Moovit. |
 

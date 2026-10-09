@@ -151,6 +151,7 @@ The controlled vocabulary for the `tags` field of every note in `research/`. Rul
 | `venezia` | Evidence specific to Venezia, including Mestre and the Lido, or its stations and lines. |
 | `castelfranco` | Evidence specific to Castelfranco Veneto or its station, for example the change on the Bassano–Padova line. |
 | `rovigo` | Evidence specific to Rovigo or its station and lines. |
+| `monselice` | Evidence specific to Monselice or its station and lines. |
 | `work-commute` | Commuting to work (A1). |
 | `university-commute` | Commuting to university (A1). |
 

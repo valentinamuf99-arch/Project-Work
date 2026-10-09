@@ -27,7 +27,7 @@ Every note in this repository, with type and status. Updated with every commit. 
 
 ## Notes
 
-- [2026-10-07-interview-p1.md](notes/2026-10-07-interview-p1.md): interview, P1, commuter to work from the Lido di Venezia to Torri di Quartesolo by boat, train and bus; train cancelled between Padova and Mestre, alternative found by chance. **needs-review**
+- [2026-10-07-interview-p1.md](Interviews/2026-10-07-interview-p1.md): interview, P1, commuter to work from the Lido di Venezia to Torri di Quartesolo by boat, train and bus; train cancelled between Padova and Mestre, alternative found by chance; quotes in Italian with timestamps from the timestamped transcript. **complete**
 
 ## Transcripts
 

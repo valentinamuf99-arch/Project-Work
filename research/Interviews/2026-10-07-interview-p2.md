@@ -16,9 +16,7 @@ related: [../plan.md, ../Transcript/2026-10-07-transcript-p2-timestamped.md, "..
 
 # Interview · P2, commuter from Salzano to Lerino by two trains with a change at Mestre
 
-Phone interview, remote, about twenty-five minutes, recorded with the participant's consent in two parts (Pt.2 and Pt.2.1). Quotes are in the original Italian and reference the timestamps of the second, timestamped transcription: `research/Transcript/2026-10-07-transcript-p2-timestamped.md`. The two parts have separate time markers, so quotes are cited as `Pt.2 [hh:mm:ss]` or `Pt.2.1 [hh:mm:ss]`. Pt.2 ends and Pt.2.1 starts mid-sentence: what was said between the two recordings is lost. Both transcriptions are automatic, so quotes keep their transcription errors (for example "sciopero" is sometimes transcribed as "Shop", and "fa conto" or "1º" stand for "prima").
-
-The interviewer's same-day personal notes, in `research/raw/Personal notes/2026-10-07-personal-notes-p2.md`, add three details that are not in the recorded audio and may come from the lost gap or from the conversation off the recording: a colleague picks P2 up by car at the arrival station; his father drove him home or to another station; the five-minute ticket rule hit him on a day his train had been cancelled. These are reported here only as the interviewer's notes, not as quotes.
+Phone interview, remote, about twenty-five minutes, recorded with the participant's consent in two parts (Pt.2 and Pt.2.1). Quotes are in the original Italian and reference the timestamps of the second, timestamped transcription: `research/Transcript/2026-10-07-transcript-p2-timestamped.md`. The two parts have separate time markers, so quotes are cited as `Pt.2 [hh:mm:ss]` or `Pt.2.1 [hh:mm:ss]`. Pt.2 ends and Pt.2.1 starts mid-sentence: what was said between the two recordings is lost. Both transcriptions are automatic, so quotes keep their transcription errors (for example "sciopero" is sometimes transcribed as "Shop", and "fa conto" or "1º" stand for "prima"). Every unit and quote comes from the transcript.
 
 ## Who he is and what his commute looks like
 
@@ -98,7 +96,7 @@ The app has a small banner with disruptions across the whole network. It is not 
 
 ## When the train is cancelled: call his father, or don't go
 
-His answer to a cancellation is not another train. For a 5 a.m. trip to the airport he calls his father to drive him. For work, he writes to his colleague that he will be half an hour late, or does not go at all. He notes that he can do this and many others cannot.
+His answer to a cancellation is not another train. For a 5 a.m. trip to the airport he calls his father to drive him. For work, he writes to someone (name omitted in the transcript) that he will be half an hour late, or does not go at all. He notes that he can do this and many others cannot.
 
 > "Sciopero sciopero, quindi parliamo di cancellazione, è stata alza la cornetta, spero mio padre si svegli." — Pt.2.1 [00:00:39]
 

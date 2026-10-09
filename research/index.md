@@ -30,6 +30,7 @@ Every note in this repository, with type and status. Updated with every commit. 
 - [2026-10-07-interview-p1.md](Interviews/2026-10-07-interview-p1.md): interview, P1, commuter to work from the Lido di Venezia to Torri di Quartesolo by boat, train and bus; train cancelled between Padova and Mestre, alternative found by chance; quotes in Italian with timestamps from the timestamped transcript. **complete**
 - [2026-10-07-interview-p2.md](Interviews/2026-10-07-interview-p2.md): interview, P2, commuter to work from Salzano to Lerino by two trains with a change at Mestre; constant ten-minute delays, strikes found on Google, cancellations shown late in the app, no alternative except a private lift; quotes in Italian with timestamps from the timestamped transcript (two recordings). **complete**
 - [2026-10-07-interview-p3.md](Interviews/2026-10-07-interview-p3.md): interview, P3, university student commuting from Bassano to Padova by train, direct or with a change at Castelfranco; hail delay at Castelfranco, replacement buses that do not accept the pass, ViaggiaTreno found by word of mouth, conductor who held a connection; quotes in Italian with timestamps from the timestamped transcript. **complete**
+- [2026-10-07-interview-p4.md](Interviews/2026-10-07-interview-p4.md): interview, P4, university student commuting from Bassano to Padova by train; stranded at Padova by a line fault with no notice in the app, information only from staff, parents called four times in one month, late for an exam on a train standing still; quotes in Italian with timestamps from the timestamped transcript. **complete**
 
 ## Transcripts
 
@@ -53,7 +54,6 @@ Every note in this repository, with type and status. Updated with every commit. 
 
 ## Scheduled (not yet collected)
 
-- Derived notes for P4: interviews collected, transcripts and raw notes in place, notes in `notes/` not yet written.
 - Interview, P5, train commuter to work or university, only if recruited: 2026-10-10. Note `notes/2026-10-10-notes-p5.md`, transcript `transcripts/2026-10-10-transcript-p5.md`.
 - Desk research, benchmark of the apps participants mention: starts after P4 on 2026-10-09, complete and verified on a phone by 2026-10-11. Note `notes/YYYY-MM-DD-desk-research-benchmark.md`, dated on completion.
 - Desk research, app store reviews of the benchmarked apps: if time allows, after the interviews, no fixed day. Note `notes/YYYY-MM-DD-desk-research-app-reviews.md`, dated on completion.

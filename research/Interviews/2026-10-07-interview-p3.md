@@ -18,7 +18,7 @@ related: [../plan.md, ../Transcript/2026-10-07-transcript-p3-timestamped.md, "..
 
 Phone interview, remote, about twenty-one minutes, recorded with the participant's consent. Quotes are in the original Italian and reference the timestamps of the second, timestamped transcription: `research/Transcript/2026-10-07-transcript-p3-timestamped.md`. Both transcriptions are automatic, so quotes keep their transcription errors (for example "Train Italia" or "Trinitalia" for Trenitalia, "match" for "meteo", "canzoni" for "grandine").
 
-P3 is the only university commuter interviewed so far. The interviewer's same-day personal notes, in `research/raw/Personal notes/2026-10-07-personal-notes-p3.md`, differ from the recording on two points, reported here only as notes: they say P3 checks for strikes in advance when she has to go to university on a Friday (in the recording she only says strikes are usually on Fridays and she has no lessons then); and they say an email about the hail delays arrived half an hour later (in the recording she does not remember any email that day, and says the half-hour-late email happened in other cases).
+P3 is the only university commuter interviewed so far. Every unit and quote comes from the transcript.
 
 ## Who she is and what her commute looks like
 

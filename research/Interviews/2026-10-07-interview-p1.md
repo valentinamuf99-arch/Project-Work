@@ -17,7 +17,7 @@ related: [../plan.md, ../Transcript/2026-10-07-transcript-p1-timestamped.md, "..
 
 # Interview · P1, commuter from the Lido di Venezia to Torri di Quartesolo by boat, train and bus
 
-Phone interview, remote, about twenty-two minutes, recorded with the participant's consent. Quotes are in the original Italian and reference the timestamps of the second, timestamped transcription: `research/Transcript/2026-10-07-transcript-p1-timestamped.md`. Both transcriptions are automatic, so quotes keep their transcription errors as they are (for example "Mestre" is sometimes transcribed as "a me e 3" or "Vestre", and "Trenitalia" as "Italia"). The interviewer's same-day personal notes, in `research/raw/Personal notes/2026-10-07-personal-notes-p1.md`, agree with the transcript on every point used here.
+Phone interview, remote, about twenty-two minutes, recorded with the participant's consent. Quotes are in the original Italian and reference the timestamps of the second, timestamped transcription: `research/Transcript/2026-10-07-transcript-p1-timestamped.md`. Both transcriptions are automatic, so quotes keep their transcription errors as they are (for example "Mestre" is sometimes transcribed as "a me e 3" or "Vestre", and "Trenitalia" as "Italia"). Every unit and quote comes from the transcript.
 
 ## Who she is and what her commute looks like
 

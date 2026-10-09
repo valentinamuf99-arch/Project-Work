@@ -150,6 +150,7 @@ The controlled vocabulary for the `tags` field of every note in `research/`. Rul
 | `padova` | Evidence specific to Padova or its stations and lines. |
 | `venezia` | Evidence specific to Venezia, including Mestre and the Lido, or its stations and lines. |
 | `castelfranco` | Evidence specific to Castelfranco Veneto or its station, for example the change on the Bassano–Padova line. |
+| `rovigo` | Evidence specific to Rovigo or its station and lines. |
 | `work-commute` | Commuting to work (A1). |
 | `university-commute` | Commuting to university (A1). |
 
@@ -207,5 +208,6 @@ The controlled vocabulary for the `tags` field of every note in `research/`. Rul
 | `avm-venezia` | AVM Venezia app (tickets for Venezia public transport, including boats). |
 | `google-maps` | Google Maps. |
 | `moovit` | Moovit. |
+| `trainline` | Trainline app (train tickets from several operators, including Trenitalia). |
 
 Add other apps here, in the same form, when participants mention them.

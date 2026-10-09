@@ -210,5 +210,6 @@ The controlled vocabulary for the `tags` field of every note in `research/`. Rul
 | `google-maps` | Google Maps. |
 | `moovit` | Moovit. |
 | `trainline` | Trainline app (train tickets from several operators, including Trenitalia). |
+| `viaggiatreno` | ViaggiaTreno website (real-time running information for a single train, searched by train number). |
 
 Add other apps here, in the same form, when participants mention them.

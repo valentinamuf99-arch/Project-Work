@@ -32,6 +32,7 @@ Every note in this repository, with type and status. Updated with every commit. 
 ## Transcripts
 
 - [2026-10-07-transcript-p1.md](transcripts/2026-10-07-transcript-p1.md): transcript, P1, automatic (WhisperKit), no timestamps. **complete**
+- [2026-10-07-transcript-p1-timestamped.md](raw/Original%20transcripts/2026-10-07-transcript-p1-timestamped.md): transcript, P1, second automatic transcription of the same recording (made 2026-10-09), with speakers and timestamps. **complete**
 - [2026-10-07-transcript-p2.md](transcripts/2026-10-07-transcript-p2.md): transcript, P2, automatic (WhisperKit), no timestamps, joined from two recordings (Pt.2 and Pt.2.1). **complete**
 - [2026-10-07-transcript-p3.md](transcripts/2026-10-07-transcript-p3.md): transcript, P3, automatic (WhisperKit), no timestamps. **complete**
 - [2026-10-07-transcript-p4.md](transcripts/2026-10-07-transcript-p4.md): transcript, P4, automatic (WhisperKit), no timestamps; the recording metadata says 2026-10-08. **complete**

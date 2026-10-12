@@ -1,3 +1,18 @@
+---
+title: "Interview script · Redesigning the commute"
+date: 2026-10-05
+activity: plan
+source: "Research plan, priority questions for the semi-structured interviews"
+author: "Eugenia Valentina Muffolini"
+channel: course
+method: interview script
+tags: [train, vicenza, padova, routine-break, noticing, understanding, deciding]
+confidence: high
+grade: primary
+status: complete
+related: [plan.md, structure.md, index.md]
+---
+
 # Interview script · Redesigning the commute
 
 Semi-structured interview for the research defined in [research/plan.md](research/plan.md).

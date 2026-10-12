@@ -24,13 +24,6 @@ Every file in this repository, grouped by folder, oldest first. Format: filename
 - CLAUDE.md — unknown · unknown · unknown · unknown
 - README.md — unknown · unknown · unknown · unknown
 
-## process/
-
-- project-notes_1.md — unknown · unknown · unknown · unknown
-- prompt-plan.md — unknown · unknown · unknown · unknown
-- prompt.md — unknown · unknown · unknown · unknown
-- prompts.md — unknown · unknown · unknown · unknown
-
 ## research/
 
 - plan.md — plan · complete · primary · high

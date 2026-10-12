@@ -11,7 +11,7 @@ tags: [train, bus, padova, vicenza, castelfranco, university-commute, routine, l
 confidence: medium
 grade: primary
 status: complete
-related: [../plan.md, ../Transcript/2026-10-07-transcript-p3-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p3.md", "../raw/Personal notes/2026-10-07-personal-notes-p3.md", 2026-10-07-interview-p1.md, 2026-10-07-interview-p2.md, ../2026-10-12-desk-research.md]
+related: [../plan.md, ../Transcript/2026-10-07-transcript-p3-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p3.md", "../raw/Personal notes/2026-10-07-personal-notes-p3.md", 2026-10-07-interview-lucrezia-gradi.md, 2026-10-07-interview-matteo-galvagni.md, ../2026-10-12-desk-research.md]
 ---
 
 # Interview · P3, student commuting from Bassano to Padova by train, direct or with a change at Castelfranco

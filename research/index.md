@@ -15,45 +15,63 @@ related: [structure.md, research/plan.md]
 
 # Index · the map of the research base
 
-Every note in this repository, with type and status. Updated with every commit. If a file is not listed here, it does not exist as far as the knowledge base is concerned.
+Every file in this repository, grouped by folder, oldest first. Format: filename — activity · status · grade · confidence. Files without frontmatter are listed with unknown fields.
 
-## Format
+## Root
 
-- [structure.md](../structure.md): the format specification for every note, instructions for AI agents. **complete**
+- structure.md — structure · complete · tertiary · high
+- brief.md — unknown · unknown · unknown · unknown
+- CLAUDE.md — unknown · unknown · unknown · unknown
+- README.md — unknown · unknown · unknown · unknown
 
-## Plan
+## process/
 
-- [plan.md](plan.md): the research plan, with priority questions, 4 confirmed interviews plus 1 optional, desk research, the day-by-day schedule and the tag list. **complete**
+- project-notes_1.md — unknown · unknown · unknown · unknown
+- prompt-plan.md — unknown · unknown · unknown · unknown
+- prompt.md — unknown · unknown · unknown · unknown
+- prompts.md — unknown · unknown · unknown · unknown
 
-## Notes
+## research/
 
-- [2026-10-07-interview-p1.md](Interviews/2026-10-07-interview-p1.md): interview, P1, commuter to work from the Lido di Venezia to Torri di Quartesolo by boat, train and bus; train cancelled between Padova and Mestre, alternative found by chance; quotes in Italian with timestamps from the timestamped transcript. **complete**
-- [2026-10-07-interview-p2.md](Interviews/2026-10-07-interview-p2.md): interview, P2, commuter to work from Salzano to Lerino by two trains with a change at Mestre; constant ten-minute delays, strikes found on Google, cancellations shown late in the app, no alternative except a private lift; quotes in Italian with timestamps from the timestamped transcript (two recordings). **complete**
-- [2026-10-07-interview-p3.md](Interviews/2026-10-07-interview-p3.md): interview, P3, university student commuting from Bassano to Padova by train, direct or with a change at Castelfranco; hail delay at Castelfranco, replacement buses that do not accept the pass, ViaggiaTreno found by word of mouth, conductor who held a connection; quotes in Italian with timestamps from the timestamped transcript. **complete**
-- [2026-10-07-interview-p4.md](Interviews/2026-10-07-interview-p4.md): interview, P4, university student commuting from Bassano to Padova by train; stranded at Padova by a line fault with no notice in the app, information only from staff, parents called four times in one month, late for an exam on a train standing still; quotes in Italian with timestamps from the timestamped transcript. **complete**
-- [2026-10-09-interview-p5.md](Interviews/2026-10-09-interview-p5.md): interview, P5, university student commuting from near Rovigo to Padova by car and train; small frequent delays accepted as normal, strikes seen on Instagram and avoided by staying home, five-minute ticket rule solved with a pass and tap-to-pay; quotes in Italian with timestamps from the timestamped transcript. **complete**
-- [2026-10-09-interview-p6.md](Interviews/2026-10-09-interview-p6.md): interview, P6, university student commuting from Monselice to Padova by train; no apps, only the station board and staff, ordinary delays with a platform change, one past break solved by a known bus and a family lift, wants the reason for delays at the station; quotes in Italian with timestamps from the timestamped transcript. **complete**
-- [2026-10-12-desk-research.md](2026-10-12-desk-research.md): desk research, benchmark of the five apps participants mention (Trenitalia, ViaggiaTreno, Trainline, AVM Venezia, SVT): commuting features, disruption handling, UX strengths and weaknesses, comparison table, gaps and opportunities for the concept; not yet verified on a phone. **needs-review**
+- plan.md — plan · complete · primary · high
+- 2026-10-12-desk-research.md — desk-research · needs-review · secondary · medium
+- interview-script.md — unknown · unknown · unknown · unknown
 
-## Transcripts
+## research/Notes/
 
-- [2026-10-07-transcript-p1.md](transcripts/2026-10-07-transcript-p1.md): transcript, P1, automatic (WhisperKit), no timestamps. **complete**
-- [2026-10-07-transcript-p1-timestamped.md](raw/Original%20transcripts/2026-10-07-transcript-p1-timestamped.md): transcript, P1, second automatic transcription of the same recording (made 2026-10-09), with speakers and timestamps. **complete**
-- [2026-10-07-transcript-p2.md](transcripts/2026-10-07-transcript-p2.md): transcript, P2, automatic (WhisperKit), no timestamps, joined from two recordings (Pt.2 and Pt.2.1). **complete**
-- [2026-10-07-transcript-p2-timestamped.md](Transcript/2026-10-07-transcript-p2-timestamped.md): transcript, P2, second automatic transcription of the same two recordings (Pt.2 and Pt.2.1, made 2026-10-09), with speakers and timestamps; each part keeps its own time markers. **complete**
-- [2026-10-07-transcript-p3.md](transcripts/2026-10-07-transcript-p3.md): transcript, P3, automatic (WhisperKit), no timestamps. **complete**
-- [2026-10-07-transcript-p3-timestamped.md](Transcript/2026-10-07-transcript-p3-timestamped.md): transcript, P3, second automatic transcription of the same recording (made 2026-10-09), with speakers and timestamps. **complete**
-- [2026-10-07-transcript-p4.md](transcripts/2026-10-07-transcript-p4.md): transcript, P4, automatic (WhisperKit), no timestamps; the recording metadata says 2026-10-08. **complete**
-- [2026-10-07-transcript-p4-timestamped.md](Transcript/2026-10-07-transcript-p4-timestamped.md): transcript, P4, second automatic transcription of the same recording (made 2026-10-09), with speakers and timestamps. **complete**
-- [2026-10-09-transcript-p5-timestamped.md](Transcript/2026-10-09-transcript-p5-timestamped.md): transcript, P5, second automatic transcription of the same recording, with speakers and timestamps. **complete**
-- [2026-10-09-transcript-p6-timestamped.md](Transcript/2026-10-09-transcript-p6-timestamped.md): transcript, P6, second automatic transcription of the same recording, with speakers and timestamps. **complete**
+- 2026-10-07-interview-lucrezia-gradi.md — interview · complete · primary · medium
+- 2026-10-07-interview-matteo-galvagni.md — interview · complete · primary · medium
+- 2026-10-07-interview-lorena-tonuzi.md — interview · complete · primary · medium
+- 2026-10-07-interview-greta-tonuzi.md — interview · complete · primary · medium
+- 2026-10-09-interview-anna-baggio.md — interview · complete · primary · medium
+- 2026-10-09-interview-benedetta-rossi.md — interview · complete · primary · medium
 
-## Raw material
+## research/Transcript/
 
-- [2026-10-07-notes-p1.md](raw/2026-10-07-notes-p1.md): spontaneous notes in Italian, P1, three apps (AVM, Trenitalia, SVT), cancellation email with no reason or alternative. **complete**
-- [2026-10-07-notes-p2.md](raw/2026-10-07-notes-p2.md): spontaneous notes in Italian, P2, two trains and a lift by car, frequent strikes, no alternative except calling family. **complete**
-- [2026-10-07-notes-p3.md](raw/2026-10-07-notes-p3.md): spontaneous notes in Italian, P3, university commute with a possible change at Castelfranco, delay announced by speaker before the email. **complete**
-- [2026-10-07-notes-p4.md](raw/2026-10-07-notes-p4.md): spontaneous notes in Italian, P4, university commute to Padova, train stopped with no announcement, missed connection solved at the station information desk. **complete**
+- 2026-10-07-transcript-p1-timestamped.md — interview · complete · primary · medium
+- 2026-10-07-transcript-p2-timestamped.md — interview · complete · primary · medium
+- 2026-10-07-transcript-p3-timestamped.md — interview · complete · primary · medium
+- 2026-10-07-transcript-p4-timestamped.md — interview · complete · primary · medium
+- 2026-10-09-transcript-p5-timestamped.md — interview · complete · primary · medium
+- 2026-10-09-transcript-p6-timestamped.md — interview · complete · primary · medium
+
+## research/raw/Original transcripts/
+
+- 2026-10-07-transcript-p1.md — unknown · unknown · unknown · unknown
+- 2026-10-07-transcript-p2.md — unknown · unknown · unknown · unknown
+- 2026-10-07-transcript-p3.md — unknown · unknown · unknown · unknown
+- 2026-10-07-transcript-p4.md — unknown · unknown · unknown · unknown
+- 2026-10-09-transcript-p5.md — unknown · unknown · unknown · unknown
+- 2026-10-09-transcript-p6.md — unknown · unknown · unknown · unknown
+
+## research/raw/Spontaneous notes/
+
+- 2026-10-07-spontaneous-notes-p1.md — unknown · unknown · unknown · unknown
+- 2026-10-07-spontaneous-notes-p2.md — unknown · unknown · unknown · unknown
+- 2026-10-07-spontaneous-notes-p3.md — unknown · unknown · unknown · unknown
+- 2026-10-07-spontaneous-notes-p4.md — unknown · unknown · unknown · unknown
+- 2026-10-09-spontaneous-notes-p5.md — unknown · unknown · unknown · unknown
+- 2026-10-09-spontaneous-notes-p6.md — unknown · unknown · unknown · unknown
 
 ## Scheduled (not yet collected)
 

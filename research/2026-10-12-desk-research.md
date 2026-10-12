@@ -10,7 +10,7 @@ tags: [train, bus, boat, venezia, vicenza, padova, information-source, trust, no
 confidence: medium
 grade: secondary
 status: needs-review
-related: [plan.md, Interviews/2026-10-07-interview-p1.md, Interviews/2026-10-07-interview-p2.md, Interviews/2026-10-07-interview-p3.md, Interviews/2026-10-07-interview-p4.md, Interviews/2026-10-09-interview-p5.md, Interviews/2026-10-09-interview-p6.md]
+related: [plan.md, Notes/2026-10-07-interview-lucrezia-gradi.md, Notes/2026-10-07-interview-matteo-galvagni.md, Notes/2026-10-07-interview-lorena-tonuzi.md, Notes/2026-10-07-interview-greta-tonuzi.md, Notes/2026-10-09-interview-anna-baggio.md, Notes/2026-10-09-interview-benedetta-rossi.md]
 ---
 
 # Desk research · benchmark of the apps participants mention

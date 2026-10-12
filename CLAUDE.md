@@ -8,5 +8,5 @@ Rules:
 - Every new note goes into [research/index.md](research/index.md), the same day.
 - Use only the tags listed in [research/plan.md](research/plan.md), section 7.
 - Transcripts in `research/transcripts/` are never edited.
-- Participant codes only (P1, P2, ...), never real names: in file names, notes and transcripts.
+- Interview note file names in `research/Notes/` use the participant's real name (e.g. `2026-10-07-interview-name.md`). Everywhere else, inside notes and transcripts, use participant codes only (P1, P2, ...).
 - Do not use the em dash "—" to split sentences.

@@ -11,7 +11,7 @@ tags: [train, padova, rovigo, university-commute, routine, ordinary-delay, break
 confidence: medium
 grade: primary
 status: complete
-related: [../plan.md, ../Transcript/2026-10-09-transcript-p5-timestamped.md, "../raw/Original transcripts/2026-10-09-transcript-p5.md", "../raw/Personal notes/2026-10-09-personal-notes-p5.md", 2026-10-07-interview-p2.md, 2026-10-07-interview-p3.md, ../2026-10-12-desk-research.md]
+related: [../plan.md, ../Transcript/2026-10-09-transcript-p5-timestamped.md, "../raw/Original transcripts/2026-10-09-transcript-p5.md", "../raw/Personal notes/2026-10-09-personal-notes-p5.md", 2026-10-07-interview-matteo-galvagni.md, 2026-10-07-interview-lorena-tonuzi.md, ../2026-10-12-desk-research.md]
 ---
 
 # Interview · P5, student commuting from a village near Rovigo to Padova by car and train

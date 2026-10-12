@@ -11,7 +11,7 @@ tags: [train, venezia, vicenza, work-commute, routine, ordinary-delay, routine-b
 confidence: medium
 grade: primary
 status: complete
-related: [../plan.md, ../Transcript/2026-10-07-transcript-p2-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p2.md", "../raw/Personal notes/2026-10-07-personal-notes-p2.md", 2026-10-07-interview-p1.md, ../2026-10-12-desk-research.md]
+related: [../plan.md, ../Transcript/2026-10-07-transcript-p2-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p2.md", "../raw/Personal notes/2026-10-07-personal-notes-p2.md", 2026-10-07-interview-lucrezia-gradi.md, ../2026-10-12-desk-research.md]
 ---
 
 # Interview · P2, commuter from Salzano to Lerino by two trains with a change at Mestre

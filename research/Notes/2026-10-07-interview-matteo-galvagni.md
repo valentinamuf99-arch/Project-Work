@@ -11,7 +11,7 @@ tags: [train, venezia, vicenza, work-commute, routine, ordinary-delay, routine-b
 confidence: medium
 grade: primary
 status: complete
-related: [../plan.md, ../Transcript/2026-10-07-transcript-p2-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p2.md", "../raw/Personal notes/2026-10-07-personal-notes-p2.md", 2026-10-07-interview-lucrezia-gradi.md, ../2026-10-12-desk-research.md]
+related: [../plan.md, ../Transcript/2026-10-07-transcript-p2-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p2.md", "../raw/Personal notes/2026-10-07-personal-notes-p2.md", 2026-10-07-interview-lucrezia-gradi.md, 2026-10-07-interview-lorena-tonuzi.md, 2026-10-07-interview-greta-tonuzi.md, 2026-10-09-interview-anna-baggio.md, 2026-10-09-interview-benedetta-rossi.md, ../2026-10-12-desk-research.md]
 ---
 
 # Interview · P2, commuter from Salzano to Lerino by two trains with a change at Mestre
@@ -208,5 +208,12 @@ This unit is a reading of the interview, not what P2 said. It maps the evidence 
 - **Information scattered**: the Trenitalia app for tickets and departures, Google Maps for multimodal planning, separate operator sites for tickets, Google for strikes and refund rules. Generic network notices are ignored because they are not filtered to his journey.
 - **Warning (Q29)**: he explicitly asks for notifications about his own journeys only, and contrasts that with "spam".
 - **Benchmark input (plan section 4)**: Trenitalia and Google Maps confirmed. Telegram news channels appear as an informal information source.
+- **Shared with other notes**: links by shared evidence, see also `related`.
+  - The lost connection at Mestre is also the break point in the [P1 note](2026-10-07-interview-lucrezia-gradi.md).
+  - A missed connection as the real cost of a delay is also in the [P3 note](2026-10-07-interview-lorena-tonuzi.md), where a conductor held the connection.
+  - Strikes missing from the app and found elsewhere are also in the [P4 note](2026-10-07-interview-greta-tonuzi.md) (website, conductor) and the [P5 note](2026-10-09-interview-anna-baggio.md) (Instagram).
+  - The five-minute ticket rule, and the wish for a warning about one's own train before leaving home, are also in the [P5 note](2026-10-09-interview-anna-baggio.md).
+  - A family car as the real fallback when a train is cancelled is also in the [P4 note](2026-10-07-interview-greta-tonuzi.md) and the [P6 note](2026-10-09-interview-benedetta-rossi.md).
+  - Contradiction: the [desk research note](../2026-10-12-desk-research.md) (Signals, "People outside the apps") says P2 opens an app only to buy tickets; this note records that he checks the app for delays before leaving home (Pt.2 [00:06:15]) and searches it for alternative trains (Pt.2.1 [00:05:12]).
 
 Strongest candidate moment from this interview: **the half hour before departure**, when a commuter needs to know early, and for his own journey only, whether the train is late or actually cancelled, and what the alternative is.

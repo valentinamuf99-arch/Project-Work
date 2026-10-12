@@ -11,7 +11,7 @@ tags: [train, bus, padova, monselice, university-commute, routine, ordinary-dela
 confidence: medium
 grade: primary
 status: complete
-related: [../plan.md, ../Transcript/2026-10-09-transcript-p6-timestamped.md, "../raw/Original transcripts/2026-10-09-transcript-p6.md", "../raw/Personal notes/2026-10-09-personal-notes-p6.md", 2026-10-09-interview-anna-baggio.md, 2026-10-07-interview-greta-tonuzi.md, ../2026-10-12-desk-research.md]
+related: [../plan.md, ../Transcript/2026-10-09-transcript-p6-timestamped.md, "../raw/Original transcripts/2026-10-09-transcript-p6.md", "../raw/Personal notes/2026-10-09-personal-notes-p6.md", 2026-10-09-interview-anna-baggio.md, 2026-10-07-interview-greta-tonuzi.md, 2026-10-07-interview-lucrezia-gradi.md, 2026-10-07-interview-matteo-galvagni.md, 2026-10-07-interview-lorena-tonuzi.md, ../2026-10-12-desk-research.md]
 ---
 
 # Interview · P6, student commuting from Monselice to Padova by train, relying on the station board and staff
@@ -136,5 +136,10 @@ This unit is a reading of the interview, not what P6 said. It maps the evidence 
 - **Notifying others and cost**: the cost she names is not her own lateness but involving her parents. This echoes P2 and P4.
 - **Trust**: she trusts the board and staff over the app (once buggy). She expects staff to know more than she does, and is let down when they react only after the fact.
 - **Benchmark input (plan section 4)**: Trenitalia website (pass only). No app used. Station information (boards, staff) is a channel the benchmark does not cover.
+- **Shared with other notes**: links by shared evidence, see also `related`.
+  - Parents with a car as the real fallback, and the discomfort of involving family, are also in the [P2 note](2026-10-07-interview-matteo-galvagni.md) and the [P4 note](2026-10-07-interview-greta-tonuzi.md).
+  - A replacement bus that is not a usable alternative is also in the [P3 note](2026-10-07-interview-lorena-tonuzi.md) and the [P4 note](2026-10-07-interview-greta-tonuzi.md).
+  - Wanting the reason for a delay to judge whether to act is also in the [P1 note](2026-10-07-interview-lucrezia-gradi.md) and the [P4 note](2026-10-07-interview-greta-tonuzi.md).
+  - A short single-train trip, followed on the board and announcements only, with delays treated as ordinary, is also in the [P5 note](2026-10-09-interview-anna-baggio.md).
 
 Strongest candidate moment from this interview: **the station board when a delay appears**, where a commuter who does not use apps needs the reason and a sense of whether the delay will grow, in the place everyone passes through.

@@ -11,7 +11,7 @@ tags: [train, bus, padova, vicenza, castelfranco, university-commute, routine, l
 confidence: medium
 grade: primary
 status: complete
-related: [../plan.md, ../Transcript/2026-10-07-transcript-p3-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p3.md", "../raw/Personal notes/2026-10-07-personal-notes-p3.md", 2026-10-07-interview-lucrezia-gradi.md, 2026-10-07-interview-matteo-galvagni.md, ../2026-10-12-desk-research.md]
+related: [../plan.md, ../Transcript/2026-10-07-transcript-p3-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p3.md", "../raw/Personal notes/2026-10-07-personal-notes-p3.md", 2026-10-07-interview-lucrezia-gradi.md, 2026-10-07-interview-matteo-galvagni.md, 2026-10-07-interview-greta-tonuzi.md, 2026-10-09-interview-anna-baggio.md, 2026-10-09-interview-benedetta-rossi.md, ../2026-10-12-desk-research.md]
 ---
 
 # Interview · P3, student commuting from Bassano to Padova by train, direct or with a change at Castelfranco
@@ -149,5 +149,11 @@ This unit is a reading of the interview, not what P3 said. It maps the evidence 
 - **Alternatives (Q24, A9)**: the replacement bus is the operator's alternative, with friction (pass not valid, extra ticket, longer ride). The best help she received came from a person, the conductor, who had information and could act on the connection.
 - **Information sources and trust**: she trusts ViaggiaTreno more than the Trenitalia app for real-time status. The tool reached her by word of mouth, not from the operator.
 - **Benchmark input (plan section 4)**: Trenitalia confirmed; ViaggiaTreno is a strong candidate to add, as a real-time source participants actually use.
+- **Shared with other notes**: links by shared evidence, see also `related`.
+  - The same route (Bassano to Padova, direct or with a change at Castelfranco) is in the [P4 note](2026-10-07-interview-greta-tonuzi.md), with a much higher break frequency.
+  - Replacement buses that are not a usable alternative are also in the [P4 note](2026-10-07-interview-greta-tonuzi.md) and the [P6 note](2026-10-09-interview-benedetta-rossi.md).
+  - Missed or nearly missed connections are also in the [P1 note](2026-10-07-interview-lucrezia-gradi.md) and the [P2 note](2026-10-07-interview-matteo-galvagni.md), and a late official email is also in the [P1 note](2026-10-07-interview-lucrezia-gradi.md).
+  - The tap-to-pay workaround for the five-minute ticket rule reached P5 from P3, as recorded in the [P5 note](2026-10-09-interview-anna-baggio.md).
+  - Contradiction: the [desk research note](../2026-10-12-desk-research.md) (Signals, "People outside the apps") says P3 opens an app only to buy tickets; this note records that she checks the Trenitalia app or website before going to the station ([00:13:55]) and follows her train on ViaggiaTreno ([00:14:51]).
 
 Strongest candidate moment from this interview: **the wait before and during a disruption**, when a commuter wants to follow her own train stop by stop, and the person who can actually secure the connection is the conductor.

@@ -12,7 +12,7 @@ tags: [boat, train, bus, venezia, padova, vicenza, work-commute, routine, ordina
 confidence: medium
 grade: primary
 status: complete
-related: [../plan.md, ../Transcript/2026-10-07-transcript-p1-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p1.md", "../raw/Personal notes/2026-10-07-personal-notes-p1.md", ../2026-10-12-desk-research.md]
+related: [../plan.md, ../Transcript/2026-10-07-transcript-p1-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p1.md", "../raw/Personal notes/2026-10-07-personal-notes-p1.md", 2026-10-07-interview-matteo-galvagni.md, 2026-10-07-interview-lorena-tonuzi.md, 2026-10-07-interview-greta-tonuzi.md, 2026-10-09-interview-benedetta-rossi.md, ../2026-10-12-desk-research.md]
 ---
 
 # Interview · P1, commuter from the Lido di Venezia to Torri di Quartesolo by boat, train and bus
@@ -206,5 +206,11 @@ This unit is a reading of the interview, not what P1 said. It maps the evidence 
 - **Alternatives found by chance (Q24, A9)**: confirmed directly. The train that saved the evening was seen on a board in an underpass while she was walking away; the official message offered only generic options.
 - **Information scattered across apps**: three apps for three operators, used only as ticket wallets. None of them connects one leg to the next, which is exactly where she says the problem lies (the connections).
 - **Benchmark input (plan section 4)**: P1 uses AVM Venezia, Trenitalia and SVT Vicenza. SVT has a ticketing app in her use, which the plan had not confirmed: worth checking before the benchmark list is fixed.
+- **Shared with other notes**: links by shared evidence, see also `related`.
+  - Lost connections, with Mestre as the place where the chain breaks, are also in the [P2 note](2026-10-07-interview-matteo-galvagni.md).
+  - A connection about to be lost, and an official email that arrives too late to act on, are also in the [P3 note](2026-10-07-interview-lorena-tonuzi.md).
+  - A train that is boarded and does not leave, with no reason given, and the fear of being stranded alone at night in a station that feels unsafe, are also in the [P4 note](2026-10-07-interview-greta-tonuzi.md).
+  - Wanting the reason for the stop in order to judge what to do next is also in the [P6 note](2026-10-09-interview-benedetta-rossi.md).
+  - Contradiction: the [desk research note](../2026-10-12-desk-research.md) (Signals, "Understanding") says P1 got the cause and duration from people; this note records that no staff were available ([00:19:03]) and that she never learned the reason ([00:10:42]).
 
 Strongest candidate moment from this interview: **the cancellation at Mestre**, when a commuter needs one answer that covers the whole remaining chain: why, for how long, and which train and boat will still get her home.

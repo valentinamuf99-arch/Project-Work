@@ -11,7 +11,7 @@ tags: [train, padova, rovigo, university-commute, routine, ordinary-delay, break
 confidence: medium
 grade: primary
 status: complete
-related: [../plan.md, ../Transcript/2026-10-09-transcript-p5-timestamped.md, "../raw/Original transcripts/2026-10-09-transcript-p5.md", "../raw/Personal notes/2026-10-09-personal-notes-p5.md", 2026-10-07-interview-matteo-galvagni.md, 2026-10-07-interview-lorena-tonuzi.md, ../2026-10-12-desk-research.md]
+related: [../plan.md, ../Transcript/2026-10-09-transcript-p5-timestamped.md, "../raw/Original transcripts/2026-10-09-transcript-p5.md", "../raw/Personal notes/2026-10-09-personal-notes-p5.md", 2026-10-07-interview-matteo-galvagni.md, 2026-10-07-interview-lorena-tonuzi.md, 2026-10-07-interview-greta-tonuzi.md, 2026-10-09-interview-benedetta-rossi.md, ../2026-10-12-desk-research.md]
 ---
 
 # Interview · P5, student commuting from a village near Rovigo to Padova by car and train
@@ -125,5 +125,10 @@ This unit is a reading of the interview, not what P5 said. It maps the evidence 
 - **Warning (Q29)**: despite not feeling the need, she would welcome a notification that her own train is late before leaving home, plus strikes and works on the line. The value she sees is in planning ahead, especially on days when she works.
 - **Small-friction coping**: the five-minute ticket rule appears again (also P2), here solved by a pass and by tap-to-pay, a tip passed on by P3.
 - **Benchmark input (plan section 4)**: Trenitalia (passes) and Trainline (single tickets) confirmed. Instagram appears as an informal source for strikes.
+- **Shared with other notes**: links by shared evidence, see also `related`.
+  - The five-minute ticket rule, and the wish for a warning about one's own train before leaving home, are also in the [P2 note](2026-10-07-interview-matteo-galvagni.md).
+  - The tap-to-pay tip came from P3, whose commute is in the [P3 note](2026-10-07-interview-lorena-tonuzi.md).
+  - Strikes learned outside the app are also in the [P2 note](2026-10-07-interview-matteo-galvagni.md) (Google, Telegram) and the [P4 note](2026-10-07-interview-greta-tonuzi.md) (website, conductor).
+  - A short single-train trip, followed on the board and announcements only, with delays treated as ordinary, is also in the [P6 note](2026-10-09-interview-benedetta-rossi.md).
 
 Strongest candidate moment from this interview: **before leaving home**, when a commuter who accepts small delays would still use one early, personal notice about her own train, strikes and works to decide when to leave.

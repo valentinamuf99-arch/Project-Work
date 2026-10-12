@@ -11,7 +11,7 @@ tags: [train, bus, padova, castelfranco, university-commute, routine, routine-br
 confidence: medium
 grade: primary
 status: complete
-related: [../plan.md, ../Transcript/2026-10-07-transcript-p4-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p4.md", "../raw/Personal notes/2026-10-07-personal-notes-p4.md", 2026-10-07-interview-lorena-tonuzi.md, ../2026-10-12-desk-research.md]
+related: [../plan.md, ../Transcript/2026-10-07-transcript-p4-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p4.md", "../raw/Personal notes/2026-10-07-personal-notes-p4.md", 2026-10-07-interview-lorena-tonuzi.md, 2026-10-07-interview-lucrezia-gradi.md, 2026-10-07-interview-matteo-galvagni.md, 2026-10-09-interview-anna-baggio.md, 2026-10-09-interview-benedetta-rossi.md, ../2026-10-12-desk-research.md]
 ---
 
 # Interview · P4, student commuting from Bassano to Padova by train, stranded at Padova by a line fault
@@ -150,5 +150,12 @@ This unit is a reading of the interview, not what P4 said. It maps the evidence 
 - **Alternatives (Q24, A9)**: the official alternative (a replacement bus via Mestre, home at midnight) was not usable. The working alternative was private, as for P2.
 - **Warning (Q29)**: the one advance warning that worked was for a strike, from the conductor and the website, and she planned well with it. The app does not carry it, and its infomobility is perceived as covering high-speed trains only.
 - **Benchmark input (plan section 4)**: Trenitalia app and website should be checked separately: P4 finds information on the site that is missing in the app.
+- **Shared with other notes**: links by shared evidence, see also `related`.
+  - The same route (Bassano to Padova, change at Castelfranco) is in the [P3 note](2026-10-07-interview-lorena-tonuzi.md), where breaks are rare.
+  - A train that is boarded and does not leave, with no reason given, and the fear of a station at night, are also in the [P1 note](2026-10-07-interview-lucrezia-gradi.md).
+  - Strikes missing from the app and found elsewhere are also in the [P2 note](2026-10-07-interview-matteo-galvagni.md) (Google, Telegram) and the [P5 note](2026-10-09-interview-anna-baggio.md) (Instagram).
+  - Parents with a car as the real fallback are also in the [P2 note](2026-10-07-interview-matteo-galvagni.md) and the [P6 note](2026-10-09-interview-benedetta-rossi.md).
+  - Replacement buses that are not a usable alternative are also in the [P3 note](2026-10-07-interview-lorena-tonuzi.md) and the [P6 note](2026-10-09-interview-benedetta-rossi.md).
+  - Wanting the cause early, to decide in time, is also in the [P1 note](2026-10-07-interview-lucrezia-gradi.md) and the [P6 note](2026-10-09-interview-benedetta-rossi.md).
 
 Strongest candidate moment from this interview: **the first half hour on a train that does not leave**, when a commuter needs to know whether she will get home at all, early enough to decide to call for a lift.

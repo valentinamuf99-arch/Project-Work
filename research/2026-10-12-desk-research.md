@@ -126,3 +126,8 @@ This unit is reading, not evidence: it maps the benchmark to the brief's three m
 - **Notifying others**: a ready message for an employer, a lecturer or family (P4 called her parents four times in one month).
 - **A channel outside the app** for people like P6: SMS or the station itself.
 - **Dependency**: all of this needs open data (GTFS, GTFS Realtime) for Trenitalia, SVT and Busitalia Veneto, which has not been checked yet.
+
+**Contradictions with the interview notes**
+
+- Contradiction: the "People outside the apps" bullet above says P2 and P3 open an app only to buy tickets. The [P2 note](Notes/2026-10-07-interview-matteo-galvagni.md) records a delay check in the app before leaving home and a search for alternative trains in it; the [P3 note](Notes/2026-10-07-interview-lorena-tonuzi.md) records a check in the app or website before leaving and ViaggiaTreno for real-time status.
+- Contradiction: the "Understanding" bullet above cites P1 for causes and durations coming from people. The [P1 note](Notes/2026-10-07-interview-lucrezia-gradi.md) records that no staff were available and that she never learned the reason.

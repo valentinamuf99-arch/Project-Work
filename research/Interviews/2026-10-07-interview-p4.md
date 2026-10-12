@@ -11,7 +11,7 @@ tags: [train, bus, padova, castelfranco, university-commute, routine, routine-br
 confidence: medium
 grade: primary
 status: complete
-related: [../plan.md, ../Transcript/2026-10-07-transcript-p4-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p4.md", "../raw/Personal notes/2026-10-07-personal-notes-p4.md", 2026-10-07-interview-p3.md]
+related: [../plan.md, ../Transcript/2026-10-07-transcript-p4-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p4.md", "../raw/Personal notes/2026-10-07-personal-notes-p4.md", 2026-10-07-interview-p3.md, ../2026-10-12-desk-research.md]
 ---
 
 # Interview · P4, student commuting from Bassano to Padova by train, stranded at Padova by a line fault

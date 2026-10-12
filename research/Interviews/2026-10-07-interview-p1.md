@@ -12,7 +12,7 @@ tags: [boat, train, bus, venezia, padova, vicenza, work-commute, routine, ordina
 confidence: medium
 grade: primary
 status: complete
-related: [../plan.md, ../Transcript/2026-10-07-transcript-p1-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p1.md", "../raw/Personal notes/2026-10-07-personal-notes-p1.md"]
+related: [../plan.md, ../Transcript/2026-10-07-transcript-p1-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p1.md", "../raw/Personal notes/2026-10-07-personal-notes-p1.md", ../2026-10-12-desk-research.md]
 ---
 
 # Interview · P1, commuter from the Lido di Venezia to Torri di Quartesolo by boat, train and bus

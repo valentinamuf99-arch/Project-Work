@@ -30,7 +30,6 @@ Every research file in this repository, grouped by folder, oldest first. Format:
 
 - 2026-10-12-benchmark.md — desk-research · complete · secondary · medium
 - 2026-10-13-review-analysis-trenitalia-trainline.md — desk-research · complete · secondary · medium
-- 2026-10-13-disruption-experience.md — desk-research · complete · secondary · medium
 - 2026-10-13-commuting-statistics.md — desk-research · complete · secondary · medium
 
 ## research/Notes/

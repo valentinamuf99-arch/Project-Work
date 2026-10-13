@@ -10,7 +10,7 @@ tags: [train, bus, venezia, vicenza, padova, castelfranco, monselice, rovigo, wo
 confidence: medium
 grade: secondary
 status: complete
-related: [plan.md, Desk research/2026-10-13-disruption-experience.md, Desk research/2026-10-12-benchmark.md, Desk research/2026-10-13-review-analysis-trenitalia-trainline.md]
+related: [plan.md, Desk research/2026-10-12-benchmark.md, Desk research/2026-10-13-review-analysis-trenitalia-trainline.md]
 ---
 
 # Desk research · commuting in Veneto in numbers

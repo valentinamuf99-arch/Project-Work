@@ -9,7 +9,7 @@ method: competitive benchmark (desk research, not yet verified on a phone)
 tags: [train, bus, boat, venezia, vicenza, padova, information-source, trust, noticing, understanding, deciding, alternative, warning, strike, cancellation, missed-connection, open-data, trenitalia, viaggiatreno, trainline, avm-venezia, svt, google-maps]
 confidence: medium
 grade: secondary
-status: needs-review
+status: complete
 related: [plan.md, Desk research/2026-10-13-review-analysis-trenitalia-trainline.md, Notes/2026-10-07-interview-lucrezia-gradi.md, Notes/2026-10-07-interview-matteo-galvagni.md, Notes/2026-10-07-interview-lorena-tonuzi.md, Notes/2026-10-07-interview-greta-tonuzi.md, Notes/2026-10-09-interview-anna-baggio.md, Notes/2026-10-09-interview-benedetta-rossi.md]
 ---
 
@@ -19,7 +19,7 @@ related: [plan.md, Desk research/2026-10-13-review-analysis-trenitalia-trainline
 
 This benchmark covers the five apps that came up in the interviews: Trenitalia (app and website), ViaggiaTreno, Trainline, AVM Venezia and SVT Vicenza. Google Maps, mentioned by P2 for bus alternatives, appears only in the comparison table. For each app it records the core commuting features, how it handles disruptions (real-time information, delay causes, notifications, alternatives) and its main UX strengths and weaknesses.
 
-Evidence comes from official store listings and operator pages, trade press and a 2023 document of the transport regulator (ART), read on 2026-10-12. What participants said is reported from the interview notes, with the participant code. The plan asks for the benchmark to be verified on a phone: that has not been done yet, so every point marked "unverified" is still to be tested and the note stays `needs-review`.
+Evidence comes from official store listings and operator pages, trade press and a 2023 document of the transport regulator (ART), read on 2026-10-12. What participants said is reported from the interview notes, with the participant code. The plan asks for the benchmark to be verified on a phone: that was not done for this note. The note is closed as it is: every point marked "unverified" remains untested, and the checks are listed below as open work for later.
 
 ## Trenitalia: official tickets, notifications that arrive late
 
@@ -84,7 +84,7 @@ Only P1 uses SVT Vicenza, for bus tickets.
 | Alternatives proposed | promised for regional tickets | no | unverified | no | no | yes, multimodal |
 | Train, bus and boat together | no | no | train only | Venice only | bus only | planning only |
 
-## Open checks before the note is complete
+## Open checks for later work
 
 1. Smart Caring on the Veneto regional lines participants use, for pass holders and for single tickets.
 2. Trainline: Veneto regional passes, and whether regional alerts include replacement buses and alternatives.

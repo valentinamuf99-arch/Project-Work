@@ -10,7 +10,7 @@ tags: [train, bus, boat, venezia, vicenza, padova, castelfranco, rovigo, monseli
 confidence: medium
 grade: secondary
 status: complete
-related: [plan.md, touchpoints-human.md, Notes/2026-10-07-interview-lucrezia-gradi.md, Notes/2026-10-07-interview-matteo-galvagni.md, Notes/2026-10-07-interview-lorena-tonuzi.md, Notes/2026-10-07-interview-greta-tonuzi.md, Notes/2026-10-09-interview-anna-baggio.md, Notes/2026-10-09-interview-benedetta-rossi.md, Desk research/2026-10-12-benchmark.md, Desk research/2026-10-13-review-analysis-trenitalia-trainline.md, Desk research/2026-10-13-commuting-statistics.md]
+related: [plan.md, touchpoints-human.md, 2026-10-23-features-ai.md, Notes/2026-10-07-interview-lucrezia-gradi.md, Notes/2026-10-07-interview-matteo-galvagni.md, Notes/2026-10-07-interview-lorena-tonuzi.md, Notes/2026-10-07-interview-greta-tonuzi.md, Notes/2026-10-09-interview-anna-baggio.md, Notes/2026-10-09-interview-benedetta-rossi.md, Desk research/2026-10-12-benchmark.md, Desk research/2026-10-13-review-analysis-trenitalia-trainline.md, Desk research/2026-10-13-commuting-statistics.md]
 ---
 
 # Touchpoints · every moment of contact between commuter and service

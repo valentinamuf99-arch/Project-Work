@@ -27,6 +27,7 @@ Every research file in this repository, grouped by folder, oldest first. Format:
 - interview-script.md — plan · complete · primary · high
 - touchpoints-human.md — unknown · unknown · unknown · unknown
 - 2026-10-23-touchpoints-ai.md — desk-research · complete · secondary · medium
+- 2026-10-23-features-ai.md — desk-research · needs-review · secondary · medium
 
 ## research/Desk research/
 

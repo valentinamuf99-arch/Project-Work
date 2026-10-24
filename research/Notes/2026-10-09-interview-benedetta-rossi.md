@@ -11,7 +11,7 @@ tags: [train, bus, padova, monselice, university-commute, routine, ordinary-dela
 confidence: medium
 grade: primary
 status: complete
-related: [../plan.md, ../Transcript/2026-10-09-transcript-p6-timestamped.md, "../raw/Original transcripts/2026-10-09-transcript-p6.md", "../raw/Personal notes/2026-10-09-personal-notes-p6.md", 2026-10-09-interview-anna-baggio.md, 2026-10-07-interview-greta-tonuzi.md, 2026-10-07-interview-lucrezia-gradi.md, 2026-10-07-interview-matteo-galvagni.md, 2026-10-07-interview-lorena-tonuzi.md, ../2026-10-12-desk-research.md]
+related: [../plan.md, ../Transcript/2026-10-09-transcript-p6-timestamped.md, "../raw/Original transcripts/2026-10-09-transcript-p6.md", 2026-10-09-interview-anna-baggio.md, 2026-10-07-interview-greta-tonuzi.md, 2026-10-07-interview-lucrezia-gradi.md, 2026-10-07-interview-matteo-galvagni.md, 2026-10-07-interview-lorena-tonuzi.md, ../2026-10-12-desk-research.md]
 ---
 
 # Interview · P6, student commuting from Monselice to Padova by train, relying on the station board and staff

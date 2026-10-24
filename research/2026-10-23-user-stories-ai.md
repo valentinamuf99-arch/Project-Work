@@ -2,7 +2,7 @@
 title: "User stories · one story per feature, with who, moment and value taken from the interview notes"
 date: 2026-10-23
 activity: desk-research
-source: "2026-10-23-features-ai.md, with who, circumstance and value checked against the six interview notes (P1 to P6) and the App Store review note, read on 2026-10-23; transcripts not read"
+source: "2026-10-23-features-ai.md, with who, circumstance and value checked against the six interview notes (P1 to P6) and the App Store review note, read on 2026-10-23; P6 note reread on 2026-10-24 to add supporting evidence to F12; transcripts not read"
 author: "Eugenia Valentina Muffolini"
 channel: web
 method: user stories from features, one per feature, each traced to a note and a quote
@@ -88,7 +88,7 @@ Source: F11 · `Notes/2026-10-07-interview-lucrezia-gradi.md` · [00:10:02] "Era
 
 As the student who rides home from Padova in the evening (P4), sitting for an hour on a train at Padova that has not left, starting to wonder whether to call her parents, I want to be told early when no public option will get me home that evening, so that my parents can leave much earlier and I am not left alone at the station, worried.
 
-Source: F12 · `Notes/2026-10-07-interview-greta-tonuzi.md` · [00:04:49] "E passa un'ora e finché comincio a domandarmi se effettivamente avesse avuto senso far partire qualcuno da casa per venirmi a prendere in macchina."; [00:09:35] "Che non avrei avuto modo di tornare a casa con I mezzi pubblici e che avrei potuto far partire I miei genitori molto 1º senza stare appunto con la preoccupazione del mio Dio, adesso sono qua da sola."
+Source: F12 · `Notes/2026-10-07-interview-greta-tonuzi.md` · [00:04:49] "E passa un'ora e finché comincio a domandarmi se effettivamente avesse avuto senso far partire qualcuno da casa per venirmi a prendere in macchina."; [00:09:35] "Che non avrei avuto modo di tornare a casa con I mezzi pubblici e che avrei potuto far partire I miei genitori molto 1º senza stare appunto con la preoccupazione del mio Dio, adesso sono qua da sola." Supporting evidence from a second participant: `Notes/2026-10-09-interview-benedetta-rossi.md` · P6 [00:07:26] "l'unica, appunto, alternativa era prendere l'autobus e farsi un'ora e 20 di autobus e poi appunto farsi raggiungere dai genitori"; [00:08:12] "un 1 senso di disagio, come dire, di far spostare anche magari I miei genitori"; [00:11:17] "mi sarei attivata in anticipo con eventuali altre soluzioni magari." Caveat from the features note: P6 already knew the bus option and did not ask at the station, so the story stays with P4.
 
 ## Replacement, connection and recovery
 

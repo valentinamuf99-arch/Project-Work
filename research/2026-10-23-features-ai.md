@@ -70,8 +70,8 @@ Same codes as the touchpoints note.
 
 | # | Feature | Touchpoint it answers | Evidence (note + quote) | What it does, one line |
 |---|---|---|---|---|
-| F11 | **Why it is stopped, and for how long** [strong] | TP 35, TP 37, TP 38, TP 40, TP 41 | P4 [00:06:18] "non era uscito nessun avviso del fatto del guasto di linea, perché appunto mi è stato riferito dal capotreno dopo un po' di chiamate"; P4 [00:14:57] "Neanche dallo speaker niente"; P1 [00:16:19] "fammi capire qual è il problema, qual è la tempistica"; P6 [00:11:04] "Capire se è anche una cosa magari temporanea o che si può eventualmente prolungare". ⚠C2: P5 [00:07:51] says on-board announcements do give a restart time | Tells the commuter on a train that is not moving why it is stopped and how long it is expected to stay. |
-| F12 | **No way home, said early** [weak] | TP 29, TP 35 | P4 [00:09:35] "Che non avrei avuto modo di tornare a casa con I mezzi pubblici e che avrei potuto far partire I miei genitori molto 1º"; P4 [00:04:49] "comincio a domandarmi se effettivamente avesse avuto senso far partire qualcuno da casa". One participant | Tells the commuter early when no public option will get them home that evening. |
+| F11 | **Why it is stopped, and for how long** [strong] | TP 37, TP 38, TP 40, TP 41 | P4 [00:06:18] "non era uscito nessun avviso del fatto del guasto di linea, perché appunto mi è stato riferito dal capotreno dopo un po' di chiamate"; P4 [00:14:57] "Neanche dallo speaker niente"; P1 [00:16:19] "fammi capire qual è il problema, qual è la tempistica"; P6 [00:11:04] "Capire se è anche una cosa magari temporanea o che si può eventualmente prolungare". ⚠C2: P5 [00:07:51] says on-board announcements do give a restart time | Tells the commuter on a train that is not moving why it is stopped and how long it is expected to stay. |
+| F12 | **No way home, said early** [weak] | TP 29 | P4 [00:09:35] "Che non avrei avuto modo di tornare a casa con I mezzi pubblici e che avrei potuto far partire I miei genitori molto 1º"; P4 [00:04:49] "comincio a domandarmi se effettivamente avesse avuto senso far partire qualcuno da casa". One participant | Tells the commuter early when no public option will get them home that evening. |
 | F13 | **Someone to ask on board** [weak] [no story] | TP 43 | P1 [00:19:03] "avrò visto il controllore del treno 3 volt"; P1 [00:19:34] "Cioè io se devo chiedere qualcosa a qualcuno cosa faccio?". One participant, ⚠C3: for P3, P4 and P6 staff are there | Gives the commuter on board someone to ask when no conductor is around. |
 
 ## Features for replacement, connection and recovery
@@ -110,7 +110,7 @@ Features considered and not shipped, with the touchpoint that failed to hold the
 | Live map of the train's position | TP 13 | P2 Pt.2.1 [00:14:02] cites Sweden's map: that is a "how". The need under it is F3. |
 | Seat or crowding information | TP 47 | P3 asks for bigger trains at busy hours ([00:19:17]), not for information. No capability at this moment answers it. |
 | Wait information at Castelfranco | TP 30 | The wait is the timetable; no quote shows an information gap. The hail episode is covered by P3 herself: [00:12:01] "Si tratta di una cosa che non dipende da da Trenitalia". |
-| Restart time announced on board | TP 36 | P5 says it already happens ([00:07:51]). Where it does not (TP 37), F11 holds it. |
+| Restart time announced on board | TP 27 | P5 says it already happens ([00:07:51]). Where it does not (TP 37), F11 holds it. |
 | A more reliable app for first-time users | TP 20 | One participant, one try, bugs not described: [00:12:12] "aveva dei bug". A quality problem, not a capability. |
 | Anything for staff leaving the train during a stop | TP 39 | Staff conduct, not a capability. The information gap in that moment is F11. |
 

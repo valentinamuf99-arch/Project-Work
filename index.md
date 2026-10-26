@@ -31,6 +31,7 @@ Every research file in this repository, grouped by folder, oldest first. Format:
 - 2026-10-23-user-stories-ai.md — desk-research · needs-review · secondary · medium
 - 2026-10-24-gaps-notes.md — desk-research · needs-review · tertiary · medium
 - how-might-we-ai.md — desk-research · needs-review · secondary · medium
+- 2026-10-26-possible-solutions-ai.md — desk-research · needs-review · tertiary · low
 
 ## research/Desk research/
 

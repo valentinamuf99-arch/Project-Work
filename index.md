@@ -51,3 +51,7 @@ Every research file in this repository, grouped by folder, oldest first. Format:
 - 2026-10-07-interview-greta-tonuzi.md — interview · complete · primary · medium
 - 2026-10-09-interview-anna-baggio.md — interview · complete · primary · medium
 - 2026-10-09-interview-benedetta-rossi.md — interview · complete · primary · medium
+
+## Research/Ideation/
+
+- 2026-10-27-ideation-ai.md — desk-research · needs-review · tertiary · low

@@ -8,6 +8,12 @@ Opzione dove le persone delle fermate prima scrvono se il treno è in ritardo o 
 
 HMW help a commuter make a plan in the minutes when the fate of their train is still unclear?
 Ideation:
+Mostrare alternative disponibili per arrivare alla stesa destinazione 
+Mostrare le tempistiche fino a quando può ancora cambiare treno
+Mostrare il prossimo orario disponibile 
+Mettere automaticamente nel carrello l'alternativa più valida 
+Fare in modo che finche c'è incertezza rendere il biglietto valido per qualsiasi treno 
+Opzione che mostra cosa hanno deciso nel frattempo gli altri passeggeri 
 
 HMW make sure an evening student learns from the service, days ahead, that a strike hits their route and which of their trains still run?
 Ideation:

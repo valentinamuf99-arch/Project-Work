@@ -56,3 +56,4 @@ Every research file in this repository, grouped by folder, oldest first. Format:
 
 - 2026-10-27-ideation-ai.md — desk-research · needs-review · tertiary · low
 - 2026-10-26-clusters-ai.md — desk-research · needs-review · tertiary · low
+- 2026-10-26-ideation-ai.md — desk-research · needs-review · tertiary · low

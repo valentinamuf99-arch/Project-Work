@@ -1,158 +1,209 @@
 ---
-title: "Concept clusters · agent and human concepts merged, then grouped into eleven families of answers"
+title: "Clusters · 65 merged concepts for four How-Might-We questions, grouped into thirteen families of answers"
 date: 2026-10-26
 activity: desk-research
-source: "Read on 2026-10-27: 2026-10-26-ideation-ai.md (36 concepts), 2026-10-26-ideation-human.md (4 concepts), 2026-10-26-how-might-we-ai.md (questions, reference only). Also read for format and tags: structure.md, plan.md. Also opened before writing: 2026-10-26-clustering-ai.md (an earlier clustering); not used as input."
+source: "Read on 2026-10-28 as input: Ideation/2026-10-26-ideation-human.md, Ideation/2026-10-26-ideation-ai.md, Ideation/2026-10-26-how-might-we-ai.md (questions, for reference only). Read for format and tags only: CLAUDE.md, structure.md, plan.md (section 7), index.md (header and Ideation lines). Not read: the previous 2026-10-26-clusters-ai.md, 2026-10-27-ideation-ai.md, user stories, interview notes, transcripts."
 author: "Eugenia Valentina Muffolini"
 channel: web
-method: merge of two concept lists, then clustering by direction of answer
-tags: [train, strike, cancellation, long-delay, noticing, understanding, deciding, uncertainty, alternative, warning, information-source, cost-of-lateness, coping-strategy, autonomy, work-commute, university-commute]
+method: merge of the human and agent ideation lists, then extractive clustering by direction of answer
+tags: [train, padova, work-commute, university-commute, strike, cancellation, long-delay, noticing, understanding, deciding, uncertainty, alternative, warning, information-source]
 confidence: low
 grade: tertiary
 status: needs-review
-related: [plan.md, 2026-10-26-ideation-ai.md, 2026-10-26-ideation-human.md, 2026-10-26-how-might-we-ai.md, 2026-10-26-clustering-ai.md]
+related: [plan.md, 2026-10-26-ideation-human.md, 2026-10-26-ideation-ai.md, 2026-10-26-how-might-we-ai.md]
 ---
 
-# Concept clusters · eleven families of answers
+# Clusters · 65 concepts in thirteen families
 
 ## Scope and method
 
-This note merges the agent's concepts and the human concepts into one list, then groups them by direction. It is extractive: every row comes from one of the two files, and nothing is ranked or recommended.
+This note groups every concept already written for four How-Might-We questions into families of answers. It replaces the earlier version of this file, which was not read, so none of its families carry over. Nothing new is invented: every row comes from `2026-10-26-ideation-human.md` or `2026-10-26-ideation-ai.md`. Neither input file was edited.
 
-The questions, from `2026-10-26-how-might-we-ai.md`:
+The four questions:
 
-- **#1 · F1 · P2.** HMW let an early commuter know, before leaving home at six, that their first train is already late or cancelled, so they can choose whether to go to the station at all?
-- **#4 · F4 · P4.** HMW make sure an evening student learns from the service, days ahead, that a strike hits their route and which of their trains still run?
-- **#3 · F3 · P2.** HMW help a commuter make a plan in the minutes when the fate of their train is still unclear or cancelled? This question was added by the agent in the ideation note; it is not one of the two chosen questions.
+- **#1 · F1 · P2.** An early commuter, before leaving home at six, learns that the first train is already late or cancelled.
+- **#3 · F3 · P2.** A commuter makes a plan in the minutes when the train's fate is still unclear.
+- **#4 · F4 · P4.** An evening student learns from the service, days ahead, that a strike hits the route and which trains still run.
+- **#9 · F11 · P1.** A passenger on a train stopped near Padova late in the evening learns why it is stopped and for how long.
 
-Method:
+How the merged list was built:
 
-- **Numbering.** Agent concepts keep their numbers 1 to 36 from `2026-10-26-ideation-ai.md`. Human concepts are numbered 37 to 40 in the order of `2026-10-26-ideation-human.md`.
-- **Questions.** All four human concepts sit under the #1 question in the human file, so all four are assigned #1 by the file itself. None is marked `[no question]`.
-- **Author marks.** `[agent]` only in the ideation note; `[me]` only in the human list; `[both]` the same answer in both lists; `[both?]` a match that is a judgement call, with the reason given. Matched concepts keep separate rows: nothing is merged into one row.
-- **Risky marks.** `[risky]` is copied from the ideation note. The human file marks nothing as risky, so human concepts carry no mark.
-- **Families.** Two concepts share a family when they answer the question in the same way. Families were built from the concepts first; directions A to H of the ideation note were compared only at the end.
+- **Numbers.** Agent concepts keep their numbers, 1 to 48. Human concepts follow, 49 to 65, in the order of the human file.
+- **Wording.** Agent concepts are given as name and one line, copied from the ideation note. Human concepts are copied in Italian exactly as written, typos included.
+- **Question.** A human concept answers the question it sits under in the human file.
+- **Author.** `[agent]` only in the ideation note; `[me]` only in the human file; `[both]` the same answer in both lists, whatever the wording; `[both?]` a match that is a judgment call, with the reason in one line. A pair stays two rows, each pointing to the other.
+- **`[risky]`** is kept exactly where the ideation note put it. The human file carries no risk marks, so no human row has one, even when its twin does.
+
+How the families were built:
+
+- **A family is a direction:** concepts belong together when they answer the question in the same way, whatever the channel or the question. A family may span questions.
+- **Built from the concepts first.** The eleven directions in the ideation note (A to K) were set aside and compared only at the end, in their own unit.
+- **Not ranked.** Families are numbered I to XIII for reference only. No family is recommended.
 
 ## Merged list
 
-| # | concept | question | what it does (in one line) | author | risky |
+| # | question | concept | author | pair | risk |
 |---|---|---|---|---|---|
-| 1 | Verdict before the door | #1 | Tells the commuter "go" or "don't go" about their first train before they leave home. | [agent] | |
-| 2 | Upstream witness | #1 | Riders already on the first train upstream (from Bassano) tell those waiting downstream how it is going. | [both] | [risky] |
-| 3 | The six o'clock pact | #1 | An agreement with the workplace that a failed first train means working from home, so not going costs nothing. | [agent] | [risky] |
-| 4 | Seat already held | #1 | When the first train fails, the service holds the commuter a place on another way in, so there is no choice to make. | [agent] | [risky] |
-| 5 | Morning set by the train | #1 | The commuter's morning starts at a time set by the first train's real state, not by the timetable. | [agent] | [risky] |
-| 6 | Silence means go | #1 | The commuter hears only when the first train is off; no word means it runs. | [both?] | |
-| 7 | Morning circle | #1 | Regulars on the same first train warn each other before anyone leaves home. | [agent] | [risky] |
-| 8 | Second train agreed | #1 | The commuter settles in advance what they do if the first train fails, so the six o'clock check is only a trigger. | [agent] | |
-| 9 | Fixed hour of truth | #1 | The service announces, at a fixed time before six, whether the first train runs on time. | [agent] | |
-| 10 | First train protected | #1 | The service keeps the first train of the day from building delay on its way, so the question rarely arises. | [agent] | |
-| 11 | Proof of a failed morning | #1 | The commuter gets something to show at work that the first train failed, even if they stayed home. | [agent] | [risky] |
-| 12 | Paid to stay home | #1 | When the first train fails, the trip the commuter skips is given back to them. | [agent] | [risky] |
-| 13 | My trains, strike day | #4 | Tells the student, days ahead, which of their own evening trains run on the strike day. | [agent] | |
-| 14 | Earlier conductor | #4 | On-board staff warn regular evening riders days ahead, not the day before. | [agent] | |
-| 15 | Strike-night ride swap | #4 | Students on the same route pair up to get home together on strike evenings. | [agent] | [risky] |
-| 16 | Lesson follows the train | #4 | The school learns of the strike and moves the evening lesson to fit a train that still runs. | [agent] | [risky] |
-| 17 | Strike in my week | #4 | The strike appears in the student's own plan for that day as soon as it is announced. | [agent] | |
-| 18 | Your train, named | #4 | The service names the one train the student should take home that evening. | [agent] | |
-| 19 | Strike evening pre-planned | #4 | The student receives a whole way home for the strike evening, prepared days ahead. | [agent] | |
-| 20 | Classmates as relay | #4 | Strike notices travel through the student's own course group. | [agent] | [risky] |
-| 21 | University as messenger | #4 | The university warns its evening students of strikes that hit their routes. | [agent] | [risky] |
-| 22 | Sure, likely, unknown | #4 | The service says days ahead which of the student's trains are certain to run and which are not. | [agent] | |
-| 23 | An evening run kept | #4 | The service keeps a guaranteed train in the evening window when students go home. | [agent] | |
-| 24 | Night covered | #4 | On strike evenings the service pays for another way home when no guaranteed train fits. | [agent] | [risky] |
-| 25 | Deadline for the verdict | #3 | The service commits to a time by which it will say cancelled or late. | [agent] | |
-| 26 | Both plans in hand | #3 | Gives the commuter a plan for "late" and a plan for "cancelled" at once, so they can act before knowing which. | [agent] | |
-| 27 | Odds, not status | #3 | Tells the commuter how likely a cancellation is, not only that the state is unknown. | [both?] | [risky] |
-| 28 | Someone plans with you | #3 | A person, staff or a fellow regular, builds the plan with the commuter in those minutes. | [agent] | [risky] |
-| 29 | Price of waiting | #3 | Tells the commuter what a cancellation would cost them in time, so they can weigh waiting against leaving. | [agent] | |
-| 30 | Plan made the night before | #3 | The commuter sets ahead of time what they do if the train fails, so the unclear minutes need no decision. | [agent] | [risky] |
-| 31 | The service picks | #3 | In the unclear minutes the service tells the commuter which option to take. | [agent] | [risky] |
-| 32 | No limbo | #3 | The service never leaves a train neither departed nor cancelled; it decides at once. | [agent] | |
-| 33 | Platform pool | #3 | People waiting for the same train decide together and share the way out. | [agent] | [risky] |
-| 34 | Arrival promised | #3 | The service promises a time the commuter will arrive, whatever happens to this train. | [agent] | [risky] |
-| 35 | Lateness forgiven | #3 | The workplace or school accepts the late arrival when the train is in limbo, so no plan is needed. | [agent] | [risky] |
-| 36 | Doubt paid back | #3 | If waiting through the unclear state costs the commuter a better option, the service makes up for it. | [agent] | [risky] |
-| 37 | "Notifica push del ritardo o cancellazione" | #1 | A push notification when the train is late or cancelled. | [both?] | |
-| 38 | "Opzione di visualizzazione in tempo reale del treno" | #1 | An option to see the train in real time. | [me] | |
-| 39 | "Opzione dove c'è una percentuale di probabilità di cancellazione e ritardo" | #1 | An option showing a percentage likelihood of cancellation and delay. | [both?] | |
-| 40 | "Opzione dove le persone delle fermate prima scrvono se il treno è in ritardo o no" | #1 | An option where people at the earlier stops write whether the train is late. | [both] | |
+| 1 | #1 | Own-train warning: the service tells P2, unasked, that their own first train is late or cancelled. | [both] | 49 | |
+| 2 | #1 | The morning already knows: the news about the first train arrives inside something P2 already does at six, so no check is needed. | [agent] | | |
+| 3 | #1 | The train on its way: P2 can see where the first train is on its way from Bassano before leaving home. | [both] | 50 | |
+| 4 | #1 | How likely this morning: P2 is told how likely it is that this morning's first train runs late or is cancelled. | [both] | 51 | [risky] |
+| 5 | #1 | The evening-before outlook: P2 learns the night before whether tomorrow's first train is expected to run normally. | [agent] | | [risky] |
+| 6 | #1 | Word from earlier stops: riders already waiting at earlier stops on the line say whether the train has come by. | [both] | 52 | [risky] |
+| 7 | #1 | When to leave, not whether it is late: P2 is told the time to leave home for the train as it is actually running. | [agent] | | |
+| 8 | #1 | My own threshold: P2 sets once the delay at which they would not go, and is told only "go" or "don't go". | [agent] | | |
+| 9 | #1 | The other way, with the warning: the warning comes together with the next workable way to reach the office that morning. | [agent] | | |
+| 10 | #1 | Does Mestre still work?: P2 learns whether the change at Mestre still holds with the first train's delay, not only the delay itself. | [agent] | | |
+| 11 | #1 | Why it is late: the warning says why the first train is late, so P2 can judge whether it will recover. | [agent] | | |
+| 12 | #1 | When it will be known: if the first train's state is still unknown at six, the service says by what time it will be. | [agent] | | |
+| 13 | #3 | A deadline on the limbo: the service commits to a time by which the train will be declared running or cancelled. | [agent] | | |
+| 14 | #3 | Two plans side by side: P2 sees what "only late" and what "cancelled" would each mean for their arrival, before either is known. | [agent] | | |
+| 15 | #3 | How long I can still wait: P2 is told how many minutes remain before waiting closes off the other ways. | [both] | 54 | |
+| 16 | #3 | The next train if this one goes: P2 sees the next train they would take if this one is cancelled. | [both?] | 55 | |
+| 17 | #3 | Other ways to the same place: P2 is shown the other ways to reach the same destination while the train is in limbo. | [both] | 53 | |
+| 18 | #3 | A fallback kept ready: the best fallback is prepared for P2, ready to take or let go once the train's fate is known. | [both] | 56 | [risky] |
+| 19 | #3 | Any train counts: while the train's fate is unclear, P2's ticket is good on any train for the trip. | [both] | 57 | [risky] |
+| 20 | #3 | Someone who knows the train: P2 can reach a person from the service who knows the train's actual state. | [agent] | | [risky] |
+| 21 | #3 | What the others chose: P2 sees what other passengers of the same train have decided to do meanwhile. | [both] | 58 | [risky] |
+| 22 | #3 | Why it has not left: P2 is told why the train shows neither departed nor cancelled. | [agent] | | |
+| 23 | #3 | What usually happens next: P2 learns how this train turned out on past days when it showed the same state. | [agent] | | [risky] |
+| 24 | #3 | A plan B agreed in advance: P2 decides once, on a calm day, what to do when this train goes into limbo, and is reminded of it when it does. | [agent] | | |
+| 25 | #4 | Warning to whoever travels: anyone holding a ticket or pass for the route is told directly that the strike hits it. | [both] | 60 | |
+| 26 | #4 | Which of mine run: the strike notice lists which of the route's trains are hit and which are guaranteed. | [both] | 61 | |
+| 27 | #4 | One place for strikes: the service keeps every announced strike in one place the student can look up. | [both] | 59 | |
+| 28 | #4 | The strike in the student's week: the strike day appears among the student's own days ahead, with the guaranteed trains on it. | [agent] | | [risky] |
+| 29 | #4 | The conductor, days earlier: the on-board announcement that told P4 the day before is made on the route's trains days ahead. | [agent] | | |
+| 30 | #4 | An evening that fits: the student is offered a way home for the strike day, built only from trains that are guaranteed. | [agent] | | [risky] |
+| 31 | #4 | The window against my times: the hours when trains may not run are shown against the student's usual evening train. | [agent] | | |
+| 32 | #4 | Padova station, days ahead: Padova station itself announces the strike on the route days before it happens. | [agent] | | |
+| 33 | #4 | Ask about my train: the student can ask a person from the service, days ahead, whether their usual train runs. | [agent] | | |
+| 34 | #4 | Guaranteed, confirmed: the day before the strike, the service confirms that each guaranteed train on the route will in fact run. | [agent] | | |
+| 35 | #4 | Only my trains: the student says once which trains they take, and every strike notice speaks only about those. | [agent] | | |
+| 36 | #4 | Told when buying: the student is told about the strike at the moment they buy a ticket or renew a pass for a date it covers. | [agent] | | |
+| 37 | #9 | The speaker says it: an on-board announcement gives the reason for the stop and its expected length. | [both] | 62 | [risky] |
+| 38 | #9 | The carriage screens say it: the screens inside the train show why it is stopped and for how long. | [both] | 63 | |
+| 39 | #9 | Told on my own ticket: whoever holds a ticket for this train is told directly why it is stopped and for how long. | [both] | 64 | |
+| 40 | #9 | The ticket knows: the ticket for this train carries the latest news about it, for the passenger to look at. | [both] | 65 | |
+| 41 | #9 | Someone walks through: a member of staff comes through the carriages to say why the train is stopped and for how long. | [agent] | | |
+| 42 | #9 | Next news at a set time: even when the cause is not yet known, passengers are told when the next update will come. | [agent] | | |
+| 43 | #9 | The cause in plain words: passengers are told what is stopping the train, in words a passenger understands. | [agent] | | |
+| 44 | #9 | What I can do from here: with the reason and the length comes what the passenger can do if the stop goes on. | [agent] | | |
+| 45 | #9 | How long, as my arrival: the length of the stop is told as the new arrival time at the end of the passenger's trip. | [agent] | | |
+| 46 | #9 | Does my last connection hold?: P1 says once which onward leg matters that evening, and is told whether the stop puts it at risk. | [agent] | | |
+| 47 | #9 | Passengers on the same train: passengers on the stopped train can share with each other what they know about the stop. | [agent] | | [risky] |
+| 48 | #9 | The worst case: passengers are told the longest the stop could last, so they can plan for that. | [agent] | | [risky] |
+| 49 | #1 | Notifica push del ritardo o cancellazione | [both] | 1 | |
+| 50 | #1 | Opzione di visualizzazione in tempo reale del treno | [both] | 3 | |
+| 51 | #1 | Opzione dove c'è una percentuale di probabilità di cancellazione e ritardo | [both] | 4 | |
+| 52 | #1 | Opzione dove le persone delle fermate prima scrvono se il treno è in ritardo o no | [both] | 6 | |
+| 53 | #3 | Mostrare alternative disponibili per arrivare alla stesa destinazione | [both] | 17 | |
+| 54 | #3 | Mostrare le tempistiche fino a quando può ancora cambiare treno | [both] | 15 | |
+| 55 | #3 | Mostrare il prossimo orario disponibile | [both?] | 16 | |
+| 56 | #3 | Mettere automaticamente nel carrello l'alternativa più valida | [both] | 18 | |
+| 57 | #3 | Fare in modo che finche c'è incertezza rendere il biglietto valido per qualsiasi treno | [both] | 19 | |
+| 58 | #3 | Opzione che mostra cosa hanno deciso nel frattempo gli altri passeggeri | [both] | 21 | |
+| 59 | #4 | Sezione "Scioperi" sul servizio | [both] | 27 | |
+| 60 | #4 | Se l'utente ha già preso il biglietto o ha un abbonamento, avviso diretto che avvisa dello sciopero | [both] | 25 | |
+| 61 | #4 | Avviso via email dello sciopero e tabella descrittiva di quali treni sono colpiti e quali sono garantiti | [both] | 26 | |
+| 62 | #9 | Avviso dallo speaker | [both] | 37 | |
+| 63 | #9 | Avviso dai monitor all'interno del treno | [both] | 38 | |
+| 64 | #9 | Avviso notifica push dall'app per chi ha quel biglietto del treno | [both] | 39 | |
+| 65 | #9 | Nel biglietto, una sezione "Info" che indica le ultime info di quel treno | [both] | 40 | |
 
-Human concepts are quoted as written in `2026-10-26-ideation-human.md`; the one-line gloss is a translation, not a rewrite.
+Checks on the pairs:
 
-Matches and why:
-
-- **2 and 40 · [both].** Both answers have people further up the line report whether the train is late to those waiting downstream. 2 places them on the train, 40 at the earlier stops; the answer is the same.
-- **6 and 37 · [both?].** Both send word when the first train fails, and nothing otherwise. Judgement call: 6 speaks only of a train that is "off" and makes silence itself the signal; 37 covers delay as well and says nothing about silence.
-- **27 and 39 · [both?].** Both give a likelihood instead of a status. Judgement call: the answer is the same, but 27 was written for #3 (the unclear minutes) and 39 for #1 (before six), and 39 adds delay to cancellation.
-- **38 · [me].** No agent concept shows the train's live state for the commuter to read. The ideation note discarded a "stop-by-stop live position" as answering #7; it is not in the agent's list, so it is not counted as a match.
+- **All 17 `[also mine]` marks in the ideation note were checked.** Sixteen hold as `[both]`. No match was missed: no other agent concept gives the same answer as a human one.
+- **16 ↔ 55 `[both?]`.** Concept 16 shows the next train only as the fallback if this one is cancelled; 55 shows the next available time with no condition, so they match only if 55 is read as the fallback.
+- **25 ↔ 60 and 36 kept apart.** Concept 36 warns at the moment of buying; 60 warns whoever already holds a ticket or pass, which is 25.
+- **26 ↔ 61.** Concept 61 also carries a direct warning by email, close to 25, but its distinct content is the table of hit and guaranteed trains, which is 26. It is paired once, with 26.
 
 ## Families
 
 | family | its direction, one line | concepts (by number) | questions | authors |
 |---|---|---|---|---|
-| Told before moving | The service sends the train's real state to the person before they have to leave or travel, and they decide. | 1, 6, 13, 17, 37 | #1, #4 | 1 [agent], 6 [both?], 13 [agent], 17 [agent], 37 [both?] |
-| Watch it yourself | The commuter can look at the train's live state and read it on their own. | 38 | #1 | 38 [me] |
-| A set hour for the truth | The service commits to when the verdict will come, so waiting has an end. | 9, 25 | #1, #3 | all [agent] |
-| An estimate before the fact | Before the state is known, the person gets a likelihood or a likely cost to weigh. | 22, 27 [risky], 29, 39 | #4, #3, #1 | 22 [agent], 27 [both?], 29 [agent], 39 [both?] |
-| People pass the word | Riders, staff, classmates or the university carry the news, not the service's systems. | 2 [risky], 7 [risky], 14, 20 [risky], 21 [risky], 40 | #1, #4 | 2 [both], 7 [agent], 14 [agent], 20 [agent], 21 [agent], 40 [both] |
-| People act with you | Other people work out the way home with the person, or share it. | 15 [risky], 28 [risky], 33 [risky] | #4, #3 | all [agent] |
-| Fallback chosen before it fails | The plan B exists before the failure, so the bad moment only triggers it. | 8, 19, 26, 30 [risky] | #1, #4, #3 | all [agent] |
-| The service takes the choice | The service chooses, holds or guarantees the outcome, so the person has nothing left to decide. | 4 [risky], 5 [risky], 18, 31 [risky], 34 [risky] | #1, #4, #3 | all [agent] |
-| Obligations bend | Work or school adapts to the failed train, so failing matters less. | 3 [risky], 11 [risky], 16 [risky], 35 [risky] | #1, #4, #3 | all [agent] |
-| The service pays | The service compensates in money or paid transport for what the failure costs. | 12 [risky], 24 [risky], 36 [risky] | #1, #4, #3 | all [agent] |
-| The service fails less | The train service itself changes so the situation behind the question happens less. | 10, 23, 32 | #1, #4, #3 | all [agent] |
+| I · Sent to the holder | The status of the person's own trip is sent to them, unasked, wherever they are. | 1, 25, 26, 36, 39, 49, 60, 61, 64 | #1, #4, #9 | [both] 1↔49, 25↔60, 26↔61, 39↔64 · [agent] 36 |
+| II · Inside what they already do | The news is placed in something the person already does or keeps, so there is nothing new to check. | 2, 28 `[risky]` | #1, #4 | [agent] 2, 28 |
+| III · Open to look up | The state is kept somewhere the person can consult whenever they choose. | 3, 27, 40, 50, 59, 65 | #1, #4, #9 | [both] 3↔50, 27↔59, 40↔65 |
+| IV · Announced on the spot | The train or the station tells whoever is physically there. | 29, 32, 37 `[risky]`, 38, 62, 63 | #4, #9 | [both] 37↔62, 38↔63 · [agent] 29, 32 |
+| V · Staff as the source | A member of the operator's staff, reachable or present, gives the answer. | 20 `[risky]`, 33, 41 | #3, #4, #9 | [agent] 20, 33, 41 |
+| VI · Fellow riders as the source | Other passengers report what they see or show what they chose. | 6 `[risky]`, 21 `[risky]`, 47 `[risky]`, 52, 58 | #1, #3, #9 | [both] 6↔52, 21↔58 · [agent] 47 |
+| VII · Estimate the outcome early | A likely, usual or worst outcome is given before the real one is known. | 4 `[risky]`, 5 `[risky]`, 23 `[risky]`, 48 `[risky]`, 51 | #1, #3, #9 | [both] 4↔51 · [agent] 5, 23, 48 |
+| VIII · A time for the answer | While the state is unknown, the service commits to when it will be known or confirmed. | 12, 13, 34, 42 | #1, #3, #4, #9 | [agent] 12, 13, 34, 42 |
+| IX · The cause, not only the status | The reason is given, so the person can judge what comes next. | 11, 22, 43 | #1, #3, #9 | [agent] 11, 22, 43 |
+| X · Restated as my trip | The state is told as what it means for the person's own leave time, waiting margin, connection, arrival or trains. | 7, 10, 14, 15, 31, 35, 45, 46, 54 | #1, #3, #4, #9 | [both] 15↔54 · [agent] 7, 10, 14, 31, 35, 45, 46 |
+| XI · Decided beforehand | The person settles a rule or a plan on a calm day, and the service plays it back when the disruption comes. | 8, 24 | #1, #3 | [agent] 8, 24 |
+| XII · The way out, shown | Another way to make the trip, or to get home, comes with the status or in place of it. | 9, 16, 17, 30 `[risky]`, 44, 53, 55 | #1, #3, #4, #9 | [both] 17↔53 · [both?] 16↔55 · [agent] 9, 30, 44 |
+| XIII · Make a wrong guess cheap | The service carries part of the risk, by holding a fallback or widening the ticket, so choosing under doubt costs less. | 18 `[risky]`, 19 `[risky]`, 56, 57 | #3 | [both] 18↔56, 19↔57 |
 
-Borderline placements:
+Where a concept sat on an edge, the deciding line:
 
-- **1 · Verdict before the door.** It says "go" or "don't go", which is close to choosing for the commuter. Placed in "told before moving" because the commuter still decides whether to leave.
-- **5 · Morning set by the train.** The commuter never sees the fact, only its effect on their wake-up time. Placed in "the service takes the choice"; it could also sit in "fallback chosen before it fails" if the commuter is the one who set the rule the night before.
-- **9 · Fixed hour of truth.** It delivers the fact, like "told before moving", but its answer is the promise of a time. Placed with 25 for that reason.
-- **29 · Price of waiting.** It estimates a cost, not a likelihood. Placed in "an estimate before the fact" because both give something to weigh before the state is known.
-- **32 · No limbo.** It ends the unclear state, which "a set hour for the truth" also does, but by changing operations. Placed in "the service fails less".
-- **38 · Watch it yourself.** A family of one. It is kept apart from "told before moving" because the person pulls and reads the state instead of being told it; if pull and push are not taken as different answers, 38 joins that family.
+- **2 and 28 (II), not I.** Both are pushed, but their answer is the place the news lands (the morning routine, the student's own days), not the act of sending.
+- **26 and 61 (I), not X.** They list hit and guaranteed trains for the whole route, sent as a notice; 35 narrows the notice to the person's own trains and so sits in X.
+- **35 and 46 (X), not XI.** The person sets something once, but the service answers with relevance to their trip, not with a decision the person made in advance (8, 24).
+- **41 (V), not IV.** The stopped train speaks through a person who can be asked, not through a speaker or a screen.
+- **48 (VII), not X.** The worst case is an estimate of how the stop will end, given before it ends.
+- **16 and 55 (XII), not X.** They give a train to take, not a reading of the current one.
 
 ## Unclassified
 
-None. Every concept answers its question in a way at least one family names. The borderline cases above were placed, not forced: each has a stated alternative.
+None. Every one of the 65 concepts fits one family without stretching its one line. The concepts closest to an edge are listed with their deciding line at the end of the Families unit.
 
 ## One-hand families
 
-- **Only `[me]`:** "watch it yourself" (38).
-- **Only `[agent]`:** "a set hour for the truth", "people act with you", "fallback chosen before it fails", "the service takes the choice", "obligations bend", "the service pays", "the service fails less". Seven of eleven.
-- **Mixed:** "told before moving", "an estimate before the fact", "people pass the word". Each stays mixed even if the `[both?]` matches are rejected, because the human concept would then be `[me]` in the same family.
-- **Families with #3 only:** none. Every family that holds a #3 concept also holds a #1 or #4 concept.
-- **Families with no #3 concept:** "told before moving", "watch it yourself", "people pass the word".
+No family holds only human concepts: every human concept has an agent twin, so every family with a human row also has an agent row.
 
-## Comparison with A–H
+Families with agent concepts only:
 
-- **A · Earlier word** becomes "told before moving": same core, loses 5 (moved to "the service takes the choice"), gains 37.
-- **B · People as channel** is split: "people pass the word" (2, 7, 14, 20, 21, plus 40) carries news; "people act with you" (15, 28, 33) acts with the person.
-- **C · Service decides** becomes "the service takes the choice": same concepts, plus 5.
-- **D · Lower the stakes** becomes "obligations bend": same concepts.
-- **E · Plan before it fails** becomes "fallback chosen before it fails": same concepts.
-- **F · Shrink the uncertainty** is split: "a set hour for the truth" (9, 25) and "an estimate before the fact" (22, 27, 29, plus 39).
-- **G · Change the service** becomes "the service fails less": same concepts.
-- **H · Service carries the cost** becomes "the service pays": same concepts.
-- **New:** "watch it yourself" (38) has no counterpart in A to H.
-- **Gone:** none.
+- **II · Inside what they already do** (2, 28).
+- **V · Staff as the source** (20, 33, 41).
+- **VIII · A time for the answer** (12, 13, 34, 42).
+- **IX · The cause, not only the status** (11, 22, 43).
+- **XI · Decided beforehand** (8, 24).
+
+Families where every concept is a `[both]` pair, with no agent-only row: **III · Open to look up** and **XIII · Make a wrong guess cheap**.
+
+## Families across questions
+
+- **All four questions:** VIII · A time for the answer; X · Restated as my trip; XII · The way out, shown.
+- **Three questions:** I · Sent to the holder (#1, #4, #9); III · Open to look up (#1, #4, #9); V · Staff as the source (#3, #4, #9); VI · Fellow riders as the source (#1, #3, #9); VII · Estimate the outcome early (#1, #3, #9); IX · The cause, not only the status (#1, #3, #9).
+- **Two questions:** II · Inside what they already do (#1, #4); IV · Announced on the spot (#4, #9); XI · Decided beforehand (#1, #3).
+- **One question only:** XIII · Make a wrong guess cheap (#3).
+
+## Comparison with the ideation directions
+
+One line per difference between these families and directions A to K in `2026-10-26-ideation-ai.md`.
+
+- **A → I, narrowed.** Kept as "sent to the holder"; concept 2 leaves for II.
+- **B → split three ways.** Looking up (3, 27, 40) is III; forecasts (4, 5, 23) join VII; 31 joins X.
+- **C → split in two.** Staff (20, 33, 41) is V; fellow passengers (6, 21, 47) is VI.
+- **D → split in two.** Rules and plans decided beforehand (8, 24) are XI; 7, 35 and 46 join X.
+- **E → XII, reshaped.** Loses 10 to X; gains 16 from H and 30 from K.
+- **F → XIII, unchanged.** Same two agent concepts, now with their human twins.
+- **G → VIII, unchanged.**
+- **H → gone.** 14, 15 and 45 join X; 16 goes to XII; 48 goes to VII.
+- **I → IX, unchanged.**
+- **J → IV, unchanged.**
+- **K → gone.** 28 joins 2 in II; 30 goes to XII.
+- **New: II.** Built from 2 (was A) and 28 (was K).
+- **New: VII.** Forecasts gathered from B (4, 5, 23) and H (48).
+- **New: X.** Merges most of H with part of D, plus 10 from E and 31 from B.
 
 ## Count
 
-- Concepts in: 40. By source: 36 from the ideation note, 4 from the human list.
-- By author mark: 33 `[agent]`, 2 `[both]` (2, 40), 4 `[both?]` (6, 27, 37, 39), 1 `[me]` (38).
-- By question: 16 for #1 (12 agent, 4 human), 12 for #4, 12 for #3.
-- Risky: 20, all agent concepts, unchanged.
-- Families out: 11.
-- Unclassified: 0.
+- **Concepts in:** 65.
+- **By author:** 31 `[agent]`, 0 `[me]`, 32 `[both]` (16 pairs), 2 `[both?]` (1 pair: 16 ↔ 55). By source file: 48 agent, 17 human.
+- **By question:** #1 sixteen (12 agent, 4 human); #3 eighteen (12 agent, 6 human); #4 fifteen (12 agent, 3 human); #9 sixteen (12 agent, 4 human).
+- **`[risky]`:** 13, all on agent rows (4, 5, 6, 18, 19, 20, 21, 23, 28, 30, 37, 47, 48).
+- **Families out:** 13. Per family: I nine, II two, III six, IV six, V three, VI five, VII five, VIII four, IX three, X nine, XI two, XII seven, XIII four.
+- **Unclassified:** 0.
 
 ## Signals
 
-This unit is a reading of the clusters, not what the sources say.
+This unit is my reading of the clusters, not what the sources say.
 
-- **Every human concept answers by giving information.** The four land in "told before moving", "watch it yourself", "an estimate before the fact" and "people pass the word". None moves the decision, lowers its cost or changes the service.
-- **The agent-only families all move the decision or its weight.** Seven families exist only on the agent side, and five of them hold `[risky]` concepts; "a set hour for the truth" and "the service fails less" are the only agent-only families with no risky mark.
-- **The only human-only direction is the one the agent discarded.** 38 is close to the "stop-by-stop live position" the ideation note dropped as answering #7. The human list kept it for #1, which makes it a direction the agent ruled out, not one it missed.
-- **The human matches land on risky ground.** Two of the three matched agent concepts (2, 27) are `[risky]` in the ideation note. Reaching them independently is not evidence that commuters want them.
-- **#4 and #3 have no human concept.** The human list covers #1 only, so every family's mix of authors says something about #1 alone.
-- **#3 never stands alone.** No family holds #3 concepts only; the added question reuses the directions of the two chosen ones, so dropping it would remove concepts but no family.
+- **The human list sits in eight families, the agent list in all thirteen.** The five families with no human concept (II, V, VIII, IX, XI) all change something other than the message itself: where it lands, who gives it, when the answer is promised, why it happened, or what the person settled in advance.
+- **The human concepts lean on the channel.** Most name a way of delivering the status (push, live view, speaker, monitor, a section, email). They cluster in I, III and IV, where the direction is how the news reaches the person.
+- **Six human concepts are twins of risky agent concepts** (51, 52, 56, 57, 58, 62). The risk marks sit only on the agent side, so the human twin carries the same assumption unmarked.
+- **Risk gathers in two families.** VII (estimate early) has four risky concepts out of five, and VI (fellow riders) three out of five. Both depend on knowledge the stories do not show anyone having.
+- **#3 is the only question that reaches XIII.** Lowering the cost of a wrong guess fits the minutes of doubt; the other questions are about learning something, not choosing under it.
+- **VIII, X and XII cross all four questions.** A promised time, a reading in terms of the person's own trip, and a way out are answers that do not depend on the moment.

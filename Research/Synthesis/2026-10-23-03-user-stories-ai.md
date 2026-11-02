@@ -10,7 +10,7 @@ tags: [train, boat, bus, venezia, vicenza, padova, castelfranco, rovigo, monseli
 confidence: medium
 grade: secondary
 status: needs-review
-related: [plan.md, 2026-10-23-features-ai.md, 2026-10-23-touchpoints-ai.md, Notes/2026-10-07-interview-lucrezia-gradi.md, Notes/2026-10-07-interview-matteo-galvagni.md, Notes/2026-10-07-interview-lorena-tonuzi.md, Notes/2026-10-07-interview-greta-tonuzi.md, Notes/2026-10-09-interview-anna-baggio.md, Notes/2026-10-09-interview-benedetta-rossi.md, Desk research/2026-10-13-review-analysis-trenitalia-trainline.md]
+related: [plan.md, 2026-10-23-features-ai.md, 2026-10-23-touchpoints-ai.md, Notes/2026-10-07-interview-lucrezia-gradi.md, Notes/2026-10-07-interview-matteo-galvagni.md, Notes/2026-10-07-interview-lorena-tonuzi.md, Notes/2026-10-07-interview-greta-tonuzi.md, Notes/2026-10-09-interview-anna-baggio.md, Notes/2026-10-09-interview-benedetta-rossi.md, Desk research/2026-10-13-review-analysis-trenitalia-trainline.md, Specs/2026-11-02-spec-01-warned-about-my-own-train.md, Specs/2026-11-02-spec-02-following-my-train.md, Specs/2026-11-02-spec-03-disruptions-on-my-route.md, Specs/2026-11-02-spec-04-paying-at-the-last-minute.md, Specs/2026-11-02-spec-05-why-and-for-how-long.md, Specs/2026-11-02-spec-06-what-still-gets-me-home.md, Specs/2026-11-02-spec-07-will-my-connection-wait.md, Specs/2026-11-02-spec-08-is-my-ticket-valid.md]
 ---
 
 # User stories · one story per feature

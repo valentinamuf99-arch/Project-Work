@@ -47,7 +47,7 @@ Specifications start from the user stories. Work in this order.
 3. **Name each specification after its behaviour**, in the commuter's terms (for example "warned about my own train"), not after a feature code.
 4. **Order the specifications** by the moment of the journey the stories describe: before the trip, at the station, on the train, replacement, connection and recovery, as in the user stories note.
 
-The number of files follows from the grouping; there is no fixed count. Files go in a new folder `Research/Specifications/`, named `2026-11-02-spec-NN-behaviour.md`, numbered in that order.
+The number of files follows from the grouping; there is no fixed count. Files go in a new folder `Research/Specs/`, named `2026-11-02-spec-NN-behaviour.md`, numbered in that order.
 
 If, while writing, one file turns out to hold two behaviours, stop and say so. Do not split or merge files without saying why.
 
@@ -89,7 +89,7 @@ Open with the heading `# Part B · Traceability`, then these units.
 
 ## Before you finish
 
-- Add each new file to `../index.md` the same day, under a `## Research/Specifications/` heading, in the existing format.
+- Add each new file to `../index.md` the same day, under a `## Research/Specs/` heading, in the existing format.
 - Add every specification file to the `related` field of `Synthesis/2026-10-23-03-user-stories-ai.md`.
 - Check every file for: a named software, tool or programming language; a code, path or name in Part A; a participant name anywhere; a tag not in `plan.md`; an em dash used to split a sentence; a rule without a row in the rule trace; a capability wider than its story.
 - Report: every user story, kept or left out, with its reason; for each kept story, the specifications it feeds; then the count: files written, stories per file, rules per file, scenarios per file, acceptance criteria per file, `[untraced]` rules per file.

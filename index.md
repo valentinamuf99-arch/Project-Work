@@ -59,3 +59,14 @@ Every research file in this repository, grouped by folder, oldest first. Format:
 - 2026-10-26-04-prioritisation-ai.md — desk-research · needs-review · tertiary · low
 - 2026-10-26-02.1-ideation-ai.md — desk-research · needs-review · tertiary · low
 - 2026-10-26-05-concept-ai.md — desk-research · draft · tertiary · low
+
+## Research/Specs/
+
+- 2026-11-02-spec-01-warned-about-my-own-train.md — desk-research · draft · tertiary · medium
+- 2026-11-02-spec-02-following-my-train.md — desk-research · draft · tertiary · medium
+- 2026-11-02-spec-03-disruptions-on-my-route.md — desk-research · draft · tertiary · medium
+- 2026-11-02-spec-04-paying-at-the-last-minute.md — desk-research · draft · tertiary · medium
+- 2026-11-02-spec-05-why-and-for-how-long.md — desk-research · draft · tertiary · medium
+- 2026-11-02-spec-06-what-still-gets-me-home.md — desk-research · draft · tertiary · medium
+- 2026-11-02-spec-07-will-my-connection-wait.md — desk-research · draft · tertiary · medium
+- 2026-11-02-spec-08-is-my-ticket-valid.md — desk-research · draft · tertiary · medium

@@ -80,7 +80,7 @@ def inline(text, ctx):
         if url.startswith('#'):
             href = '#' + aid(ctx.path) + '--' + url[1:]
         elif re.match(r'https?://', url):
-            href = url
+            return keep('<a href="%s" target="_blank" rel="noopener">%s</a>' % (html.escape(url), inline_simple(label, slots)))
         else:
             p = resolve(url, ctx.path, ctx.folder)
             href = ctx.link(p) if p else None
@@ -300,25 +300,116 @@ def finish(page):
         refs = sorted(cited.get(m.group(1), []), key=lambda e: rank.index(re.match(r'(th-TP|tp|c|f|drop|us)', e[0]).group(1)))
         if not refs:
             return m.group(0)
-        return m.group(0) + '<p class="u back">Cited by: %s</p>' % ', '.join('<a href="#%s">%s</a>' % (e, html.escape(l)) for e, l in refs)
-    return re.sub(r'<section class="note" id="([^"]+)"><h2 class="u path">[^<]*</h2>', back, page)
+        return m.group(0) + '<p class="u back"><span>Cited by</span> %s</p>' % ' '.join('<a class="chip" href="#%s">%s</a>' % (e, html.escape(l)) for e, l in refs)
+    return re.sub(r'<section class="note card" id="([^"]+)"[^>]*>.*?</header>', back, page, flags=re.S)
 
-def section(path, shown, full=True):
-    if not full:
-        return '<section class="note"><h2 class="u path">%s</h2><p class="u">Shown in full above: <a href="#%s">%s</a>.</p></section>' % (
-            html.escape(path), aid(path), html.escape(path))
+def split_fm(path):
     src = open(os.path.join(ROOT, path), encoding='utf-8').read()
-    fm, body = '', src
     m = re.match(r'---\n(.*?)\n---\n', src, re.S)
-    if m:
-        fm, body = m.group(1), src[m.end():]
+    return (m.group(1), src[m.end():]) if m else ('', src)
+
+def meta(path):
+    """Frontmatter as a dict: plain values unquoted, trailing comments dropped, tags as a list."""
+    d = {}
+    for line in split_fm(path)[0].split('\n'):
+        m = re.match(r'(\w+):\s*(.*)', line)
+        if m:
+            v = m.group(2).strip()
+            v = v[1:-1] if v.startswith('"') and v.endswith('"') else re.sub(r'\s+#.*', '', v)
+            d[m.group(1)] = v
+    d['tags'] = [t.strip() for t in d.get('tags', '').strip('[]').split(',') if t.strip()]
+    return d
+
+ICON = {
+    'dash': '<rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/>',
+    'root': '<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/>',
+    'desk': '<circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/>',
+    'notes': '<path d="M4 5h16v11H9l-5 4z"/>',
+    'synth': '<path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/>',
+    'idea': '<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/>',
+    'table': '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/>',
+}
+
+def icon(k):
+    return '<svg class="ic" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">%s</svg>' % ICON[k]
+
+def esc(s):
+    return html.escape(s, quote=True)
+
+def chips(d, keys=('activity', 'status', 'grade', 'confidence', 'date')):
+    out = []
+    for k in keys:
+        if d.get(k):
+            warn = ' warn' if d[k] in ('needs-review', 'draft', 'raw') else ''
+            out.append('<li class="chip %s%s"><span class="sr">%s: </span>%s</li>' % (k, warn, k, esc(d[k])))
+    return '<ul class="chips">%s</ul>' % ''.join(out)
+
+def footer(path):
+    return '<footer class="nf"><a class="btn" href="#%s">Back to top</a><a href="#dashboard">Back to dashboard</a></footer>' % aid(path)
+
+def section(path, shown, folder, full=True):
+    d = meta(path)
+    title = d.get('title') or posixpath.basename(path)
+    if not full:
+        return ('<section class="note card stub"><header class="nh u"><p class="path">%s</p><h2 class="title">%s</h2></header>'
+                '<p class="u">Shown in full in Tables: <a href="#%s">%s</a>.</p><footer class="nf"><a href="#dashboard">Back to dashboard</a></footer></section>') % (
+            esc(path), esc(title), aid(path), esc(path))
+    fm, body = split_fm(path)
     ctx = Ctx(path, shown)
-    parts = ['<section class="note" id="%s"><h2 class="u path">%s</h2>' % (aid(path), html.escape(path))]
+    parts = ['<section class="note card" id="%s" data-folder="%s" data-title="%s"><header class="nh u"><p class="path">%s</p><h2 class="title">%s</h2>%s</header>' % (
+        aid(path), esc(folder), esc(title), esc(path), esc(title), chips(d))]
     if fm:
-        parts.append('<pre class="fm u">%s</pre>' % html.escape(fm, quote=False))
-    parts.append(render_body(body, ctx))
+        parts.append('<details class="meta"><summary>Metadata</summary><pre class="fm u">%s</pre></details>' % html.escape(fm, quote=False))
+    parts.append('<div class="body">%s</div>' % render_body(body, ctx))
+    parts.append(footer(path))
     parts.append('</section>')
     return '\n'.join(parts)
+
+# Sidebar groups: (anchor, name, icon, tint); notes per group are filled in main().
+GROUPS = [('d-root', 'Root', 'root', 'blush'), ('d-desk-research', 'Desk research', 'desk', 'sky'),
+          ('d-notes', 'Notes', 'notes', 'sage'), ('d-synthesis', 'Synthesis', 'synth', 'lavender'),
+          ('d-ideation', 'Ideation', 'idea', 'sand'), ('d-tables', 'Tables', 'table', 'mint')]
+
+def label(p):
+    """Sidebar label: the participant code for interviews (no real names outside file names), the undated file name otherwise."""
+    code = next((c for c, q in CODES.items() if q == p and c.startswith('P')), None)
+    return code + ' · interview' if code else undated(p)[:-3]
+
+def sidebar(groups):
+    items = ['<li><a class="item" href="#dashboard">%s<span>Dashboard</span></a></li>' % icon('dash')]
+    for (gid, name, ic, tint), paths in groups:
+        items.append('<li><details data-folder="%s"><summary class="item" style="--tint:var(--%s)"><span class="dot">%s</span><span>%s</span><span class="count" aria-label="%d notes">%d</span></summary><ul class="sub">%s</ul></details></li>' % (
+            esc(name), tint, icon(ic), esc(name), len(paths), len(paths),
+            ''.join('<li><a href="#%s" title="%s">%s</a></li>' % (aid(p), esc(p), esc(label(p))) for p in paths)))
+    return ('<nav id="side" aria-label="Research folders"><div class="brand"><p class="bt">Research base</p><p class="bs">Brief 01 · Redesigning the commute</p></div>'
+            '<ul class="nav">%s</ul></nav>') % ''.join(items)
+
+def dashboard(groups, order, body):
+    metas = {p: meta(p) for p in order}
+    count = lambda pre: len(re.findall(r'id="%s-' % pre, body))
+    kpis = [('Total notes', len(order), None), ('Interviews (P1-P6)', sum(m.get('activity') == 'interview' for m in metas.values()), 'd-notes'),
+            ('Touchpoints (TP)', count('tp'), aid(TABLES[0])), ('Features (F)', count('f'), aid(TABLES[1])),
+            ('User stories', count('us'), aid(TABLES[2])), ('Needs review', sum(m.get('status') == 'needs-review' for m in metas.values()), None)]
+    tiles = ''.join(('<li class="kpi"><a href="#%s"><span class="kv">%d</span><span class="kl">%s</span></a></li>' % (h, v, l)) if h else
+                    '<li class="kpi"><div><span class="kv">%d</span><span class="kl">%s</span></div></li>' % (v, l) for l, v, h in kpis)
+    cards = ''.join('<a class="fcard" href="#%s" style="--tint:var(--%s)"><span class="dot">%s</span><span class="fn">%s</span><span class="fc">%d notes</span><span class="fd">Latest %s</span></a>' % (
+        gid, tint, icon(ic), esc(name), len(paths), max((metas[p].get('date', '') for p in paths), default=''))
+        for (gid, name, ic, tint), paths in groups)
+    latest = sorted(order, key=lambda p: (metas[p].get('date', ''), p), reverse=True)[:5]
+    rows = ''.join('<li><a href="#%s">%s</a>%s</li>' % (aid(p), esc(metas[p].get('title') or p), chips(metas[p], ('status', 'grade', 'confidence', 'date'))) for p in latest)
+    tags = {}
+    for m in metas.values():
+        for t in m['tags']:
+            tags[t] = tags.get(t, 0) + 1
+    top = sorted(tags.items(), key=lambda t: (-t[1], t[0]))[:24]
+    tagchips = ''.join('<button type="button" class="chip tag" data-tag="%s">%s <span class="tn">%d</span></button>' % (esc(t), esc(t), c) for t, c in top)
+    newest = max(m.get('date', '') for m in metas.values())
+    return ('<section id="dashboard" class="part dash" aria-labelledby="dash-h"><div class="hello"><h1 id="dash-h">Research base</h1>'
+            '<p>Brief 01 · Redesigning the commute. %d notes in %d folders, latest note dated %s.</p></div>'
+            '<ul class="kpis" aria-label="Key figures">%s</ul><h2 class="dh">Folders</h2><div class="folders">%s</div>'
+            '<div class="dgrid"><div class="card"><h2 class="dh">Latest notes</h2><ol class="latest">%s</ol></div>'
+            '<div class="card"><h2 class="dh">Tags</h2><p class="hint">Most used tags. Select one to search for it.</p><div class="tagcloud">%s</div></div></div></section>') % (
+        len(order), len(groups), newest, tiles, cards, rows, tagchips)
 
 def main():
     CODES.update(read_codes(TABLES[0], r'P\d|REV'))
@@ -326,14 +417,19 @@ def main():
     order = index_order()
     shown = set(TABLES) | set(order)
     tmpl = open(OUT, encoding='utf-8').read()
-    head = tmpl[:tmpl.index('<main>') + len('<main>')]
-    tail = tmpl[tmpl.index('</main>'):]
-    nav = '<nav><p>Tables:</p><ul>%s</ul><p>Notes, by folder:</p><ul>%s</ul></nav>' % (
-        ''.join('<li><a href="#%s">%s</a></li>' % (aid(p), html.escape(p)) for p in TABLES),
-        ''.join('<li><a href="#%s">%s</a></li>' % (aid(p), html.escape(p)) for p in order))
-    tables = '<div class="part"><h1>Tables</h1>%s</div>' % ''.join(section(p, shown) for p in TABLES)
-    notes = '<div class="part"><h1>Notes</h1>%s</div>' % ''.join(section(p, shown, p not in TABLES) for p in order)
-    open(OUT, 'w', encoding='utf-8').write(finish(head + '\n' + nav + '\n' + tables + notes + '\n' + tail))
+    m = re.search(r'<main[^>]*>', tmpl)
+    head, tail = tmpl[:m.end()], tmpl[tmpl.index('</main>'):]
+    paths = [[p for p in order if posixpath.dirname(p) in ('', 'Research')]] + [
+        [p for p in order if posixpath.dirname(p) == f] for f in FOLDERS[1:]] + [TABLES]
+    groups = list(zip(GROUPS, paths))
+    head = re.sub(r'<nav id="side".*?</nav>', lambda _: sidebar(groups), head, flags=re.S)
+    parts = []
+    for (gid, name, ic, tint), ps in groups:
+        full = name == 'Tables'
+        parts.append('<div class="part folder" id="%s" data-folder="%s" style="--tint:var(--%s)"><h1 class="fh"><span class="dot">%s</span>%s</h1>%s</div>' % (
+            gid, esc(name), tint, icon(ic), esc(name), ''.join(section(p, shown, name, full or p not in TABLES) for p in ps)))
+    body = ''.join(parts)
+    open(OUT, 'w', encoding='utf-8').write(finish(head + '\n' + dashboard(groups, order, body) + body + '\n' + tail))
     print(len(order), 'notes:', order)
 
 if __name__ == '__main__':

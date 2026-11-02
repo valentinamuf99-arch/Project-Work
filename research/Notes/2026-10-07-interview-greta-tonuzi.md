@@ -120,13 +120,15 @@ The strike information was on the website but not in the app. She expected the o
 
 ## Late for an exam: a train standing still, no word, staff smoking outside
 
-On another occasion, with an exam at 9, her train stayed at a stop far longer than needed and she arrived late to the exam. There was no announcement at all; the driver and then the conductor got off to smoke. She stresses that for workers with important appointments the consequences would be worse than for her.
+On another occasion, with an exam at 9, her train stayed at a stop far longer than needed and she arrived late to the exam. There was no announcement at all; the driver and then the conductor got off to smoke. She stresses that for workers with important appointments the consequences would be worse than for her. She adds that not knowing the reason is part of the problem: a notification with the delay and its cause would at least let her tell her university classmates or her work.
 
 > "Non capisco per quale motivo in certe fermate l'attesa in cui il treno, vabbè, fa salire le persone giustamente e dopo dovrebbe ripartire è durata più del dovuto, perché io banalmente sono arrivata in ritardo all'esame" — [00:14:20]
 
 > "0. 0. Neanche dallo speaker niente, non è passato un capotreno ad avvisare niente" — [00:14:57]
 
 > "Il macchinista, è addirittura sceso a formarsi una 1 cicca. Voglio dire, non... Qua mi sento veramente presa in giro" — [00:15:18]
+
+> "ma poi anche il fatto di non sapere neanche il motivo cioè nel senso se mi arrivasse la notifica il treno in ritardo di tot minuti perché c'è stato un guasto di qua allora io dico ok almeno solo la motivazione posso in qualche modo scrivere ai miei compagni di università o scrivere al mio lavoro eccetera" — [~00:16:00] (estimated: the transcript has no timestamps; the passage falls between [00:15:18] and [00:16:22])
 
 > "Esatto, noi siamo rimasti là una mezz'ora fermi senza senza motivo. No no. Cioè non appunto neanche né lo speaker né il macchinista né il capotreno dato un avviso." — [00:16:22]
 

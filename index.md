@@ -35,6 +35,7 @@ Every research file in this repository, grouped by folder, oldest first. Format:
 - possible-solutions-human.md — unknown · unknown · unknown · unknown
 - 2026-10-26-merge-list.md — desk-research · needs-review · tertiary · low
 - 2026-10-26-concept-marks-ai.md — desk-research · needs-review · tertiary · low
+- 2026-11-02-specification-instructions.md — plan · draft · tertiary · high
 
 ## research/Desk research/
 

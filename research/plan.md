@@ -10,12 +10,12 @@ tags: [train, vicenza, padova, routine-break, noticing, understanding, deciding]
 confidence: high
 grade: primary
 status: complete
-related: [brief.md, questions.md, interview-script.md, structure.md, research/index.md]
+related: [../brief.md, interview-script.md, ../structure.md, ../index.md, 2026-10-24-gaps-notes.md, Desk research/2026-10-12-benchmark.md, Desk research/2026-10-13-review-analysis-trenitalia-trainline.md, Ideation/2026-10-26-02-ideation-human.md, Ideation/2026-10-26-04-prioritisation-ai.md, Ideation/2026-10-26-05-concept-ai.md]
 ---
 
 # Research plan · Redesigning the commute
 
-Based on [brief.md](../brief.md) and [questions.md](../questions.md).
+Based on [brief.md](../brief.md).
 Research window: **one week, 05/10 → 12/10/2026**.
 Context: **Vicenza–Padova area (Veneto)**. Participants commute there by train, to work or university.
 
@@ -213,3 +213,27 @@ The controlled vocabulary for the `tags` field of every note in `research/`. Rul
 | `viaggiatreno` | ViaggiaTreno website (real-time running information for a single train, searched by train number). |
 
 Add other apps here, in the same form, when participants mention them.
+
+---
+
+## 8. Changes during the project
+
+This section records where the work departed from the plan above, which is kept as written: the gap between plan and reality is itself a finding. Each row was checked against the file named in the last column; a row or a detail that could not be checked is marked [unverified].
+
+| date | what the plan said | what happened | why | where it is |
+|---|---|---|---|---|
+| 2026-10-09 | §3: 4 confirmed participants (P1 to P4) plus P5 still to recruit; §6: "Report the sample as 4 participants". | 6 participants were interviewed, P1 to P6. P5 and P6 were both recruited. | The reason for recruiting a sixth participant is not recorded in the repository. | `Notes/` (six interview notes), `Raw/Original transcripts/` (six transcripts), `2026-10-24-gaps-notes.md` |
+| 2026-10-07, 2026-10-09 | §3 and §5: P1 and P2 on 07/10, P3 on 08/10, P4 on 09/10, P5 on 10/10 if recruited. | P1, P2, P3 and P4 were interviewed on 2026-10-07; P5 and P6 on 2026-10-09. | Not recorded in the repository. | `date` in the frontmatter of the six notes in `Notes/` and in the transcript file names |
+| 2026-10-07 | §3: remote interviews of 30 min. | All six interviews were remote, by phone, between 13 and 25 min long. | Not recorded in the repository. | `channel: phone` and `location: remote` in the six notes; lengths as listed in `2026-10-24-gaps-notes.md` |
+| 2026-10-07 | §3: P1, P2 and P3 commute to work, P4 to university; only one university commuter. | P1 and P2 commute to work; P3, P4, P5 and P6 commute to university (4 of 6). The plan's caution on group differences now applies to the work side, which rests on two people. | The plan's P3 row was a guess before the interview. | `source` and `tags` (`work-commute`, `university-commute`) of the six notes in `Notes/` |
+| 2026-10-07, 2026-10-09 | Header: Vicenza to Padova area. | The area is wider: the Lido di Venezia and Mestre (P1, P2), Bassano and Castelfranco (P3, P4), Rovigo (P5), Monselice (P6), towards Vicenza (P1, P2) and Padova (P3 to P6). The tags `boat`, `venezia`, `castelfranco`, `rovigo` and `monselice` are already in §7. | The participants recruited live outside the Vicenza to Padova corridor. | `title` and `source` of the six notes in `Notes/` |
+| 2026-10-07 | §3 and §4: notes in `research/notes/` named `interview-pN`, transcripts in `research/transcripts/`, desk research as `research/notes/YYYY-MM-DD-desk-research-<topic>.md`, "Files use participant codes, never real names". | Interview notes are in `Notes/`, named with the participant's real name, as `CLAUDE.md` requires. Original transcripts are in `Raw/Original transcripts/`, timestamped transcripts in `Transcript/`, desk research in `Desk research/` without the `desk-research` prefix. Inside notes and transcripts, participant codes only are still used. The paths in §3 and §4 and the "never real names" rule for file names no longer apply. | The file name rule changed in `CLAUDE.md`. | `CLAUDE.md`, folder listing of `Research/` |
+| 2026-10-12 | §4: benchmark of at most 4 apps (Trenitalia, Busitalia Veneto, Google Maps, Moovit, adjusted by the interviews), verified on a phone by Sun 11/10. | The benchmark covers the apps participants mentioned: Trenitalia, ViaggiaTreno, Trainline, AVM Venezia and SVT, with Google Maps only in the comparison table. Busitalia Veneto and Moovit are not covered. It is dated 2026-10-12 and was not verified on a phone. | §4 allowed the list to follow the apps participants actually use; no participant mentioned Busitalia Veneto or Moovit. | `Desk research/2026-10-12-benchmark.md` |
+| 2026-10-13 | §4: app store reviews of the benchmark apps, if time allows. | An App Store review analysis of Trenitalia and Trainline was added: 33 screenshots, about 45 Trenitalia and 30 Trainline reviews. A note on commuting statistics, not in the plan, was added the same day. | Trenitalia is the app all six participants mention; Trainline is the only other train app in the interviews. | `Desk research/2026-10-13-review-analysis-trenitalia-trainline.md`, `Desk research/2026-10-13-commuting-statistics.md`, `Raw/Trenitalia screenshot reviews/`, `Raw/Trainline screenshot reviews/` |
+| 2026-10-24 | §4: open data availability check (GTFS, GTFS Realtime, service alerts) testing A11, if time allows. | Never done; no open data note exists. A11 is still untested. | Not recorded in the repository. | `2026-10-24-gaps-notes.md` (plan.md, "Open data check never done") |
+| 2026-10-23 to 2026-10-26 | §5: research closed on Mon 12/10; Sun 11/10 for tagging findings and synthesis prep. No phases after the research window. | The work went on after the window. Synthesis on 2026-10-23: touchpoints, features, user stories. Gaps review on 2026-10-24. On 2026-10-26: How-Might-We questions, ideation, clusters, prioritisation and concept. | The project continued past research into synthesis and ideation. | `Synthesis/` and `Ideation/` file names and frontmatter dates; `../index.md` (which lists some of these files under older names, and one, `2026-10-27-ideation-ai.md`, that does not exist) |
+| 2026-10-26 | Not in the plan, which proposes no design direction. | Chosen moment, first version: "before boarding, from days ahead up to the platform", when the commuter needs to know whether their train is late, cancelled or hit by a strike, and decide what to do. | Chosen by the author for ideation. | `Ideation/2026-10-26-02-ideation-human.md`, `Ideation/2026-10-26-03-clusters-ai.md`, `Ideation/2026-10-26-04-prioritisation-ai.md` |
+| 2026-11-02 | Not in the plan. | Chosen moment narrowed: "the same day, from home up to the platform, before boarding". Days ahead are no longer part of it. | Decided by the author after the clusters and prioritisation notes were written. | `Ideation/2026-10-26-05-concept-ai.md` (Scope and method; the edit date is in its `source` field) |
+| 2026-10-26 | Not in the plan. | Prototype defined: one flow of 4 to 5 screens, in Figma or as a clickable HTML prototype, with simulated data only, built by the author with an AI agent. That the agent is Claude is [unverified]: the notes say "an agent". | Used as the "feasible" test in prioritisation. | `Ideation/2026-10-26-04-prioritisation-ai.md`, `Ideation/2026-10-26-05-concept-ai.md` ("Prototype fit") |
+| 2026-10-26 | Not in the plan. | Chosen concept: 1 · Own-train warning. It tells a commuter who takes the same train every day, without them having to check, that this train is late or cancelled, and why. | Chosen by the author from the prioritisation. | `Ideation/2026-10-26-05-concept-ai.md` |
+| 2026-11-02 | Frontmatter and the "Based on" line linked `questions.md`, and `research/index.md`. | `questions.md` does not exist anywhere in the research base, so its links were removed; the assumptions A1 to A11 and questions Q1 to Q32 cited in this plan cannot be checked in the repository. The index is at the repository root and is now linked as `../index.md`; `interview-script.md` is in the same folder as this plan. The links inside §3 and §5 are left as written. | The file was never added to the repository. | Folder listing of the repository; `2026-10-24-gaps-notes.md` (plan.md, "Missing files the plan depends on") |

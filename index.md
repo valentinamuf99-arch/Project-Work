@@ -70,3 +70,18 @@ Every research file in this repository, grouped by folder, oldest first. Format:
 - 2026-11-02-spec-06-what-still-gets-me-home.md — desk-research · draft · tertiary · medium
 - 2026-11-02-spec-07-will-my-connection-wait.md — desk-research · draft · tertiary · medium
 - 2026-11-02-spec-08-is-my-ticket-valid.md — desk-research · draft · tertiary · medium
+
+## Research/Synthesis/User Stories/
+
+- 2026-10-23-user-story-01-f01-own-train-alert-before-leaving.md — desk-research · needs-review · secondary · medium
+- 2026-10-23-user-story-02-f03-cancelled-or-only-late.md — desk-research · needs-review · secondary · medium
+- 2026-10-23-user-story-03-f04-strike-notice-for-own-route.md — desk-research · needs-review · secondary · medium
+- 2026-10-23-user-story-04-f05-notices-filtered-to-own-route.md — desk-research · needs-review · secondary · medium
+- 2026-10-23-user-story-05-f06-last-minute-purchase-path.md — desk-research · needs-review · secondary · medium
+- 2026-10-23-user-story-06-f08-own-train-stop-by-stop.md — desk-research · needs-review · secondary · medium
+- 2026-10-23-user-story-07-f09-the-reason-on-the-board.md — desk-research · needs-review · secondary · medium
+- 2026-10-23-user-story-08-f11-why-stopped-and-for-how-long.md — desk-research · needs-review · secondary · medium
+- 2026-10-23-user-story-09-f12-no-way-home-said-early.md — desk-research · needs-review · secondary · medium
+- 2026-10-23-user-story-10-f14-alternatives-for-own-trip.md — desk-research · needs-review · secondary · medium
+- 2026-10-23-user-story-11-f15-is-my-ticket-valid-on-it.md — desk-research · needs-review · secondary · medium
+- 2026-10-23-user-story-12-f16-will-the-next-leg-wait.md — desk-research · needs-review · secondary · medium

@@ -9,7 +9,7 @@ ROOT = os.path.normpath(ROOT)
 OUT = os.path.join(ROOT, 'Research', 'Synthesis', 'research.html')
 TABLES = ['Research/Synthesis/2026-10-23-01.1-touchpoints-ai.md', 'Research/Synthesis/2026-10-23-02-features-ai.md', 'Research/Synthesis/2026-10-23-03-user-stories-ai.md']
 # Folders shown, in this order; Raw and Transcript stay out as before.
-FOLDERS = ['Research', 'Research/Desk research', 'Research/Notes', 'Research/Synthesis', 'Research/Ideation']
+FOLDERS = ['Research', 'Research/Desk research', 'Research/Notes', 'Research/Synthesis', 'Research/Synthesis/User Stories', 'Research/Ideation', 'Research/Specs']
 
 KNOWN = set()
 for d, _, fs in os.walk(ROOT):
@@ -327,6 +327,8 @@ ICON = {
     'notes': '<path d="M4 5h16v11H9l-5 4z"/>',
     'synth': '<path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/>',
     'idea': '<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/>',
+    'story': '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+    'spec': '<path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h7"/>',
     'table': '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/>',
 }
 
@@ -368,7 +370,8 @@ def section(path, shown, folder, full=True):
 # Sidebar groups: (anchor, name, icon, tint); notes per group are filled in main().
 GROUPS = [('d-root', 'Root', 'root', 'blush'), ('d-desk-research', 'Desk research', 'desk', 'sky'),
           ('d-notes', 'Notes', 'notes', 'sage'), ('d-synthesis', 'Synthesis', 'synth', 'lavender'),
-          ('d-ideation', 'Ideation', 'idea', 'sand'), ('d-tables', 'Tables', 'table', 'mint')]
+          ('d-user-stories', 'User Stories', 'story', 'lavender'), ('d-ideation', 'Ideation', 'idea', 'sand'),
+          ('d-specs', 'Specs', 'spec', 'sky'), ('d-tables', 'Tables', 'table', 'mint')]
 
 def label(p):
     """Sidebar label: the participant code for interviews (no real names outside file names), the undated file name otherwise."""

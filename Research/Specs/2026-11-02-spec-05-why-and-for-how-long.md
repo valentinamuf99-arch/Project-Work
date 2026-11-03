@@ -10,7 +10,7 @@ tags: [train, padova, monselice, venezia, university-commute, work-commute, long
 confidence: medium
 grade: tertiary
 status: draft
-related: [plan.md, 2026-11-02-specification-instructions.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Synthesis/2026-10-23-01.1-touchpoints-ai.md, Ideation/2026-10-26-01.1-how-might-we-ai.md, 2026-10-24-gaps-notes.md, Specs/2026-11-02-spec-01-warned-about-my-own-train.md, Specs/2026-11-02-spec-06-what-still-gets-me-home.md]
+related: [plan.md, 2026-11-02-specification-instructions.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Synthesis/2026-10-23-01.1-touchpoints-ai.md, Ideation/2026-10-26-01.1-how-might-we-ai.md, 2026-10-24-gaps-notes.md, Specs/2026-11-02-spec-01-warned-about-my-own-train.md, Specs/2026-11-02-spec-06-what-still-gets-me-home.md, Synthesis/User Stories/2026-10-23-user-story-07-f09-the-reason-on-the-board.md, Synthesis/User Stories/2026-10-23-user-story-08-f11-why-stopped-and-for-how-long.md]
 ---
 
 # Specification 05 · Why it is late, and for how long

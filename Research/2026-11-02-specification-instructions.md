@@ -54,6 +54,7 @@ If, while writing, one file turns out to hold two behaviours, stop and say so. D
 ## Rules for every file
 
 - **Format.** Frontmatter as in `../structure.md`, with `activity: desk-research`, `channel: web`, `grade: tertiary`, `status: draft`, `confidence` no higher than the lowest of the notes it cites. `related` lists every note the file cites. Body in two parts, each made of `##` units, one unit one meaning.
+- **Linked to its stories.** Every specification answers one or more user stories and must be reachable from them by link. Its `related` field lists the file of every story it answers, from `Synthesis/User Stories/` (for example `Synthesis/User Stories/2026-10-23-user-story-01-f01-own-train-alert-before-leaving.md`). Each of those story files lists the specification in its own `related` field.
 - **Tags.** Only from `plan.md` section 7.
 - **No technology.** Do not name software, tools, products, programming languages, frameworks or libraries, and do not say how the app is built. Where a source names a data format (open data, GTFS), say "the operator's running information" instead. Describing what the commuter sees and does (screens, the information on them, messages, actions) is allowed and expected.
 - **Part A stands alone.** No feature codes, touchpoint numbers, question numbers, file paths, participant codes or evidence marks in Part A. Rules are numbered (R1, R2, ...) so that Part B can trace them.
@@ -91,5 +92,5 @@ Open with the heading `# Part B · Traceability`, then these units.
 
 - Add each new file to `../index.md` the same day, under a `## Research/Specs/` heading, in the existing format.
 - Add every specification file to the `related` field of `Synthesis/2026-10-23-03-user-stories-ai.md`.
-- Check every file for: a named software, tool or programming language; a code, path or name in Part A; a participant name anywhere; a tag not in `plan.md`; an em dash used to split a sentence; a rule without a row in the rule trace; a capability wider than its story.
+- Check every file for: a story it answers missing from its `related` field, or a story file that does not link back to it; a named software, tool or programming language; a code, path or name in Part A; a participant name anywhere; a tag not in `plan.md`; an em dash used to split a sentence; a rule without a row in the rule trace; a capability wider than its story.
 - Report: every user story, kept or left out, with its reason; for each kept story, the specifications it feeds; then the count: files written, stories per file, rules per file, scenarios per file, acceptance criteria per file, `[untraced]` rules per file.

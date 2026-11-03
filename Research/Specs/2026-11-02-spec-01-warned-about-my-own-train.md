@@ -10,7 +10,7 @@ tags: [train, work-commute, long-delay, cancellation, noticing, understanding, d
 confidence: medium
 grade: tertiary
 status: draft
-related: [plan.md, 2026-11-02-specification-instructions.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Synthesis/2026-10-23-01.1-touchpoints-ai.md, Ideation/2026-10-26-01.1-how-might-we-ai.md, 2026-10-24-gaps-notes.md, Specs/2026-11-02-spec-02-following-my-train.md, Specs/2026-11-02-spec-03-disruptions-on-my-route.md, Specs/2026-11-02-spec-05-why-and-for-how-long.md, Specs/2026-11-02-spec-06-what-still-gets-me-home.md]
+related: [plan.md, 2026-11-02-specification-instructions.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Synthesis/2026-10-23-01.1-touchpoints-ai.md, Ideation/2026-10-26-01.1-how-might-we-ai.md, 2026-10-24-gaps-notes.md, Specs/2026-11-02-spec-02-following-my-train.md, Specs/2026-11-02-spec-03-disruptions-on-my-route.md, Specs/2026-11-02-spec-05-why-and-for-how-long.md, Specs/2026-11-02-spec-06-what-still-gets-me-home.md, Synthesis/User Stories/2026-10-23-user-story-01-f01-own-train-alert-before-leaving.md, Synthesis/User Stories/2026-10-23-user-story-02-f03-cancelled-or-only-late.md]
 ---
 
 # Specification 01 · Warned about my own train

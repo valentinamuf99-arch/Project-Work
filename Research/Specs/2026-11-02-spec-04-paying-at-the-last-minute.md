@@ -10,7 +10,7 @@ tags: [train, rovigo, padova, university-commute, information-source]
 confidence: medium
 grade: tertiary
 status: draft
-related: [plan.md, 2026-11-02-specification-instructions.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Synthesis/2026-10-23-01.1-touchpoints-ai.md, Ideation/2026-10-26-01.1-how-might-we-ai.md, 2026-10-24-gaps-notes.md, Specs/2026-11-02-spec-08-is-my-ticket-valid.md]
+related: [plan.md, 2026-11-02-specification-instructions.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Synthesis/2026-10-23-01.1-touchpoints-ai.md, Ideation/2026-10-26-01.1-how-might-we-ai.md, 2026-10-24-gaps-notes.md, Specs/2026-11-02-spec-08-is-my-ticket-valid.md, Synthesis/User Stories/2026-10-23-user-story-05-f06-last-minute-purchase-path.md]
 ---
 
 # Specification 04 · Paying at the last minute

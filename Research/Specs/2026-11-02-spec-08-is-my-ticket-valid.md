@@ -10,7 +10,7 @@ tags: [train, bus, university-commute, strike, alternative, cost-of-lateness]
 confidence: medium
 grade: tertiary
 status: draft
-related: [plan.md, 2026-11-02-specification-instructions.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Synthesis/2026-10-23-01.1-touchpoints-ai.md, Ideation/2026-10-26-01.1-how-might-we-ai.md, 2026-10-24-gaps-notes.md, Specs/2026-11-02-spec-04-paying-at-the-last-minute.md, Specs/2026-11-02-spec-06-what-still-gets-me-home.md]
+related: [plan.md, 2026-11-02-specification-instructions.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Synthesis/2026-10-23-01.1-touchpoints-ai.md, Ideation/2026-10-26-01.1-how-might-we-ai.md, 2026-10-24-gaps-notes.md, Specs/2026-11-02-spec-04-paying-at-the-last-minute.md, Specs/2026-11-02-spec-06-what-still-gets-me-home.md, Synthesis/User Stories/2026-10-23-user-story-11-f15-is-my-ticket-valid-on-it.md]
 ---
 
 # Specification 08 · Is my ticket valid on it?

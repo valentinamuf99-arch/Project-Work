@@ -10,7 +10,7 @@ tags: [train, rovigo, padova, university-commute, trenitalia]
 confidence: medium
 grade: secondary
 status: needs-review
-related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-09-interview-anna-baggio.md, Specs/2026-11-02-spec-04-paying-at-the-last-minute.md]
+related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-09-interview-anna-baggio.md]
 ---
 
 # User story 05 · F6 Last-minute purchase path

@@ -10,7 +10,7 @@ tags: [train, bus, university-commute, strike, alternative, cost-of-lateness]
 confidence: medium
 grade: secondary
 status: needs-review
-related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-lorena-tonuzi.md, Specs/2026-11-02-spec-08-is-my-ticket-valid.md]
+related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-lorena-tonuzi.md]
 ---
 
 # User story 11 · F15 Is my ticket valid on it?

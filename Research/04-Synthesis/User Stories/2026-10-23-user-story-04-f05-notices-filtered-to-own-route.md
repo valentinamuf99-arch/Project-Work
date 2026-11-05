@@ -10,7 +10,7 @@ tags: [train, venezia, work-commute, noticing, information-source, trust, warnin
 confidence: medium
 grade: secondary
 status: needs-review
-related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-matteo-galvagni.md, Specs/2026-11-02-spec-03-disruptions-on-my-route.md]
+related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-matteo-galvagni.md]
 ---
 
 # User story 04 · F5 Notices filtered to one's route

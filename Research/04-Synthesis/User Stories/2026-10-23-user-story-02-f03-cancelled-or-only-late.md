@@ -10,7 +10,7 @@ tags: [train, venezia, work-commute, cancellation, long-delay, understanding, de
 confidence: medium
 grade: secondary
 status: needs-review
-related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-matteo-galvagni.md, Specs/2026-11-02-spec-01-warned-about-my-own-train.md]
+related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-matteo-galvagni.md]
 ---
 
 # User story 02 · F3 Cancelled or only late

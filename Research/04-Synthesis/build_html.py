@@ -1,15 +1,15 @@
-"""Rebuild Research/Synthesis/research.html from the Markdown notes, in the page format already used.
+"""Rebuild Research/04-Synthesis/research.html from the Markdown notes, in the page format already used.
 
-Run from anywhere: python3 Research/Synthesis/build_html.py
+Run from anywhere: python3 Research/04-Synthesis/build_html.py
 """
 import html, os, posixpath, re, sys
 
 ROOT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')
 ROOT = os.path.normpath(ROOT)
-OUT = os.path.join(ROOT, 'Research', 'Synthesis', 'research.html')
-TABLES = ['Research/Synthesis/2026-10-23-01.1-touchpoints-ai.md', 'Research/Synthesis/2026-10-23-02-features-ai.md', 'Research/Synthesis/2026-10-23-03-user-stories-ai.md']
-# Folders shown, in this order; Raw and Transcript stay out as before.
-FOLDERS = ['Research', 'Research/Desk research', 'Research/Notes', 'Research/Synthesis', 'Research/Synthesis/User Stories', 'Research/Ideation', 'Research/Specs']
+OUT = os.path.join(ROOT, 'Research', '04-Synthesis', 'research.html')
+TABLES = ['Research/04-Synthesis/2026-10-23-01.1-touchpoints-ai.md', 'Research/04-Synthesis/2026-10-23-02-features-ai.md', 'Research/04-Synthesis/2026-10-23-03-user-stories-ai.md']
+# Folders shown, in this order; only the top level of 01.3-Raw (the gaps note), transcripts and raw subfolders stay out.
+FOLDERS = ['Research', 'Research/01.1-Notes', 'Research/01.2-Desk research', 'Research/01.3-Raw', 'Research/04-Synthesis', 'Research/04-Synthesis/User Stories', 'Research/05-Ideation', 'Research/06-Specifications']
 
 KNOWN = set()
 for d, _, fs in os.walk(ROOT):
@@ -37,7 +37,7 @@ def index_order():
     """Root notes, then every note of each folder in FOLDERS, by file name (files on disk, not index.md)."""
     order = [p for p in ('index.md', 'structure.md') if p in KNOWN]
     # Plan and script first, interviews in P1..P6 order, the rest by file name.
-    first = ['Research/plan.md', 'Research/interview-script.md'] + [CODES[c] for c in sorted(CODES) if c.startswith('P')]
+    first = ['Research/plan.md', 'Research/01.1-Notes/interview-script.md'] + [CODES[c] for c in sorted(CODES) if c.startswith('P')]
     key = lambda k: (first.index(k) if k in first else len(first), k)
     for f in FOLDERS:
         order += sorted((k for k in KNOWN if posixpath.dirname(k) == f), key=key)
@@ -103,8 +103,8 @@ def inline(text, ctx):
         text = re.sub(r'\x00(\d+)\x00', lambda m: slots[int(m.group(1))], text)
     return text
 
-AI_DOCS = set(TABLES) | {'Research/2026-10-24-gaps-notes.md'}
-HUMAN = 'Research/Synthesis/2026-10-23-01-touchpoints-human.md'
+AI_DOCS = set(TABLES) | {'Research/01.3-Raw/2026-10-24-gaps-notes.md'}
+HUMAN = 'Research/04-Synthesis/2026-10-23-01-touchpoints-human.md'
 TOKEN = r'(?<![\w-])(⚠?C\d+|TP \d+[a-z]?|TP-\d+|F\d+|P[1-6]|REV|S[1-7])(?![\w-])'
 CODES = {}   # P1..P6, REV -> note path; filled from the touchpoints note
 SCODES = {}  # S1..S7 -> note path; filled from touchpoints-human
@@ -292,7 +292,7 @@ def finish(page):
             label = LABEL[kind].format('TP-' + num if kind == 'th-TP' else num)
         notes = re.findall(r'href="#(n-[^"]+?-md)"', m.group(3))
         if 'benchmark note' in m.group(3):  # C5 and C6 name the benchmark without a link
-            notes.append(aid('Research/Desk research/2026-10-12-benchmark.md'))
+            notes.append(aid('Research/01.2-Desk research/2026-10-12-benchmark.md'))
         for note in dict.fromkeys(notes):
             cited.setdefault(note, []).append((eid, label))
     rank = ['th-TP', 'tp', 'c', 'f', 'drop', 'us']
@@ -368,10 +368,11 @@ def section(path, shown, folder, full=True):
     return '\n'.join(parts)
 
 # Sidebar groups: (anchor, name, icon, tint); notes per group are filled in main().
-GROUPS = [('d-root', 'Root', 'root', 'blush'), ('d-desk-research', 'Desk research', 'desk', 'sky'),
-          ('d-notes', 'Notes', 'notes', 'sage'), ('d-synthesis', 'Synthesis', 'synth', 'lavender'),
-          ('d-user-stories', 'User Stories', 'story', 'lavender'), ('d-ideation', 'Ideation', 'idea', 'sand'),
-          ('d-specs', 'Specs', 'spec', 'sky'), ('d-tables', 'Tables', 'table', 'mint')]
+GROUPS = [('d-root', 'Root', 'root', 'blush'), ('d-notes', '01.1 Notes', 'notes', 'sage'),
+          ('d-desk-research', '01.2 Desk research', 'desk', 'sky'), ('d-raw', '01.3 Raw', 'notes', 'blush'),
+          ('d-synthesis', '04 Synthesis', 'synth', 'lavender'), ('d-user-stories', '04 User Stories', 'story', 'lavender'),
+          ('d-ideation', '05 Ideation', 'idea', 'sand'), ('d-specs', '06 Specifications', 'spec', 'sky'),
+          ('d-tables', 'Tables', 'table', 'mint')]
 
 def label(p):
     """Sidebar label: the participant code for interviews (no real names outside file names), the undated file name otherwise."""

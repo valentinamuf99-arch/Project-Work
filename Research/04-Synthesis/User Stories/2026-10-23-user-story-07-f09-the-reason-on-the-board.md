@@ -10,7 +10,7 @@ tags: [train, padova, monselice, university-commute, long-delay, understanding, 
 confidence: medium
 grade: secondary
 status: needs-review
-related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-09-interview-benedetta-rossi.md, Specs/2026-11-02-spec-05-why-and-for-how-long.md]
+related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-09-interview-benedetta-rossi.md, 06-Specifications/2026-11-02-spec-05-why-it-is-late.md]
 ---
 
 # User story 07 · F9 The reason, on the board

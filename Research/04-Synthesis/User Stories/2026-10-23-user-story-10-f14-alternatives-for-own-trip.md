@@ -10,7 +10,7 @@ tags: [train, boat, bus, venezia, university-commute, cancellation, deciding, al
 confidence: medium
 grade: secondary
 status: needs-review
-related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-lucrezia-gradi.md, Specs/2026-11-02-spec-06-what-still-gets-me-home.md]
+related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-lucrezia-gradi.md]
 ---
 
 # User story 10 · F14 Alternatives for one's own trip

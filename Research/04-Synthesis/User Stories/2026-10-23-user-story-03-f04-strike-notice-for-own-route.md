@@ -10,7 +10,7 @@ tags: [train, padova, university-commute, strike, noticing, warning, information
 confidence: medium
 grade: secondary
 status: needs-review
-related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-greta-tonuzi.md, Specs/2026-11-02-spec-03-disruptions-on-my-route.md]
+related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-greta-tonuzi.md]
 ---
 
 # User story 03 · F4 Strike notice for one's own route

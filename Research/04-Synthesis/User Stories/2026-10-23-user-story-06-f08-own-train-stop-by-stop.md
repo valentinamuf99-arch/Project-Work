@@ -10,7 +10,7 @@ tags: [train, vicenza, padova, university-commute, noticing, information-source,
 confidence: medium
 grade: secondary
 status: needs-review
-related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-lorena-tonuzi.md, Specs/2026-11-02-spec-02-following-my-train.md]
+related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-lorena-tonuzi.md, 06-Specifications/2026-11-02-spec-01-my-train-and-my-limit.md, 06-Specifications/2026-11-02-spec-04-following-my-train-stop-by-stop.md]
 ---
 
 # User story 06 · F8 Own train, stop by stop

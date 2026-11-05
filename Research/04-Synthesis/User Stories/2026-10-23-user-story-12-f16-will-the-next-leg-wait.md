@@ -10,7 +10,7 @@ tags: [train, vicenza, university-commute, long-delay, missed-connection, decidi
 confidence: medium
 grade: secondary
 status: needs-review
-related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-lorena-tonuzi.md, Specs/2026-11-02-spec-07-will-my-connection-wait.md]
+related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-lorena-tonuzi.md]
 ---
 
 # User story 12 · F16 Will the next leg wait?

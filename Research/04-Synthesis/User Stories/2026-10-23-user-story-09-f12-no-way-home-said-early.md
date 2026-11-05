@@ -10,7 +10,7 @@ tags: [train, padova, university-commute, long-delay, deciding, alternative, not
 confidence: medium
 grade: secondary
 status: needs-review
-related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-greta-tonuzi.md, Notes/2026-10-09-interview-benedetta-rossi.md, Specs/2026-11-02-spec-06-what-still-gets-me-home.md]
+related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-greta-tonuzi.md, Notes/2026-10-09-interview-benedetta-rossi.md]
 ---
 
 # User story 09 · F12 No way home, said early

@@ -10,7 +10,7 @@ tags: [train, venezia, work-commute, long-delay, cancellation, noticing, decidin
 confidence: medium
 grade: secondary
 status: needs-review
-related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-matteo-galvagni.md, Specs/2026-11-02-spec-01-warned-about-my-own-train.md]
+related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-matteo-galvagni.md, 06-Specifications/2026-11-02-spec-01-my-train-and-my-limit.md, 06-Specifications/2026-11-02-spec-02-warned-about-my-own-train.md, 06-Specifications/2026-11-02-spec-03-another-way-to-make-the-trip.md]
 ---
 
 # User story 01 · F1 Own-train alert before leaving

@@ -1,0 +1,30 @@
+*, *::before, *::after { box-sizing: border-box; }
+body, h1, h2, h3, p, ul, ol { margin: 0; }
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-muted: #5c5c5c;
+  --color-accent: #0b5cad;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --font-body: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-size-base: 1rem;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+main { padding: var(--space-3); }
+
+/* mobile first: wider screens only center the content */
+@media (min-width: 768px) {
+  main, .app-header { max-width: 720px; margin-inline: auto; }
+}

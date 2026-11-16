@@ -28,14 +28,14 @@ A student on a monthly pass who takes the same train between Bassano and Padova 
 | rule | actor | action | response | conditions and edges | state changes |
 |---|---|---|---|---|---|
 | R1 | The commuter | Opens the saved train (directly, or from the warning). | The app shows the train's stops in order up to the commuter's get-on stop. For each stop already reached: actual arrival and departure times. For the last stop reached: marked as the train's current position. For the get-on stop: scheduled time and expected time. | Only on a trip day, until the train leaves the get-on stop. The expected time at the get-on stop is shown only if the operator's running information gives it; otherwise the app shows the scheduled time and the delay at the last stop reached, and does not compute one. | No change. |
-| R2 | The app | Shows the train's position. | The app says the time of the last update ("last stop reached at 13:12"). | The position is known only stop by stop, not between stops: the app never shows the train between two stops. | No change. |
+| R2 | The app | Shows the train's position. | The app says the time of the last update ("last stop reached at 13:12"). | The position is known only stop by stop. Between two stops the app shows that the train is travelling from the last stop reached towards the next one ("travelling to [next stop]"), without placing it along the line. | No change. |
 | R3 | The commuter | Opens a train that has not left its origin. | The app says the train has not left yet and shows its scheduled departure from the origin. | If the departure time from the origin has passed and the train is neither shown as left nor as cancelled, the app says exactly that: "not left yet, not cancelled", with the time of the last update. It never guesses which it will be. | No change. |
-| R4 | The commuter | Opens a train that is cancelled. | The app says it is cancelled, on the first line, above the stops. | Whole run or part of the run: unspecified. | No change. |
+| R4 | The commuter | Opens a train that is cancelled. | The app says it is cancelled, on the first line, above the stops. | Both whole run and part of the run. Whole run: "Cancelled." Part of the run: the first line says from which stop to which stop ("Cancelled from [stop] to [stop]") and those stops are marked cancelled; the stops still served are shown as in R1. | No change. |
 
 ## States and data
 
 - **Data read:** the saved train and the get-on stop (from "My train and my limit"); the stops, scheduled times, actual arrival and departure times, delay and cancellation (from the operator's running information).
-- **States of the train as shown:** not left yet → on its way (last stop reached) → left the get-on stop (nothing more shown). Cancelled can come from any state. "Not left yet, not cancelled" is "not left yet" past its scheduled departure.
+- **States of the train as shown:** not left yet → on its way (last stop reached, travelling to the next) → left the get-on stop (nothing more shown). Cancelled (whole run or part of the run) can come from any state. "Not left yet, not cancelled" is "not left yet" past its scheduled departure.
 
 ## What the commuter gets and does
 
@@ -45,6 +45,7 @@ A student on a monthly pass who takes the same train between Bassano and Padova 
 4. **Not left yet.** "Not left [origin] yet. Scheduled departure [time]."
 5. **Not left, not cancelled, past its time.** "Not left [origin] yet, not cancelled. Last update [time]."
 6. **Cancelled.** "Cancelled." above the stops.
+7. **Cancelled for part of the run.** "Cancelled from [stop] to [stop]." above the stops, with those stops marked cancelled.
 
 Appearance constraint: the current position and the expected time at the get-on stop are the first two lines.
 
@@ -60,14 +61,15 @@ Appearance constraint: the current position and the expected time at the get-on 
 - Given an expected time at the get-on stop from the operator, when the commuter opens the train, then that time is shown with the scheduled one. (R1)
 - Given no expected time from the operator, when the commuter opens the train, then only the scheduled time and the last known delay are shown, and no computed time. (R1, edge)
 - Given any position, when it is shown, then the time of the last update is shown with it. (R2)
-- Given a train between two stops, when the commuter opens it, then the position shown is the last stop reached. (R2, edge)
+- Given a train between two stops, when the commuter opens it, then the last stop reached is shown and the train is shown as travelling to the next stop, with no position along the line. (R2, edge)
 - Given a train past its departure, neither left nor cancelled, when the commuter opens it, then the app shows "not left yet, not cancelled" and the time of the last update. (R3, edge)
 - Given a cancelled train, when the commuter opens it, then "Cancelled" is the first line. (R4)
+- Given a train cancelled for part of its run, when the commuter opens it, then the first line says from which stop to which stop it is cancelled, and those stops are marked cancelled. (R4, edge)
 
 ## Out of scope
 
 - Following any train other than the saved one.
-- A map, a moving position between stops, a forecast of the delay.
+- A map, a position along the line between stops, a forecast of the delay.
 - The stops after the commuter's get-on stop.
 
 ## Links to other parts of the app
@@ -108,11 +110,12 @@ One story only. The concept places concept 5 (Real-time train view) here, though
 | R1 | The student never gets "when it will reach my stop" because the operator gives no expected time, and the rule forbids computing one. | Whether to compute an estimate from the last delay: a design choice not in the sources. | Nothing. | `[fixable]` |
 | R2 | None within the rule. | | | `[note]` |
 | R3 | None within the rule. | | | `[note]` |
-| R4 | A train cancelled for part of its run shows as running, or as cancelled for a stop it still serves. | Partial cancellation is unspecified. | Uncheckable until written. | `[fixable]` |
+| R4 | The operator's running information does not say which stops a partial cancellation covers, and the app cannot fill the first line. | Nothing the app can check; the rule is met. | Whether the operator gives the cancelled stops. | `[note]` |
 
 ## Assumptions and open questions
 
 - **The value is thin.** F8's "so that" restates the capability (HMW note): no decision is shown that P3 would make with the time. Test: ask P3 what she did the last time she followed her train from home.
 - **The operator's running information is right.** Reviewers say the live status is wrong (TP 14). The app cannot correct it. Test: the open-data check against the board for several runs.
 - **Computing an expected time** at the get-on stop from the last delay would answer the "so that" but is not in any source. Left out, listed here.
+- **"Travelling to [next stop]" between stops** (R2) and **partial cancellation** (R4) are design choices, not in the sources.
 - **"In the operator's own channel"** is part of the story's capability and is a question of who provides the app, not of its behaviour; not specified.

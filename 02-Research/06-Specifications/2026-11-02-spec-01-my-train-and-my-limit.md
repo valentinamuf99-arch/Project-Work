@@ -28,16 +28,16 @@ On a calm day, the commuter tells the app which train they take every day, where
 
 | rule | actor | action | response | conditions and edges | state changes |
 |---|---|---|---|---|---|
-| R1 | The commuter | Names their usual train by its number. | The app finds the train in the operator's running information and shows its route: origin, stops, destination and scheduled times. | Only a train the operator's running information knows. If the number is not found, the app says so and saves nothing; it never guesses a near match. Whether a commuter can save more than one usual train: unspecified. | A train is chosen, not yet saved. |
+| R1 | The commuter | Names their usual train by its number. | The app finds the train in the operator's running information and shows its route: origin, stops, destination and scheduled times. | Only a train the operator's running information knows. If the number is not found, the app says so and saves nothing; it never guesses a near match. The commuter can save more than one usual train: each one is set up on its own, with its own stops, limit and days (R2 to R4). A number already saved is not saved twice: the app says so. | A train is chosen, not yet saved. |
 | R2 | The commuter | Picks, on that route, the stop where they get on and the stop where they get off. | The app shows the scheduled departure from the first and arrival at the second, and saves the train with the two stops. | The get-off stop must come after the get-on stop on the route. If the commuter changes trains (for example at Mestre), the get-off stop is where they leave this train; the second train is unspecified. | The usual train is saved, with the commuter's two stops. |
 | R3 | The commuter | Sets the delay, in whole minutes, that would change their plans. | The app saves it as the commuter's limit and says, in one sentence, what it means: "You will be told when this train is N minutes late or more, or cancelled." | A limit is required to save the set-up. No default value: the app does not propose a number. [open] Whether a limit of zero (told of any delay) is allowed. | The limit is saved; the warning is active for this train. |
 | R4 | The commuter | Chooses on which days they take the train. | The app saves the days. | [open] Every day the train runs, or only the days the commuter picks. The sources do not say. | The days are saved. |
 
 ## States and data
 
-- **Data from the commuter:** the train number, the get-on stop, the get-off stop, the limit in minutes, the days (R4, [open]).
+- **Data from the commuter, for each saved train:** the train number, the get-on stop, the get-off stop, the limit in minutes, the days (R4, [open]).
 - **Data from the operator's running information:** the train's route, its stops and scheduled times.
-- **States:** no train saved → train chosen (R1) → train saved with stops (R2) → warning active (R3).
+- **States, for each train:** no train saved → train chosen (R1) → train saved with stops (R2) → warning active (R3). A commuter with one train saved can start again from R1 to add another.
 
 ## What the commuter gets and does
 
@@ -47,19 +47,23 @@ On a calm day, the commuter tells the app which train they take every day, where
 4. **Limit set.** The commuter types a number of minutes. The app confirms with the sentence in R3.
 5. **Days chosen** (R4, [open]).
 6. **Set-up done.** The app shows a summary: train, two stops, limit, days. From now on it stays silent until the limit is passed or the train is cancelled (see "Warned about my own train").
+7. **Another train.** The commuter can add another usual train from the summary; steps 1 to 6 run again for it. The saved trains are listed one after the other.
 
-Appearance constraint: the summary fits in four lines, one per item, the limit written in minutes.
+Appearance constraint: each train's summary fits in four lines, one per item, the limit written in minutes.
 
 ## Example scenarios
 
 1. **The office-day commuter.** Train number: unspecified. Route: from Bassano to Venezia via Mestre (the stops in between: unspecified). Get on: unspecified, a stop after Bassano. Get off: Mestre, where he changes. Departure: about six in the morning. Limit: 30 minutes. Steps 1 to 6 run without an edge.
 2. **The student on a pass.** Train number: unspecified. Route: through Vicenza (the train she follows passes Vicenza, arriving 13:08 and leaving 13:12). Get on and get off: unspecified, on her trip between Bassano and Padova. Limit: unspecified. Steps 1 to 6.
 3. **Number not found.** The commuter types a number the operator's running information does not know. Step 2 shows "No train with this number was found"; nothing is saved.
+4. **Two usual trains.** A commuter who takes one of two trains depending on her timetable (P4 in the concept's assumptions) saves the first, then adds the second (step 7). Train numbers, stops and limits: unspecified.
 
 ## Acceptance criteria
 
 - Given a train number the operator's running information knows, when the commuter enters it, then the app shows that train's route with its stops and scheduled times. (R1)
 - Given a number the operator's running information does not know, when the commuter enters it, then the app says no train was found and saves nothing. (R1, edge)
+- Given one usual train saved, when the commuter adds a second train with its own stops and limit, then both are saved, each with its own stops, limit and days. (R1)
+- Given a train already saved, when the commuter enters its number again, then the app says it is already saved and does not save it twice. (R1, edge)
 - Given a train's route, when the commuter picks a get-off stop that comes before the get-on stop, then the app does not save and says why. (R2, edge)
 - Given a train with two stops chosen, when the commuter saves, then the app shows the scheduled departure and arrival times at those stops. (R2)
 - Given no limit entered, when the commuter tries to finish the set-up, then the app does not activate the warning and asks for a limit. (R3, edge)
@@ -112,14 +116,14 @@ Why they share this behaviour: both need the app to know which train is "my own 
 
 | rule | how it fails | what is missing | what is uncheckable | severity |
 |---|---|---|---|---|
-| R1 | A commuter who takes different trains on different days (P4 in the concept's assumptions) saves one and is warned about the wrong one on other days. | Whether more than one train can be saved: written "unspecified". | Nothing. | `[fixable]` |
+| R1 | A commuter who saves two trains without setting the days (R4, [open]) is warned about both on the same morning. | How the two trains share the days depends on the R4 choice. | Nothing. | `[fixable]` |
 | R2 | The commuter who changes at Mestre is never told about the second train. | The second leg is out of scope by choice; the rule says so. | Nothing. | `[note]` |
 | R3 | A commuter without a number in mind (P6 calls ten minutes "not excessive", a judgement, not a limit) cannot finish the set-up. | What happens if the commuter does not know their limit. | Nothing. | `[fixable]` |
 | R4 | The warning fires on a day off, or stays silent on a working day, depending on the [open] choice. | The choice itself. | Nothing until it is made. | `[fixable]` |
 
 ## Assumptions and open questions
 
-- **There is one usual train to save.** P4 takes either of two trains depending on her timetable (concept, Assumptions). Test: ask each participant how many different trains they take in a week.
+- **More than one usual train can be saved** (author's decision, 2026-11-16). It answers the concept assumption "There is one usual train to save": P4 takes either of two trains depending on her timetable (concept, Assumptions). Test: ask each participant how many different trains they take in a week, to check whether two is enough or the list must be longer.
 - **A commuter sets a threshold.** Only P2 states one. Test: ask P3, P5 and P6 at what delay they would change plans, and whether they would set it in advance.
 - **The commuter knows the train's number.** P3 does; nothing shows P2 or P6 do. Choosing the train by stop and time instead was not traced and is not specified. Test: ask P2 and P6 how they name their train.
 - **Editing and removing the set-up** have no rule: no story asks for them. Test: whether the prototype needs them at all.

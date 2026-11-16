@@ -11,12 +11,12 @@ tags: [train, bus, padova, vicenza, castelfranco, university-commute, routine, l
 confidence: medium
 grade: primary
 status: complete
-related: [../plan.md, ../Transcript/2026-10-07-transcript-p3-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p3.md", 2026-10-07-interview-lucrezia-gradi.md, 2026-10-07-interview-matteo-galvagni.md, 2026-10-07-interview-greta-tonuzi.md, 2026-10-09-interview-anna-baggio.md, 2026-10-09-interview-benedetta-rossi.md, ../2026-10-12-desk-research.md]
+related: [../plan.md, ../01-Transcript/2026-10-07-transcript-p3-timestamped.md, "../01.3-Raw/Original transcripts/2026-10-07-transcript-p3.md", 2026-10-07-interview-lucrezia-gradi.md, 2026-10-07-interview-matteo-galvagni.md, 2026-10-07-interview-greta-tonuzi.md, 2026-10-09-interview-anna-baggio.md, 2026-10-09-interview-benedetta-rossi.md, ../01.2-Desk research/2026-10-12-benchmark.md]
 ---
 
 # Interview · P3, student commuting from Bassano to Padova by train, direct or with a change at Castelfranco
 
-Phone interview, remote, about twenty-one minutes, recorded with the participant's consent. Quotes are in the original Italian and reference the timestamps of the second, timestamped transcription: `research/Transcript/2026-10-07-transcript-p3-timestamped.md`. Both transcriptions are automatic, so quotes keep their transcription errors (for example "Train Italia" or "Trinitalia" for Trenitalia, "match" for "meteo", "canzoni" for "grandine").
+Phone interview, remote, about twenty-one minutes, recorded with the participant's consent. Quotes are in the original Italian and reference the timestamps of the second, timestamped transcription: `01-Transcript/2026-10-07-transcript-p3-timestamped.md`. Both transcriptions are automatic, so quotes keep their transcription errors (for example "Train Italia" or "Trinitalia" for Trenitalia, "match" for "meteo", "canzoni" for "grandine").
 
 P3 is the only university commuter interviewed so far. Every unit and quote comes from the transcript.
 
@@ -154,6 +154,6 @@ This unit is a reading of the interview, not what P3 said. It maps the evidence 
   - Replacement buses that are not a usable alternative are also in the [P4 note](2026-10-07-interview-greta-tonuzi.md) and the [P6 note](2026-10-09-interview-benedetta-rossi.md).
   - Missed or nearly missed connections are also in the [P1 note](2026-10-07-interview-lucrezia-gradi.md) and the [P2 note](2026-10-07-interview-matteo-galvagni.md), and a late official email is also in the [P1 note](2026-10-07-interview-lucrezia-gradi.md).
   - The tap-to-pay workaround for the five-minute ticket rule reached P5 from P3, as recorded in the [P5 note](2026-10-09-interview-anna-baggio.md).
-  - Contradiction: the [desk research note](../2026-10-12-desk-research.md) (Signals, "People outside the apps") says P3 opens an app only to buy tickets; this note records that she checks the Trenitalia app or website before going to the station ([00:13:55]) and follows her train on ViaggiaTreno ([00:14:51]).
+  - Contradiction: the [desk research note](../01.2-Desk research/2026-10-12-benchmark.md) (Signals, "People outside the apps") says P3 opens an app only to buy tickets; this note records that she checks the Trenitalia app or website before going to the station ([00:13:55]) and follows her train on ViaggiaTreno ([00:14:51]).
 
 Strongest candidate moment from this interview: **the wait before and during a disruption**, when a commuter wants to follow her own train stop by stop, and the person who can actually secure the connection is the conductor.

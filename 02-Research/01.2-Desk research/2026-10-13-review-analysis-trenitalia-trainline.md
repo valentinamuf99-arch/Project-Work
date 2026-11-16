@@ -10,7 +10,7 @@ tags: [train, venezia, work-commute, routine, routine-break, cancellation, long-
 confidence: medium
 grade: secondary
 status: complete
-related: [plan.md, Desk research/2026-10-12-benchmark.md, Notes/2026-10-07-interview-lucrezia-gradi.md, Notes/2026-10-07-interview-matteo-galvagni.md, Notes/2026-10-07-interview-lorena-tonuzi.md, Notes/2026-10-07-interview-greta-tonuzi.md, Notes/2026-10-09-interview-anna-baggio.md, Notes/2026-10-09-interview-benedetta-rossi.md]
+related: [plan.md, 01.2-Desk research/2026-10-12-benchmark.md, 01.1-Notes/2026-10-07-interview-lucrezia-gradi.md, 01.1-Notes/2026-10-07-interview-matteo-galvagni.md, 01.1-Notes/2026-10-07-interview-lorena-tonuzi.md, 01.1-Notes/2026-10-07-interview-greta-tonuzi.md, 01.1-Notes/2026-10-09-interview-anna-baggio.md, 01.1-Notes/2026-10-09-interview-benedetta-rossi.md]
 ---
 
 # Desk research · App Store reviews of Trenitalia and Trainline

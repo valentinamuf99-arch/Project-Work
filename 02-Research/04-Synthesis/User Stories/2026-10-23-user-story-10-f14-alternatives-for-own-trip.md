@@ -2,7 +2,7 @@
 title: "User story 10 · F14 Alternatives for one's own trip (P1)"
 date: 2026-10-23
 activity: desk-research
-source: "Story F14 from Synthesis/2026-10-23-03-user-stories-ai.md, moved to its own file on 2026-11-03 with the text unchanged; transcripts not read"
+source: "Story F14 from 04-Synthesis/2026-10-23-03-user-stories-ai.md, moved to its own file on 2026-11-03 with the text unchanged; transcripts not read"
 author: "Eugenia Valentina Muffolini"
 channel: web
 method: user story from a feature, traced to a note and a quote
@@ -10,7 +10,7 @@ tags: [train, boat, bus, venezia, university-commute, cancellation, deciding, al
 confidence: medium
 grade: secondary
 status: needs-review
-related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-lucrezia-gradi.md]
+related: [plan.md, 04-Synthesis/2026-10-23-03-user-stories-ai.md, 04-Synthesis/2026-10-23-02-features-ai.md, 01.1-Notes/2026-10-07-interview-lucrezia-gradi.md]
 ---
 
 # User story 10 · F14 Alternatives for one's own trip
@@ -21,6 +21,6 @@ As the commuter who chains boat, train and bus from the Lido di Venezia (P1), ju
 
 ## Source
 
-- **Feature:** F14 · Alternatives for one's own trip, in `Synthesis/2026-10-23-02-features-ai.md`.
-- **Note:** `Notes/2026-10-07-interview-lucrezia-gradi.md`
+- **Feature:** F14 · Alternatives for one's own trip, in `04-Synthesis/2026-10-23-02-features-ai.md`.
+- **Note:** `01.1-Notes/2026-10-07-interview-lucrezia-gradi.md`
 - **Evidence:** [00:11:03] "Vado vado verso l'autobus perché non vedevo boh"; [00:17:41] "Io avrei voluto sapere quali altri treni ci sono che avrei potuto prendere e prendere Venezia."; [00:13:32] "è più il il fatto che mi sarei fermata in una stazione che a me non piace per niente."

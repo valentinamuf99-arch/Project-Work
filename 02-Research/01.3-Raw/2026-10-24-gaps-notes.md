@@ -10,7 +10,7 @@ tags: [information-source, trust, routine-break, break-frequency, alternative]
 confidence: medium
 grade: tertiary
 status: needs-review
-related: [plan.md, interview-script.md, touchpoints-human.md, 2026-10-23-touchpoints-ai.md, 2026-10-23-features-ai.md, 2026-10-23-user-stories-ai.md, Desk research/2026-10-12-benchmark.md, Desk research/2026-10-13-review-analysis-trenitalia-trainline.md, Desk research/2026-10-13-commuting-statistics.md, Notes/2026-10-07-interview-lucrezia-gradi.md, Notes/2026-10-07-interview-matteo-galvagni.md, Notes/2026-10-07-interview-lorena-tonuzi.md, Notes/2026-10-07-interview-greta-tonuzi.md, Notes/2026-10-09-interview-anna-baggio.md, Notes/2026-10-09-interview-benedetta-rossi.md]
+related: [plan.md, 01.1-Notes/interview-script.md, 04-Synthesis/2026-10-23-01-touchpoints-human.md, 04-Synthesis/2026-10-23-01.1-touchpoints-ai.md, 04-Synthesis/2026-10-23-02-features-ai.md, 04-Synthesis/2026-10-23-03-user-stories-ai.md, 01.2-Desk research/2026-10-12-benchmark.md, 01.2-Desk research/2026-10-13-review-analysis-trenitalia-trainline.md, 01.2-Desk research/2026-10-13-commuting-statistics.md, 01.1-Notes/2026-10-07-interview-lucrezia-gradi.md, 01.1-Notes/2026-10-07-interview-matteo-galvagni.md, 01.1-Notes/2026-10-07-interview-lorena-tonuzi.md, 01.1-Notes/2026-10-07-interview-greta-tonuzi.md, 01.1-Notes/2026-10-09-interview-anna-baggio.md, 01.1-Notes/2026-10-09-interview-benedetta-rossi.md]
 ---
 
 # Gaps notes · contradictions and gaps across the research base

@@ -2,7 +2,7 @@
 title: "Prioritisation · 60 clustered concepts marked on valuable, feasible and relevant, before boarding"
 date: 2026-10-26
 activity: desk-research
-source: "Read on 2026-11-02 as input: Ideation/2026-10-26-03-clusters-ai.md (60 concepts, 13 families), Synthesis/2026-10-23-03-user-stories-ai.md (F1, F3, F4, F8, F9: the 'so that' clauses and quotes), Ideation/2026-10-26-01.1-how-might-we-ai.md (questions #1, #2, #4, #7, #8), Ideation/2026-10-26-02.1-ideation-ai.md (only the [risky] marks and their assumptions), brief.md (scope). The previous version of this file was replaced. Interview notes and transcripts not read: every quote is taken from the user stories note."
+source: "Read on 2026-11-02 as input: 05-Ideation/2026-10-26-03-clusters-ai.md (60 concepts, 13 families), 04-Synthesis/2026-10-23-03-user-stories-ai.md (F1, F3, F4, F8, F9: the 'so that' clauses and quotes), 05-Ideation/2026-10-26-01.1-how-might-we-ai.md (questions #1, #2, #4, #7, #8), 05-Ideation/2026-10-26-02.1-ideation-ai.md (only the [risky] marks and their assumptions), brief.md (scope). The previous version of this file was replaced. Interview notes and transcripts not read: every quote is taken from the user stories note."
 author: "Eugenia Valentina Muffolini"
 channel: web
 method: three-axis marking (valuable, feasible, relevant), strong / weak / out, one traced reason per axis
@@ -10,7 +10,7 @@ tags: [train, padova, venezia, monselice, work-commute, university-commute, stri
 confidence: low
 grade: tertiary
 status: needs-review
-related: [plan.md, 2026-10-26-03-clusters-ai.md, 2026-10-23-03-user-stories-ai.md, 2026-10-26-01.1-how-might-we-ai.md, 2026-10-26-02.1-ideation-ai.md]
+related: [plan.md, 2026-10-26-03-clusters-ai.md, 04-Synthesis/2026-10-23-03-user-stories-ai.md, 2026-10-26-01.1-how-might-we-ai.md, 2026-10-26-02.1-ideation-ai.md]
 ---
 
 # Prioritisation · 60 concepts marked, before boarding

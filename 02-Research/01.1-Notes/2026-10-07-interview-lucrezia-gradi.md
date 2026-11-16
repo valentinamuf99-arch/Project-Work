@@ -12,12 +12,12 @@ tags: [boat, train, bus, venezia, padova, vicenza, work-commute, routine, ordina
 confidence: medium
 grade: primary
 status: complete
-related: [../plan.md, ../Transcript/2026-10-07-transcript-p1-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p1.md", 2026-10-07-interview-matteo-galvagni.md, 2026-10-07-interview-lorena-tonuzi.md, 2026-10-07-interview-greta-tonuzi.md, 2026-10-09-interview-benedetta-rossi.md, ../2026-10-12-desk-research.md]
+related: [../plan.md, ../01-Transcript/2026-10-07-transcript-p1-timestamped.md, "../01.3-Raw/Original transcripts/2026-10-07-transcript-p1.md", 2026-10-07-interview-matteo-galvagni.md, 2026-10-07-interview-lorena-tonuzi.md, 2026-10-07-interview-greta-tonuzi.md, 2026-10-09-interview-benedetta-rossi.md, ../01.2-Desk research/2026-10-12-benchmark.md]
 ---
 
 # Interview · P1, commuter from the Lido di Venezia to Torri di Quartesolo by boat, train and bus
 
-Phone interview, remote, about twenty-two minutes, recorded with the participant's consent. Quotes are in the original Italian and reference the timestamps of the second, timestamped transcription: `research/Transcript/2026-10-07-transcript-p1-timestamped.md`. Both transcriptions are automatic, so quotes keep their transcription errors as they are (for example "Mestre" is sometimes transcribed as "a me e 3" or "Vestre", and "Trenitalia" as "Italia"). Every unit and quote comes from the transcript.
+Phone interview, remote, about twenty-two minutes, recorded with the participant's consent. Quotes are in the original Italian and reference the timestamps of the second, timestamped transcription: `01-Transcript/2026-10-07-transcript-p1-timestamped.md`. Both transcriptions are automatic, so quotes keep their transcription errors as they are (for example "Mestre" is sometimes transcribed as "a me e 3" or "Vestre", and "Trenitalia" as "Italia"). Every unit and quote comes from the transcript.
 
 ## Who she is and what her commute looks like
 
@@ -211,6 +211,6 @@ This unit is a reading of the interview, not what P1 said. It maps the evidence 
   - A connection about to be lost, and an official email that arrives too late to act on, are also in the [P3 note](2026-10-07-interview-lorena-tonuzi.md).
   - A train that is boarded and does not leave, with no reason given, and the fear of being stranded alone at night in a station that feels unsafe, are also in the [P4 note](2026-10-07-interview-greta-tonuzi.md).
   - Wanting the reason for the stop in order to judge what to do next is also in the [P6 note](2026-10-09-interview-benedetta-rossi.md).
-  - Contradiction: the [desk research note](../2026-10-12-desk-research.md) (Signals, "Understanding") says P1 got the cause and duration from people; this note records that no staff were available ([00:19:03]) and that she never learned the reason ([00:10:42]).
+  - Contradiction: the [desk research note](../01.2-Desk research/2026-10-12-benchmark.md) (Signals, "Understanding") says P1 got the cause and duration from people; this note records that no staff were available ([00:19:03]) and that she never learned the reason ([00:10:42]).
 
 Strongest candidate moment from this interview: **the cancellation at Mestre**, when a commuter needs one answer that covers the whole remaining chain: why, for how long, and which train and boat will still get her home.

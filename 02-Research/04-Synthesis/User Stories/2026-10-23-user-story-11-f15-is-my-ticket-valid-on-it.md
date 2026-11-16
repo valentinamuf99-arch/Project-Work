@@ -2,7 +2,7 @@
 title: "User story 11 · F15 Is my ticket valid on it? (P3)"
 date: 2026-10-23
 activity: desk-research
-source: "Story F15 from Synthesis/2026-10-23-03-user-stories-ai.md, moved to its own file on 2026-11-03 with the text unchanged; transcripts not read"
+source: "Story F15 from 04-Synthesis/2026-10-23-03-user-stories-ai.md, moved to its own file on 2026-11-03 with the text unchanged; transcripts not read"
 author: "Eugenia Valentina Muffolini"
 channel: web
 method: user story from a feature, traced to a note and a quote
@@ -10,7 +10,7 @@ tags: [train, bus, university-commute, strike, alternative, cost-of-lateness]
 confidence: medium
 grade: secondary
 status: needs-review
-related: [plan.md, Synthesis/2026-10-23-03-user-stories-ai.md, Synthesis/2026-10-23-02-features-ai.md, Notes/2026-10-07-interview-lorena-tonuzi.md]
+related: [plan.md, 04-Synthesis/2026-10-23-03-user-stories-ai.md, 04-Synthesis/2026-10-23-02-features-ai.md, 01.1-Notes/2026-10-07-interview-lorena-tonuzi.md]
 ---
 
 # User story 11 · F15 Is my ticket valid on it?
@@ -21,6 +21,6 @@ As the student who commutes from Bassano to Padova on a monthly pass (P3), on a 
 
 ## Source
 
-- **Feature:** F15 · Is my ticket valid on it?, in `Synthesis/2026-10-23-02-features-ai.md`.
-- **Note:** `Notes/2026-10-07-interview-lorena-tonuzi.md`
+- **Feature:** F15 · Is my ticket valid on it?, in `04-Synthesis/2026-10-23-02-features-ai.md`.
+- **Note:** `01.1-Notes/2026-10-07-interview-lorena-tonuzi.md`
 - **Evidence:** [00:12:45] "ho chiesto ai controllori e l'autobus non consentiva l'utilizzo dell'abbonamento, quindi ho dovuto fare un biglietto in più per l'autobus." Value from an observation: the extra ticket she had to buy, recorded in the same quote.

@@ -11,12 +11,12 @@ tags: [train, venezia, vicenza, work-commute, routine, ordinary-delay, routine-b
 confidence: medium
 grade: primary
 status: complete
-related: [../plan.md, ../Transcript/2026-10-07-transcript-p2-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p2.md", 2026-10-07-interview-lucrezia-gradi.md, 2026-10-07-interview-lorena-tonuzi.md, 2026-10-07-interview-greta-tonuzi.md, 2026-10-09-interview-anna-baggio.md, 2026-10-09-interview-benedetta-rossi.md, ../2026-10-12-desk-research.md]
+related: [../plan.md, ../01-Transcript/2026-10-07-transcript-p2-timestamped.md, "../01.3-Raw/Original transcripts/2026-10-07-transcript-p2.md", 2026-10-07-interview-lucrezia-gradi.md, 2026-10-07-interview-lorena-tonuzi.md, 2026-10-07-interview-greta-tonuzi.md, 2026-10-09-interview-anna-baggio.md, 2026-10-09-interview-benedetta-rossi.md, ../01.2-Desk research/2026-10-12-benchmark.md]
 ---
 
 # Interview · P2, commuter from Salzano to Lerino by two trains with a change at Mestre
 
-Phone interview, remote, about twenty-five minutes, recorded with the participant's consent in two parts (Pt.2 and Pt.2.1). Quotes are in the original Italian and reference the timestamps of the second, timestamped transcription: `research/Transcript/2026-10-07-transcript-p2-timestamped.md`. The two parts have separate time markers, so quotes are cited as `Pt.2 [hh:mm:ss]` or `Pt.2.1 [hh:mm:ss]`. Pt.2 ends and Pt.2.1 starts mid-sentence: what was said between the two recordings is lost. Both transcriptions are automatic, so quotes keep their transcription errors (for example "sciopero" is sometimes transcribed as "Shop", and "fa conto" or "1º" stand for "prima"). Every unit and quote comes from the transcript.
+Phone interview, remote, about twenty-five minutes, recorded with the participant's consent in two parts (Pt.2 and Pt.2.1). Quotes are in the original Italian and reference the timestamps of the second, timestamped transcription: `01-Transcript/2026-10-07-transcript-p2-timestamped.md`. The two parts have separate time markers, so quotes are cited as `Pt.2 [hh:mm:ss]` or `Pt.2.1 [hh:mm:ss]`. Pt.2 ends and Pt.2.1 starts mid-sentence: what was said between the two recordings is lost. Both transcriptions are automatic, so quotes keep their transcription errors (for example "sciopero" is sometimes transcribed as "Shop", and "fa conto" or "1º" stand for "prima"). Every unit and quote comes from the transcript.
 
 ## Who he is and what his commute looks like
 
@@ -214,6 +214,6 @@ This unit is a reading of the interview, not what P2 said. It maps the evidence 
   - Strikes missing from the app and found elsewhere are also in the [P4 note](2026-10-07-interview-greta-tonuzi.md) (website, conductor) and the [P5 note](2026-10-09-interview-anna-baggio.md) (Instagram).
   - The five-minute ticket rule, and the wish for a warning about one's own train before leaving home, are also in the [P5 note](2026-10-09-interview-anna-baggio.md).
   - A family car as the real fallback when a train is cancelled is also in the [P4 note](2026-10-07-interview-greta-tonuzi.md) and the [P6 note](2026-10-09-interview-benedetta-rossi.md).
-  - Contradiction: the [desk research note](../2026-10-12-desk-research.md) (Signals, "People outside the apps") says P2 opens an app only to buy tickets; this note records that he checks the app for delays before leaving home (Pt.2 [00:06:15]) and searches it for alternative trains (Pt.2.1 [00:05:12]).
+  - Contradiction: the [desk research note](../01.2-Desk research/2026-10-12-benchmark.md) (Signals, "People outside the apps") says P2 opens an app only to buy tickets; this note records that he checks the app for delays before leaving home (Pt.2 [00:06:15]) and searches it for alternative trains (Pt.2.1 [00:05:12]).
 
 Strongest candidate moment from this interview: **the half hour before departure**, when a commuter needs to know early, and for his own journey only, whether the train is late or actually cancelled, and what the alternative is.

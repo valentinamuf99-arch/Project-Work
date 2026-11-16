@@ -10,7 +10,7 @@ tags: [train, bus, boat, venezia, vicenza, padova, information-source, trust, no
 confidence: medium
 grade: secondary
 status: complete
-related: [plan.md, Desk research/2026-10-13-review-analysis-trenitalia-trainline.md, Notes/2026-10-07-interview-lucrezia-gradi.md, Notes/2026-10-07-interview-matteo-galvagni.md, Notes/2026-10-07-interview-lorena-tonuzi.md, Notes/2026-10-07-interview-greta-tonuzi.md, Notes/2026-10-09-interview-anna-baggio.md, Notes/2026-10-09-interview-benedetta-rossi.md]
+related: [plan.md, 01.2-Desk research/2026-10-13-review-analysis-trenitalia-trainline.md, 01.1-Notes/2026-10-07-interview-lucrezia-gradi.md, 01.1-Notes/2026-10-07-interview-matteo-galvagni.md, 01.1-Notes/2026-10-07-interview-lorena-tonuzi.md, 01.1-Notes/2026-10-07-interview-greta-tonuzi.md, 01.1-Notes/2026-10-09-interview-anna-baggio.md, 01.1-Notes/2026-10-09-interview-benedetta-rossi.md]
 ---
 
 # Desk research · benchmark of the apps participants mention
@@ -129,5 +129,5 @@ This unit is reading, not evidence: it maps the benchmark to the brief's three m
 
 **Contradictions with the interview notes**
 
-- Contradiction: the "People outside the apps" bullet above says P2 and P3 open an app only to buy tickets. The [P2 note](Notes/2026-10-07-interview-matteo-galvagni.md) records a delay check in the app before leaving home and a search for alternative trains in it; the [P3 note](Notes/2026-10-07-interview-lorena-tonuzi.md) records a check in the app or website before leaving and ViaggiaTreno for real-time status.
-- Contradiction: the "Understanding" bullet above cites P1 for causes and durations coming from people. The [P1 note](Notes/2026-10-07-interview-lucrezia-gradi.md) records that no staff were available and that she never learned the reason.
+- Contradiction: the "People outside the apps" bullet above says P2 and P3 open an app only to buy tickets. The [P2 note](01.1-Notes/2026-10-07-interview-matteo-galvagni.md) records a delay check in the app before leaving home and a search for alternative trains in it; the [P3 note](01.1-Notes/2026-10-07-interview-lorena-tonuzi.md) records a check in the app or website before leaving and ViaggiaTreno for real-time status.
+- Contradiction: the "Understanding" bullet above cites P1 for causes and durations coming from people. The [P1 note](01.1-Notes/2026-10-07-interview-lucrezia-gradi.md) records that no staff were available and that she never learned the reason.

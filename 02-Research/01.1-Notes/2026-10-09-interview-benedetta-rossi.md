@@ -11,12 +11,12 @@ tags: [train, bus, padova, monselice, university-commute, routine, ordinary-dela
 confidence: medium
 grade: primary
 status: complete
-related: [../plan.md, ../Transcript/2026-10-09-transcript-p6-timestamped.md, "../raw/Original transcripts/2026-10-09-transcript-p6.md", 2026-10-09-interview-anna-baggio.md, 2026-10-07-interview-greta-tonuzi.md, 2026-10-07-interview-lucrezia-gradi.md, 2026-10-07-interview-matteo-galvagni.md, 2026-10-07-interview-lorena-tonuzi.md, ../2026-10-12-desk-research.md]
+related: [../plan.md, ../01-Transcript/2026-10-09-transcript-p6-timestamped.md, "../01.3-Raw/Original transcripts/2026-10-09-transcript-p6.md", 2026-10-09-interview-anna-baggio.md, 2026-10-07-interview-greta-tonuzi.md, 2026-10-07-interview-lucrezia-gradi.md, 2026-10-07-interview-matteo-galvagni.md, 2026-10-07-interview-lorena-tonuzi.md, ../01.2-Desk research/2026-10-12-benchmark.md]
 ---
 
 # Interview · P6, student commuting from Monselice to Padova by train, relying on the station board and staff
 
-Phone interview, remote, about fifteen minutes, recorded with the participant's consent (the consent request was made before the recording started). Every unit and quote comes from the second, timestamped transcription: `research/Transcript/2026-10-09-transcript-p6-timestamped.md`. Quotes are in the original Italian and keep the automatic transcription's errors (for example "Tranitalia" or "Train Italia" for Trenitalia, "6" for "sei"). The call dropped briefly around [00:04:18].
+Phone interview, remote, about fifteen minutes, recorded with the participant's consent (the consent request was made before the recording started). Every unit and quote comes from the second, timestamped transcription: `01-Transcript/2026-10-09-transcript-p6-timestamped.md`. Quotes are in the original Italian and keep the automatic transcription's errors (for example "Tranitalia" or "Train Italia" for Trenitalia, "6" for "sei"). The call dropped briefly around [00:04:18].
 
 P6 is the fourth university commuter, and the only participant who does not use any app for information.
 

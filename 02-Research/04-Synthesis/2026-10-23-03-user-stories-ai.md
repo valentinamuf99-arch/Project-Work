@@ -2,7 +2,7 @@
 title: "User stories · one story per feature, with who, moment and value taken from the interview notes"
 date: 2026-10-23
 activity: desk-research
-source: "2026-10-23-features-ai.md, with who, circumstance and value checked against the six interview notes (P1 to P6) and the App Store review note, read on 2026-10-23; P6 note reread on 2026-10-24 to add supporting evidence to F12; transcripts not read"
+source: "04-Synthesis/2026-10-23-02-features-ai.md, with who, circumstance and value checked against the six interview notes (P1 to P6) and the App Store review note, read on 2026-10-23; P6 note reread on 2026-10-24 to add supporting evidence to F12; transcripts not read"
 author: "Eugenia Valentina Muffolini"
 channel: web
 method: user stories from features, one per feature, each traced to a note and a quote
@@ -10,14 +10,14 @@ tags: [train, boat, bus, venezia, vicenza, padova, castelfranco, rovigo, monseli
 confidence: medium
 grade: secondary
 status: needs-review
-related: [plan.md, 2026-10-23-features-ai.md, 2026-10-23-touchpoints-ai.md, Notes/2026-10-07-interview-lucrezia-gradi.md, Notes/2026-10-07-interview-matteo-galvagni.md, Notes/2026-10-07-interview-lorena-tonuzi.md, Notes/2026-10-07-interview-greta-tonuzi.md, Notes/2026-10-09-interview-anna-baggio.md, Notes/2026-10-09-interview-benedetta-rossi.md, Desk research/2026-10-13-review-analysis-trenitalia-trainline.md, User Stories/2026-10-23-user-story-01-f01-own-train-alert-before-leaving.md, User Stories/2026-10-23-user-story-02-f03-cancelled-or-only-late.md, User Stories/2026-10-23-user-story-03-f04-strike-notice-for-own-route.md, User Stories/2026-10-23-user-story-04-f05-notices-filtered-to-own-route.md, User Stories/2026-10-23-user-story-05-f06-last-minute-purchase-path.md, User Stories/2026-10-23-user-story-06-f08-own-train-stop-by-stop.md, User Stories/2026-10-23-user-story-07-f09-the-reason-on-the-board.md, User Stories/2026-10-23-user-story-08-f11-why-stopped-and-for-how-long.md, User Stories/2026-10-23-user-story-09-f12-no-way-home-said-early.md, User Stories/2026-10-23-user-story-10-f14-alternatives-for-own-trip.md, User Stories/2026-10-23-user-story-11-f15-is-my-ticket-valid-on-it.md, User Stories/2026-10-23-user-story-12-f16-will-the-next-leg-wait.md, 06-Specifications/2026-11-02-spec-01-my-train-and-my-limit.md, 06-Specifications/2026-11-02-spec-02-warned-about-my-own-train.md, 06-Specifications/2026-11-02-spec-03-another-way-to-make-the-trip.md, 06-Specifications/2026-11-02-spec-04-following-my-train-stop-by-stop.md, 06-Specifications/2026-11-02-spec-05-why-it-is-late.md]
+related: [plan.md, 04-Synthesis/2026-10-23-02-features-ai.md, 04-Synthesis/2026-10-23-01.1-touchpoints-ai.md, 01.1-Notes/2026-10-07-interview-lucrezia-gradi.md, 01.1-Notes/2026-10-07-interview-matteo-galvagni.md, 01.1-Notes/2026-10-07-interview-lorena-tonuzi.md, 01.1-Notes/2026-10-07-interview-greta-tonuzi.md, 01.1-Notes/2026-10-09-interview-anna-baggio.md, 01.1-Notes/2026-10-09-interview-benedetta-rossi.md, 01.2-Desk research/2026-10-13-review-analysis-trenitalia-trainline.md, 04-Synthesis/User Stories/2026-10-23-user-story-01-f01-own-train-alert-before-leaving.md, 04-Synthesis/User Stories/2026-10-23-user-story-02-f03-cancelled-or-only-late.md, 04-Synthesis/User Stories/2026-10-23-user-story-03-f04-strike-notice-for-own-route.md, 04-Synthesis/User Stories/2026-10-23-user-story-04-f05-notices-filtered-to-own-route.md, 04-Synthesis/User Stories/2026-10-23-user-story-05-f06-last-minute-purchase-path.md, 04-Synthesis/User Stories/2026-10-23-user-story-06-f08-own-train-stop-by-stop.md, 04-Synthesis/User Stories/2026-10-23-user-story-07-f09-the-reason-on-the-board.md, 04-Synthesis/User Stories/2026-10-23-user-story-08-f11-why-stopped-and-for-how-long.md, 04-Synthesis/User Stories/2026-10-23-user-story-09-f12-no-way-home-said-early.md, 04-Synthesis/User Stories/2026-10-23-user-story-10-f14-alternatives-for-own-trip.md, 04-Synthesis/User Stories/2026-10-23-user-story-11-f15-is-my-ticket-valid-on-it.md, 04-Synthesis/User Stories/2026-10-23-user-story-12-f16-will-the-next-leg-wait.md, 06-Specifications/2026-11-02-spec-01-my-train-and-my-limit.md, 06-Specifications/2026-11-02-spec-02-warned-about-my-own-train.md, 06-Specifications/2026-11-02-spec-03-another-way-to-make-the-trip.md, 06-Specifications/2026-11-02-spec-04-following-my-train-stop-by-stop.md, 06-Specifications/2026-11-02-spec-05-why-it-is-late.md]
 ---
 
 # User stories · one story per feature
 
 ## Scope and method
 
-Each feature in `2026-10-23-features-ai.md` was turned into at most one story in the form: As a [who], in [circumstance], I want [capability], so that [value].
+Each feature in `04-Synthesis/2026-10-23-02-features-ai.md` was turned into at most one story in the form: As a [who], in [circumstance], I want [capability], so that [value].
 
 - **Who** is one interview participant, described by their commute and cited by code. App Store reviewers are not participants, so they cannot be the "who".
 - **Circumstance** is the moment in that participant's note, not the setting.
@@ -28,7 +28,7 @@ A feature whose value could not be traced to a participant's quote or observatio
 
 No feature was split: in each story the capability answers one moment of one participant.
 
-Each story is followed by its source line: feature · note · quote. Notes are cited by path from `research/`; codes as in the features note.
+Each story is followed by its source line: feature · note · quote. Notes are cited by path from `02-Research/`; codes as in the features note.
 
 ## Before the trip
 
@@ -36,37 +36,37 @@ Each story is followed by its source line: feature · note · quote. Notes are c
 
 As the office-day commuter who changes trains at Mestre (P2), in the minutes before leaving home at about six in the morning, when his first train, coming from Bassano, may already have built up delay, I want to be told that my own train is late or cancelled, so that I can decide not to go to the station at all and look for another way.
 
-Source: F1 · `Notes/2026-10-07-interview-matteo-galvagni.md` · Pt.2 [00:06:15] "Magari 1º di andare in stazione controllo se il treno un ritardo effettivamente. Il mio parte da Bassano, fa in tempo ad accumulare un tot di ritardo e quindi, se vedo che mezz'ora di ritardo, magari neanche vado in stazione o cerco un modo alternativo o chiedo a qualcuno, eccetera."
+Source: F1 · `01.1-Notes/2026-10-07-interview-matteo-galvagni.md` · Pt.2 [00:06:15] "Magari 1º di andare in stazione controllo se il treno un ritardo effettivamente. Il mio parte da Bassano, fa in tempo ad accumulare un tot di ritardo e quindi, se vedo che mezz'ora di ritardo, magari neanche vado in stazione o cerco un modo alternativo o chiedo a qualcuno, eccetera."
 
 **F3 · Cancelled or only late**
 
 As the office-day commuter who changes trains at Mestre (P2), at half past nine, looking at the live tracking of a train that shows neither departed nor cancelled, I want to be told, as soon as it is known, whether my train is cancelled or only late, so that I can make a plan, since a fifteen-minute delay and a cancellation that means an hour's wait call for different ones.
 
-Source: F3 · `Notes/2026-10-07-interview-matteo-galvagni.md` · Pt.2.1 [00:12:55] "Può succedere che io alle 9 e mezza nel tracking live non lo vedo partito, ma non lo vedo neanche cancellato."; Pt.2.1 [00:14:23] "non sai come fare un piano, perché un ritardo di 15 minuti è molto diverso da una cancellazione"; Pt.2.1 [00:14:46] "La cancellazione può significare un ritardo di un'ora se devi aspettare quello dopo."
+Source: F3 · `01.1-Notes/2026-10-07-interview-matteo-galvagni.md` · Pt.2.1 [00:12:55] "Può succedere che io alle 9 e mezza nel tracking live non lo vedo partito, ma non lo vedo neanche cancellato."; Pt.2.1 [00:14:23] "non sai come fare un piano, perché un ritardo di 15 minuti è molto diverso da una cancellazione"; Pt.2.1 [00:14:46] "La cancellazione può significare un ritardo di un'ora se devi aspettare quello dopo."
 
 **F4 · Strike notice for one's own route**
 
 As the student who rides home from Padova in the evening (P4), the day before a long strike, having heard it only from the conductor on board and finding nothing about it in the app, I want to be told in the app, days ahead, that a strike hits my route and which of my trains are guaranteed, so that I can take a train that is guaranteed and stay clear of the window when trains may not run.
 
-Source: F4 · `Notes/2026-10-07-interview-greta-tonuzi.md` · [00:11:38] "il giorno 1º che succedesse questo sciopero [...] abbiamo sentito proprio la voce del... Insomma del capotreno"; [00:13:14] "Dall'app no, ma dal sito sì."; [00:12:01] "il mio treno era garantito. Okay. Quindi ho preso il treno 1º."; [00:12:23] "c'è quella specie di lasso di tempo dove non è garantito che ci sia appunto il treno"
+Source: F4 · `01.1-Notes/2026-10-07-interview-greta-tonuzi.md` · [00:11:38] "il giorno 1º che succedesse questo sciopero [...] abbiamo sentito proprio la voce del... Insomma del capotreno"; [00:13:14] "Dall'app no, ma dal sito sì."; [00:12:01] "il mio treno era garantito. Okay. Quindi ho preso il treno 1º."; [00:12:23] "c'è quella specie di lasso di tempo dove non è garantito che ci sia appunto il treno"
 
 **F5 · Notices filtered to one's route**
 
 As the office-day commuter who changes trains at Mestre (P2), when he opens the app and the only notice is a small banner of faults across the whole network, I want to see only the disruptions that touch my own route, regional trains included, so that I can rely on an official notice instead of ignoring it and turning to news channels that are not made for me.
 
-Source: F5 · `Notes/2026-10-07-interview-matteo-galvagni.md` · Pt.2 [00:09:40] "C'è un trafiletto piccolo piccolo che a volte appare però tu devi aprire l'app"; Pt.2.1 [00:00:00] "non me ne frega nulla se a Palermo c'è un guasto"; Pt.2.1 [00:11:46] "Quindi non è una roba fatta apposta per me, è semplicemente il meglio che al momento c'è". Value partly from an observation: the note records that he does not read the banner and looks for information elsewhere (unit "Service notices are generic, so he ignores them").
+Source: F5 · `01.1-Notes/2026-10-07-interview-matteo-galvagni.md` · Pt.2 [00:09:40] "C'è un trafiletto piccolo piccolo che a volte appare però tu devi aprire l'app"; Pt.2.1 [00:00:00] "non me ne frega nulla se a Palermo c'è un guasto"; Pt.2.1 [00:11:46] "Quindi non è una roba fatta apposta per me, è semplicemente il meglio che al momento c'è". Value partly from an observation: the note records that he does not read the banner and looks for information elsewhere (unit "Service notices are generic, so he ignores them").
 
 **F6 · Last-minute purchase path**
 
 As the student who drives to Rovigo station and takes the train to Padova (P5), in the last minutes before her train leaves, buying a single ticket in the app, I want to be told before I try that the app will no longer sell it and which way of paying still works, so that I can still pay for this train without having to go to the counter.
 
-Source: F6 · `Notes/2026-10-09-interview-anna-baggio.md` · [00:04:39] "tu non puoi fare il biglietto perché dicono che il treno è in partenza imminente, quindi non te lo fanno fare, devi andare proprio allo sportello con la persona."; [00:05:43] "Perché lì non c'è il limite di tempo che lo puoi fare... Lo puoi fare sempre."
+Source: F6 · `01.1-Notes/2026-10-09-interview-anna-baggio.md` · [00:04:39] "tu non puoi fare il biglietto perché dicono che il treno è in partenza imminente, quindi non te lo fanno fare, devi andare proprio allo sportello con la persona."; [00:05:43] "Perché lì non c'è il limite di tempo che lo puoi fare... Lo puoi fare sempre."
 
 **F8 · Own train, stop by stop**
 
 As the student who commutes from Bassano to Padova on a monthly pass (P3), before going to the station, when the Trenitalia app does not say whether her train is running, I want to follow my own train stop by stop in the operator's own channel, so that I know when it will reach my stop.
 
-Source: F8 · `Notes/2026-10-07-interview-lorena-tonuzi.md` · [00:13:55] "Non sempre il... L'app di Trenitalia o il sito dice se il treno c'è o meno."; [00:14:51] "dice arrivato a Vicenza alle 13.08, ripartito alle 13.12, quindi sai quando arriverà quella successiva"
+Source: F8 · `01.1-Notes/2026-10-07-interview-lorena-tonuzi.md` · [00:13:55] "Non sempre il... L'app di Trenitalia o il sito dice se il treno c'è o meno."; [00:14:51] "dice arrivato a Vicenza alle 13.08, ripartito alle 13.12, quindi sai quando arriverà quella successiva"
 
 ## At the station
 
@@ -74,7 +74,7 @@ Source: F8 · `Notes/2026-10-07-interview-lorena-tonuzi.md` · [00:13:55] "Non s
 
 As the student from Monselice who uses no app (P6), at Padova station after her six o'clock lesson, finding on the board that her usual train is late, I want the board to give the reason for the delay, so that I can judge whether it is temporary or likely to grow, and turn to another solution in time if it grows.
 
-Source: F9 · `Notes/2026-10-09-interview-benedetta-rossi.md` · [00:05:02] "avevo il treno delle 6.09, che è quello che prendo di solito, e era... Siamo arrivati in stazione, oltre a essere in ritardo"; [00:11:04] "Capire se è anche una cosa magari temporanea o che si può eventualmente prolungare e quindi dopo creare un ritardo più ampio."; [00:11:17] "se magari appunto il ritardo si sarebbe prolungato, mi sarei attivata in anticipo con eventuali altre soluzioni magari."
+Source: F9 · `01.1-Notes/2026-10-09-interview-benedetta-rossi.md` · [00:05:02] "avevo il treno delle 6.09, che è quello che prendo di solito, e era... Siamo arrivati in stazione, oltre a essere in ritardo"; [00:11:04] "Capire se è anche una cosa magari temporanea o che si può eventualmente prolungare e quindi dopo creare un ritardo più ampio."; [00:11:17] "se magari appunto il ritardo si sarebbe prolungato, mi sarei attivata in anticipo con eventuali altre soluzioni magari."
 
 ## On the train
 
@@ -82,13 +82,13 @@ Source: F9 · `Notes/2026-10-09-interview-benedetta-rossi.md` · [00:05:02] "ave
 
 As the commuter who chains boat, train and bus from the Lido di Venezia (P1), on the train home stopped near Padova, moving a little and stopping again with no explanation, I want to be told why it is stopped and how long it is expected to stay, so that I can work out what to do instead of panicking late in the evening.
 
-Source: F11 · `Notes/2026-10-07-interview-lucrezia-gradi.md` · [00:10:02] "Eravamo appunto a Padova e vediamo che il treno sta fermo. Va va un po' più avanti e poi si ferma di nuovo."; [00:16:19] "fammi capire qual è il problema, qual è la tempistica"; [00:10:42] "Io non sapevo le motivazioni, non sapevo niente, infatti lì per lì ho un attimo panicato perché ho detto che cazzo faccio, era era tardi." Caveat ⚠C2 from the features note: P5 [00:07:51] says on-board announcements do give a restart time.
+Source: F11 · `01.1-Notes/2026-10-07-interview-lucrezia-gradi.md` · [00:10:02] "Eravamo appunto a Padova e vediamo che il treno sta fermo. Va va un po' più avanti e poi si ferma di nuovo."; [00:16:19] "fammi capire qual è il problema, qual è la tempistica"; [00:10:42] "Io non sapevo le motivazioni, non sapevo niente, infatti lì per lì ho un attimo panicato perché ho detto che cazzo faccio, era era tardi." Caveat ⚠C2 from the features note: P5 [00:07:51] says on-board announcements do give a restart time.
 
 **F12 · No way home, said early**
 
 As the student who rides home from Padova in the evening (P4), sitting for an hour on a train at Padova that has not left, starting to wonder whether to call her parents, I want to be told early when no public option will get me home that evening, so that my parents can leave much earlier and I am not left alone at the station, worried.
 
-Source: F12 · `Notes/2026-10-07-interview-greta-tonuzi.md` · [00:04:49] "E passa un'ora e finché comincio a domandarmi se effettivamente avesse avuto senso far partire qualcuno da casa per venirmi a prendere in macchina."; [00:09:35] "Che non avrei avuto modo di tornare a casa con I mezzi pubblici e che avrei potuto far partire I miei genitori molto 1º senza stare appunto con la preoccupazione del mio Dio, adesso sono qua da sola." Supporting evidence from a second participant: `Notes/2026-10-09-interview-benedetta-rossi.md` · P6 [00:07:26] "l'unica, appunto, alternativa era prendere l'autobus e farsi un'ora e 20 di autobus e poi appunto farsi raggiungere dai genitori"; [00:08:12] "un 1 senso di disagio, come dire, di far spostare anche magari I miei genitori"; [00:11:17] "mi sarei attivata in anticipo con eventuali altre soluzioni magari." Caveat from the features note: P6 already knew the bus option and did not ask at the station, so the story stays with P4.
+Source: F12 · `01.1-Notes/2026-10-07-interview-greta-tonuzi.md` · [00:04:49] "E passa un'ora e finché comincio a domandarmi se effettivamente avesse avuto senso far partire qualcuno da casa per venirmi a prendere in macchina."; [00:09:35] "Che non avrei avuto modo di tornare a casa con I mezzi pubblici e che avrei potuto far partire I miei genitori molto 1º senza stare appunto con la preoccupazione del mio Dio, adesso sono qua da sola." Supporting evidence from a second participant: `01.1-Notes/2026-10-09-interview-benedetta-rossi.md` · P6 [00:07:26] "l'unica, appunto, alternativa era prendere l'autobus e farsi un'ora e 20 di autobus e poi appunto farsi raggiungere dai genitori"; [00:08:12] "un 1 senso di disagio, come dire, di far spostare anche magari I miei genitori"; [00:11:17] "mi sarei attivata in anticipo con eventuali altre soluzioni magari." Caveat from the features note: P6 already knew the bus option and did not ask at the station, so the story stays with P4.
 
 ## Replacement, connection and recovery
 
@@ -96,23 +96,23 @@ Source: F12 · `Notes/2026-10-07-interview-greta-tonuzi.md` · [00:04:49] "E pas
 
 As the commuter who chains boat, train and bus from the Lido di Venezia (P1), just put off a cancelled train at Mestre in the evening and heading for the bus, I want to be shown the trains that can still get me to Venezia, including ones still waiting in the station, so that I get home instead of being stuck at Mestre, alone, in a station I do not feel safe in.
 
-Source: F14 · `Notes/2026-10-07-interview-lucrezia-gradi.md` · [00:11:03] "Vado vado verso l'autobus perché non vedevo boh"; [00:17:41] "Io avrei voluto sapere quali altri treni ci sono che avrei potuto prendere e prendere Venezia."; [00:13:32] "è più il il fatto che mi sarei fermata in una stazione che a me non piace per niente."
+Source: F14 · `01.1-Notes/2026-10-07-interview-lucrezia-gradi.md` · [00:11:03] "Vado vado verso l'autobus perché non vedevo boh"; [00:17:41] "Io avrei voluto sapere quali altri treni ci sono che avrei potuto prendere e prendere Venezia."; [00:13:32] "è più il il fatto che mi sarei fermata in una stazione che a me non piace per niente."
 
 **F15 · Is my ticket valid on it?**
 
 As the student who commutes from Bassano to Padova on a monthly pass (P3), on a strike day, about to board the replacement bus and having to ask the conductors whether her pass is valid on it, I want to be told whether my pass is valid on the replacement bus, so that I am not caught buying an extra ticket for a route my pass already covers.
 
-Source: F15 · `Notes/2026-10-07-interview-lorena-tonuzi.md` · [00:12:45] "ho chiesto ai controllori e l'autobus non consentiva l'utilizzo dell'abbonamento, quindi ho dovuto fare un biglietto in più per l'autobus." Value from an observation: the extra ticket she had to buy, recorded in the same quote.
+Source: F15 · `01.1-Notes/2026-10-07-interview-lorena-tonuzi.md` · [00:12:45] "ho chiesto ai controllori e l'autobus non consentiva l'utilizzo dell'abbonamento, quindi ho dovuto fare un biglietto in più per l'autobus." Value from an observation: the extra ticket she had to buy, recorded in the same quote.
 
 **F16 · Will the next leg wait?**
 
 As the student who commutes from Bassano to Padova on a monthly pass (P3), on a late train back from Vicenza, about to miss the connection at Cittadella for Bassano, I want to be told whether the next train will still be there, so that I know whether I can still get home to Bassano.
 
-Source: F16 · `Notes/2026-10-07-interview-lorena-tonuzi.md` · [00:18:15] "Dovevo scendere a Cittadella tornando da Vicenza, ma il treno era molto in ritardo e l'avremmo perso sicuramente, quindi non sarei potuta tornare a Bassano."; [00:17:41] "avrebbe chiamato il treno successivo [...] Per far sì che ci aspettasse". Caveat ⚠C4 from the features note: the held connection depended on one conductor.
+Source: F16 · `01.1-Notes/2026-10-07-interview-lorena-tonuzi.md` · [00:18:15] "Dovevo scendere a Cittadella tornando da Vicenza, ma il treno era molto in ritardo e l'avremmo perso sicuramente, quindi non sarei potuta tornare a Bassano."; [00:17:41] "avrebbe chiamato il treno successivo [...] Per far sì che ci aspettasse". Caveat ⚠C4 from the features note: the held connection depended on one conductor.
 
 ## Back on the list
 
-These features did not become stories. Each is marked `[no story]` in `2026-10-23-features-ai.md`.
+These features did not become stories. Each is marked `[no story]` in `04-Synthesis/2026-10-23-02-features-ai.md`.
 
 | Feature | Why no story |
 |---|---|

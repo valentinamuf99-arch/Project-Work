@@ -11,12 +11,12 @@ tags: [train, bus, padova, castelfranco, university-commute, routine, routine-br
 confidence: medium
 grade: primary
 status: complete
-related: [../plan.md, ../Transcript/2026-10-07-transcript-p4-timestamped.md, "../raw/Original transcripts/2026-10-07-transcript-p4.md", 2026-10-07-interview-lorena-tonuzi.md, 2026-10-07-interview-lucrezia-gradi.md, 2026-10-07-interview-matteo-galvagni.md, 2026-10-09-interview-anna-baggio.md, 2026-10-09-interview-benedetta-rossi.md, ../2026-10-12-desk-research.md]
+related: [../plan.md, ../01-Transcript/2026-10-07-transcript-p4-timestamped.md, "../01.3-Raw/Original transcripts/2026-10-07-transcript-p4.md", 2026-10-07-interview-lorena-tonuzi.md, 2026-10-07-interview-lucrezia-gradi.md, 2026-10-07-interview-matteo-galvagni.md, 2026-10-09-interview-anna-baggio.md, 2026-10-09-interview-benedetta-rossi.md, ../01.2-Desk research/2026-10-12-benchmark.md]
 ---
 
 # Interview · P4, student commuting from Bassano to Padova by train, stranded at Padova by a line fault
 
-Phone interview, remote, about eighteen minutes, recorded with the participant's consent (the consent request was made before the recording started). Every unit and quote comes from the second, timestamped transcription: `research/Transcript/2026-10-07-transcript-p4-timestamped.md`. Quotes are in the original Italian and keep the automatic transcription's errors (for example "Train Italia" or "Tremitalia" for Trenitalia, "Vego d'Argere" or "Vigodaggiore" for Vigodarzere, "6" for "sei").
+Phone interview, remote, about eighteen minutes, recorded with the participant's consent (the consent request was made before the recording started). Every unit and quote comes from the second, timestamped transcription: `01-Transcript/2026-10-07-transcript-p4-timestamped.md`. Quotes are in the original Italian and keep the automatic transcription's errors (for example "Train Italia" or "Tremitalia" for Trenitalia, "Vego d'Argere" or "Vigodaggiore" for Vigodarzere, "6" for "sei").
 
 P4 is the second university commuter, on the same route as P3.
 

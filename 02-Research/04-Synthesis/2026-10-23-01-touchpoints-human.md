@@ -8,12 +8,12 @@ Touchpoints identified from the research: the moments of interaction between the
 
 | ID | File | Type |
 |---|---|---|
-| S1 | `2026-10-07-interview-greta-tonuzi.md` | Interview |
-| S2 | `2026-10-07-interview-lorena-tonuzi.md` | Interview |
-| S3 | `2026-10-07-interview-lucrezia-gradi.md` | Interview |
-| S4 | `2026-10-07-interview-matteo-galvagni.md` | Interview |
-| S5 | `2026-10-09-interview-anna-baggio.md` | Interview |
-| S6 | `2026-10-09-interview-benedetta-rossi.md` | Interview |
+| S1 | `01.1-Notes/2026-10-07-interview-greta-tonuzi.md` | Interview |
+| S2 | `01.1-Notes/2026-10-07-interview-lorena-tonuzi.md` | Interview |
+| S3 | `01.1-Notes/2026-10-07-interview-lucrezia-gradi.md` | Interview |
+| S4 | `01.1-Notes/2026-10-07-interview-matteo-galvagni.md` | Interview |
+| S5 | `01.1-Notes/2026-10-09-interview-anna-baggio.md` | Interview |
+| S6 | `01.1-Notes/2026-10-09-interview-benedetta-rossi.md` | Interview |
 | S7 | `2026-10-13-review-analysis-trenitalia-trainline` | Review analysis |
 
 ---

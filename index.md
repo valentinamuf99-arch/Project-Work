@@ -79,6 +79,7 @@ Every research file in this repository, grouped by folder, oldest first. Format:
 
 ## Research/06-Specifications/
 
+- 2026-11-02-spec-00-technical-base.md — desk-research · draft · tertiary · low
 - 2026-11-02-spec-01-my-train-and-my-limit.md — desk-research · draft · tertiary · low
 - 2026-11-02-spec-02-warned-about-my-own-train.md — desk-research · draft · tertiary · low
 - 2026-11-02-spec-03-another-way-to-make-the-trip.md — desk-research · draft · tertiary · low

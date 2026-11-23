@@ -1,5 +1,11 @@
 {
   "title": "My train",
   "tagline": "Prototype for testing the commute UI",
-  "advanceSteps": [1, 5, 15]
+  "advanceSteps": [
+    1,
+    5,
+    15
+  ],
+  "icon": "assets/icons/app-icon.svg",
+  "pushSeconds": 6
 }

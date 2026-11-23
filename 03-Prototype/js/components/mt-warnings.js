@@ -14,6 +14,8 @@ class MtWarnings extends HTMLElement {
     this.addEventListener('click', e => {
       const number = e.target.closest('[data-train]')?.dataset.train;
       if (number) this.dispatchEvent(new CustomEvent('open-train', { bubbles: true, detail: number }));
+      const buy = e.target.closest('.buy');
+      if (buy) this.dispatchEvent(new CustomEvent('buy-ticket', { bubbles: true, detail: { ...buy.dataset } }));
     });
     store.addEventListener('change', this.update);
     this.update();
@@ -25,29 +27,40 @@ class MtWarnings extends HTMLElement {
     const warnings = store.warnings();
     const moved = e?.detail === 'clock' || e?.detail === 'running';
     if (moved && warnings.length === this.shown) return; // nothing new; keep the last announcement
-    const lines = w => {
-      const kind = w.kind[0].toUpperCase() + w.kind.slice(1);
-      return [
-        ...store.text((w.board ? 'warnBoard' : 'warn') + kind, w).split('\n'), // first line: train and minutes only
-        w.reached && store.text('warnFromReached', w),
-        w.updated && store.text(w.updated === 'added' ? 'warnUpdatedAdded' : 'warnUpdatedChanged'),
-        w.reason ? store.text('reasonLine', { reason: w.reason }) : store.text('reasonMissing'),
-      ].filter(Boolean);
-    };
+    const lines = w => store.warningLines(w);
     const announce = this.querySelector('.announce');
     announce.textContent = moved ? warnings.slice(this.shown).map(w => lines(w).join(' ')).join(' ') : '';
     this.shown = warnings.length;
     this.querySelector('section').hidden = !warnings.length;
+    const latest = new Set();
     this.querySelector('ol').innerHTML = warnings.slice().reverse().map(w => {
       const [first, ...rest] = lines(w);
+      const isLatest = !latest.has(w.number) && latest.add(w.number); // other ways only under the newest warning of a train
       return `<li class="${w.kind}">
         <p class="first">${first}</p>
         ${rest.map(l => `<p>${l}</p>`).join('')}
         <p class="sent">${store.text('warnSentAt', { time: w.at })}</p>
+        ${isLatest && w.ways ? this.ways(w.ways) : ''}
         <button type="button" data-train="${w.number}">${store.text('seeTrain')}</button>
       </li>`;
     }).join('');
   };
+
+  // Spec 03: trains first, then other means of transport; "Buy ticket" only where a ticket is sold.
+  ways({ trains, others }) {
+    const t = (key, values) => store.text(key, values);
+    const row = (text, ticket) => `<li><span>${text}</span>${ticket ? `<button type="button" class="buy"
+      data-from="${ticket.from}" data-to="${ticket.to}" data-depart="${ticket.depart}" data-means="${ticket.means}"
+      aria-label="${t('buyTicketLabel', ticket)}">${t('buyTicket')}</button>` : ''}</li>`;
+    const items = trains.map(w => row(
+      `${t(`wayRole.${w.role}`)} ${t(w.own ? 'wayOwn' : 'wayTrain', w)}${w.delay ? ' ' + t('wayDelay', { minutes: w.delay }) : ''}`,
+      !w.own && { ...w, means: t('ticketMeansTrain', w) }));
+    if (!trains.length && others.length) items.push(row(t('wayNoTrain')));
+    items.push(...others.map(o => row(t(o.depart ? 'wayOther' : 'wayTaxi', o), o.ticket && { ...o, means: o.name })));
+    if (!items.length) items.push(row(t('wayNothing')));
+    return `<details class="ways" open><summary>${t('waysTitle')}</summary><ul>${items.join('')}</ul></details>`;
+  }
 }
 
-if (!customElements.get('mt-warnings')) customElements.define('mt-warnings', MtWarnings);
+if (!customElements.get('mt-warnings'))
+ customElements.define('mt-warnings', MtWarnings);

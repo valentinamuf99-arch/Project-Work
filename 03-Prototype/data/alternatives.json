@@ -1,4 +1,36 @@
 [
-  { "from": "Bassano", "to": "Mestre", "kind": "train", "train": "20705" },
-  { "from": "Bassano", "to": "Mestre", "kind": "bus", "name": "Regional bus", "depart": "06:15", "arrive": "07:35" }
+  {
+    "from": "Bassano",
+    "to": "Mestre",
+    "kind": "bus",
+    "name": "Bus",
+    "depart": "06:15",
+    "arrive": "07:35",
+    "ticket": true
+  },
+  {
+    "from": "Bassano",
+    "to": "Mestre",
+    "kind": "bus",
+    "name": "Bus",
+    "depart": "07:15",
+    "arrive": "08:35",
+    "ticket": true
+  },
+  {
+    "from": "Bassano",
+    "to": "Mestre",
+    "kind": "taxi",
+    "name": "Taxi",
+    "ticket": false
+  },
+  {
+    "from": "Bassano",
+    "to": "Padova",
+    "kind": "bus",
+    "name": "Bus",
+    "depart": "06:30",
+    "arrive": "07:25",
+    "ticket": true
+  }
 ]

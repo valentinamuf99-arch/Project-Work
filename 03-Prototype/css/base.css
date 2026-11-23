@@ -18,6 +18,9 @@ body, h1, h2, h3, p, ul, ol { margin: 0; }
   --phone-radius: 60px;
   --phone-status-height: 54px;
   --phone-shadow: 0 20px 50px rgb(0 0 0 / 0.25);
+  --color-push: rgb(245 245 245 / 0.96);
+  --push-radius: 22px;
+  --push-shadow: 0 8px 24px rgb(0 0 0 / 0.2);
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 16px;

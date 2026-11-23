@@ -58,32 +58,49 @@ class Store extends EventTarget {
   }
 
   // Most recent event at or before the clock; null means "no news", never "on time" (R7).
-  stateOf(train) {
+  stateOf(train, at = this.minutes) {
     let last = null;
     for (const e of this.#events()) {
-      if (e.train === train && toMinutes(e.at) <= this.minutes && (!last || toMinutes(e.at) >= toMinutes(last.at))) last = e;
+      if (e.train === train && toMinutes(e.at) <= at && (!last || toMinutes(e.at) >= toMinutes(last.at))) last = e;
     }
     return last;
   }
 
-  // Spec 02 and 05: every warning sent up to the clock, oldest first, rebuilt from the running events.
+  // Spec 02, 03 and 05: every warning sent up to the clock, oldest first, rebuilt from the running events.
   // An event's "stop" is the stop its delay is given for; "reached" is the last stop the train has left.
   warnings() {
     const out = [];
+    const events = this.#events()
+      .filter(e => toMinutes(e.at) <= this.minutes)
+      .sort((a, b) => toMinutes(a.at) - toMinutes(b.at));
     for (const saved of this.saved) {
       if (!saved.days.includes(this.now.day)) continue; // only on a trip day (R1)
       const stops = this.data.trains.find(t => t.number === saved.number).stops;
       const index = name => stops.findIndex(s => s.stop === name);
       const on = index(saved.from), off = index(saved.to);
-      const events = this.#events()
-        .filter(e => e.train === saved.number && toMinutes(e.at) <= this.minutes)
-        .sort((a, b) => toMinutes(a.at) - toMinutes(b.at));
-      let board = false, over = false, cancelled = false, delay, reason = null, last = null;
-      const send = w => { last = { number: saved.number, ...w }; out.push(last); };
+      let board = false, over = false, cancelled = false, done = false, delay, reason = null, last = null;
+      let watched = new Map(); // trains shown as the next way, with their last known delay (spec 03, R3)
+      const send = w => {
+        last = { number: saved.number, ...w };
+        // Next ways only before boarding, and only when late by the limit or more, or cancelled (spec 03, R1).
+        last.ways = last.board || last.kind === 'under' ? null : this.ways(saved, toMinutes(w.at));
+        watched = new Map(last.ways?.trains.filter(t => !t.own).map(t => [t.number, t.delay]));
+        out.push(last);
+      };
       for (const e of events) {
+        if (done) break;
+        if (e.train !== saved.number) { // spec 03, R3: a way shown becomes late by the limit or more, or cancelled
+          if (!watched.has(e.train)) continue;
+          const time = this.data.trains.find(t => t.number === e.train).stops.find(s => s.stop === saved.from).depart;
+          const way = { at: e.at, board: false, time, reason: null, updated: null };
+          if (e.cancelled) send({ ...way, kind: 'wayCancelled' });
+          else if (e.delay >= saved.limit && e.delay !== watched.get(e.train)) send({ ...way, kind: 'wayLate', minutes: e.delay });
+          else if (e.delay != null) watched.set(e.train, e.delay);
+          continue;
+        }
         const reached = e.reached ? index(e.reached) : -1;
-        if (reached >= off || index(e.stop) > off) break; // at or past the get-off stop: silent (R5)
-        if (!board && reached >= on) { board = true; over = false; delay = undefined; }
+        if (reached >= off || index(e.stop) > off) { done = true; continue; } // at or past the get-off stop: silent (R5)
+        if (!board && reached >= on) { board = true; over = false; delay = undefined; watched = new Map(); }
         const previous = reason;
         reason = e.reason ?? reason; // a reason left out is not a reason withdrawn
         const facts = { at: e.at, reason, updated: null };
@@ -110,6 +127,48 @@ class Store extends EventTarget {
       }
     }
     return out.sort((a, b) => toMinutes(a.at) - toMinutes(b.at));
+  }
+
+  // Spec 03, R1: the next ways from the get-on to the get-off stop at a given minute.
+  // Trains: the first to leave and the first to arrive (one entry when they are the same), ranked on
+  // scheduled time plus known delay. Then the next of each other means of transport (times made up).
+  ways(saved, at) {
+    const trains = [];
+    for (const t of this.data.trains) {
+      const a = t.stops.findIndex(s => s.stop === saved.from), b = t.stops.findIndex(s => s.stop === saved.to);
+      if (!t.days.includes(this.now.day) || a < 0 || b <= a) continue;
+      const state = this.stateOf(t.number, at);
+      if (state?.cancelled) continue;
+      const leaves = toMinutes(t.stops[a].depart) + (state?.delay ?? 0);
+      if (leaves < at) continue; // already left
+      trains.push({
+        number: t.number, own: t.number === saved.number, delay: state?.delay,
+        depart: t.stops[a].depart, arrive: t.stops[b].arrive, from: saved.from, to: saved.to,
+        leaves, arrives: toMinutes(t.stops[b].arrive) + (state?.delay ?? 0),
+      });
+    }
+    const first = key => trains.reduce((best, t) => (!best || t[key] < best[key] ? t : best), null);
+    const leaves = first('leaves'), arrives = first('arrives');
+    const shown = !trains.length ? []
+      : leaves === arrives ? [{ ...leaves, role: 'next' }]
+      : [{ ...leaves, role: 'leaves' }, { ...arrives, role: 'arrives' }];
+    const kinds = new Set();
+    const others = this.data.alternatives
+      .filter(o => o.from === saved.from && o.to === saved.to && (!o.depart || toMinutes(o.depart) >= at))
+      .sort((x, y) => (x.depart ? toMinutes(x.depart) : Infinity) - (y.depart ? toMinutes(y.depart) : Infinity))
+      .filter(o => !kinds.has(o.kind) && kinds.add(o.kind));
+    return { trains: shown, others };
+  }
+
+  // The sentences of one warning; the first holds the train and the minutes only (spec 02, appearance).
+  warningLines(w) {
+    const kind = w.kind[0].toUpperCase() + w.kind.slice(1);
+    return [
+      ...this.text((w.board ? 'warnBoard' : 'warn') + kind, w).split('\n'),
+      w.reached && this.text('warnFromReached', w),
+      w.updated && this.text(w.updated === 'added' ? 'warnUpdatedAdded' : 'warnUpdatedChanged'),
+      !w.kind.startsWith('way') && (w.reason ? this.text('reasonLine', { reason: w.reason }) : this.text('reasonMissing')),
+    ].filter(Boolean);
   }
 
   // Interface sentence from texts.json, with {placeholders} filled (R6).

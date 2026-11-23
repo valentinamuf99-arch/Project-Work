@@ -24,7 +24,7 @@ mt-app .status-bar { display: none; }
   mt-app .phone::before { /* Dynamic Island */
     content: "";
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     top: 11px;
     left: 50%;
     width: 126px;
@@ -80,8 +80,8 @@ mt-warnings { display: block; }
 mt-warnings section { margin-block-end: var(--space-4); }
 mt-warnings h2 { margin-block-end: var(--space-2); }
 mt-warnings ol { list-style: none; padding: 0; display: grid; gap: var(--space-3); }
-mt-warnings li { padding: var(--space-3) var(--space-2); border: 1px solid var(--color-border); border-inline-start: 6px solid var(--color-error); display: grid; gap: var(--space-1); }
-mt-warnings li.under { border-inline-start-color: var(--color-muted); }
+mt-warnings ol > li { padding: var(--space-3) var(--space-2); border: 1px solid var(--color-border); border-inline-start: 6px solid var(--color-error); display: grid; gap: var(--space-1); }
+mt-warnings ol > li.under { border-inline-start-color: var(--color-muted); }
 mt-warnings .first { font-weight: bold; }
 mt-warnings .sent { color: var(--color-muted); }
 mt-warnings button { font: inherit; min-height: var(--target-min); padding: var(--space-1) var(--space-3); justify-self: start; }
@@ -91,3 +91,39 @@ mt-train-status { display: block; margin-block-start: var(--space-2); padding-bl
 mt-train-status .sent { color: var(--color-muted); }
 /* Read by screen readers only: the same warning is already in the list below. */
 mt-warnings .announce { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* Push banner: over the top of the phone; on a real phone, over the top of the screen. */
+mt-push { position: fixed; z-index: 2; top: var(--space-2); inset-inline: var(--space-2); }
+mt-push .banner { display: flex; align-items: flex-start; border-radius: var(--push-radius); background: var(--color-push); backdrop-filter: blur(20px); box-shadow: var(--push-shadow); animation: mt-push-in 0.3s ease-out; }
+mt-push .banner[hidden] { display: none; }
+mt-push .open { flex: 1; display: grid; grid-template-columns: auto 1fr; column-gap: var(--space-2); padding: var(--space-3) 0 var(--space-3) var(--space-3); border: 0; background: none; font: inherit; color: var(--color-text); text-align: start; cursor: pointer; }
+mt-push img { grid-row: span 3; border-radius: 9px; }
+mt-push .head { display: flex; justify-content: space-between; font-size: 0.8125rem; color: var(--color-muted); text-transform: uppercase; }
+mt-push .title { font-weight: 600; }
+mt-push .body { font-size: 0.9375rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+mt-push .close { min-width: var(--target-min); min-height: var(--target-min); border: 0; background: none; font: inherit; font-size: 1.25rem; color: var(--color-muted); cursor: pointer; }
+@keyframes mt-push-in { from { transform: translateY(-120%); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { mt-push .banner { animation: none; } }
+@media (min-width: 500px) {
+  mt-push { position: absolute; top: var(--phone-status-height); }
+}
+
+/* Spec 03: other ways under the newest warning */
+mt-warnings .ways { margin-block-start: var(--space-2); }
+mt-warnings .ways summary { font-weight: 600; cursor: pointer; min-height: var(--target-min); display: flex; align-items: center; }
+mt-warnings .ways ul { list-style: none; padding: 0; display: grid; gap: var(--space-1); }
+mt-warnings .ways li { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); font-size: 0.875rem; }
+mt-warnings .ways .buy { flex: none; padding: var(--space-1) var(--space-2); font-size: 0.875rem; }
+
+/* Spec 03, R4: ticket screen over the app */
+mt-ticket { position: fixed; z-index: 1; inset: 0; overflow-y: auto; padding: var(--space-4) var(--space-3); background: var(--color-bg); }
+mt-ticket[hidden] { display: none; }
+mt-ticket section { display: grid; gap: var(--space-3); }
+mt-ticket dl { display: grid; grid-template-columns: auto 1fr; gap: var(--space-2) var(--space-3); margin: 0; }
+mt-ticket dt { color: var(--color-muted); }
+mt-ticket dd { margin: 0; font-weight: 600; }
+mt-ticket .note { color: var(--color-muted); }
+mt-ticket button { font: inherit; min-height: var(--target-min); padding: var(--space-1) var(--space-3); justify-self: start; }
+@media (min-width: 500px) {
+  mt-ticket { position: absolute; inset: var(--phone-status-height) 0 0; } /* keeps the status bar visible */
+}

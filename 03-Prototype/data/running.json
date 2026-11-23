@@ -123,5 +123,46 @@
     "delay": 40,
     "cancelled": false,
     "reason": "Signal fault between Bassano and Castelfranco"
+  },
+  {
+    "scenario": "s2",
+    "train": "20705",
+    "at": "06:15",
+    "stop": "Bassano",
+    "delay": 30,
+    "cancelled": false,
+    "reason": null
+  },
+  {
+    "scenario": "s3",
+    "train": "20705",
+    "at": "06:05",
+    "stop": "Bassano",
+    "cancelled": true
+  },
+  {
+    "scenario": "s7",
+    "train": "20701",
+    "at": "05:50",
+    "stop": "Bassano",
+    "delay": 15,
+    "cancelled": false,
+    "reason": "Late connecting train"
+  },
+  {
+    "scenario": "s8",
+    "train": "20811",
+    "at": "05:50",
+    "stop": "Bassano",
+    "cancelled": true,
+    "reason": "Staff shortage"
+  },
+  {
+    "scenario": "s9",
+    "train": "20811",
+    "at": "05:50",
+    "stop": "Bassano",
+    "cancelled": true,
+    "reason": "Staff shortage"
   }
 ]

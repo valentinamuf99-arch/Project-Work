@@ -2,7 +2,7 @@ import { loadData } from './data.js';
 import { store } from './store.js';
 
 const FILES = ['app', 'texts', 'trains', 'running', 'alternatives', 'scenarios'];
-const COMPONENTS = ['mt-app', 'mt-facilitator', 'mt-my-trains', 'mt-train-setup', 'mt-train-summary', 'mt-warnings', 'mt-train-status'];
+const COMPONENTS = ['mt-app', 'mt-facilitator', 'mt-my-trains', 'mt-train-setup', 'mt-train-summary', 'mt-warnings', 'mt-train-status', 'mt-push', 'mt-ticket'];
 
 const results = await Promise.allSettled(FILES.map(loadData));
 const data = Object.fromEntries(FILES.map((name, i) => [name, results[i].value]));

@@ -1,0 +1,1 @@
+Di questo mi piace la possibilltà di seguire il treno o il pacco anche in modo verticale e non solo attraverso la mappa, in questo modo si ha la possibilità di scrivere più informazioni

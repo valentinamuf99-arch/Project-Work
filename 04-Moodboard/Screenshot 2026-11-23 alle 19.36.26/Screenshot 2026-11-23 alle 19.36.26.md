@@ -1,0 +1,1 @@
+Di questa immagine mi piace la mappa e il modo in cui viene tracciato il pacco

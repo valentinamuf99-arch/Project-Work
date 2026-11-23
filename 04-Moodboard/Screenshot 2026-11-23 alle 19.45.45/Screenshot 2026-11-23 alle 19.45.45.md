@@ -1,0 +1,1 @@
+Di questo mi piace il saluto all'utente e la searchbar e il bottone di conferma

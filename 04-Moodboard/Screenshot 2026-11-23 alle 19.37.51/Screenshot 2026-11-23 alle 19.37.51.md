@@ -1,0 +1,1 @@
+Di uqetsa immagine mi piace il fatto che la linea che segue il treno con le fermate richiama lo stile del treno di riferimento

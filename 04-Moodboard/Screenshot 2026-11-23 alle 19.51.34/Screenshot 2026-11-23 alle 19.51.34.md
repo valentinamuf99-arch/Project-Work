@@ -1,0 +1,1 @@
+Di questa mi piace il modo in cui viene scelto il giorno della settimana

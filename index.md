@@ -86,3 +86,7 @@ Every research file in this repository, grouped by folder, oldest first. Format:
 - 2026-11-02-spec-04-following-my-train-stop-by-stop.md — desk-research · draft · tertiary · low
 - 2026-11-02-spec-05-why-it-is-late.md — desk-research · draft · tertiary · low
 - 2026-11-02-specification-instructions.md — plan · draft · tertiary · high
+
+## 04-Moodboard/
+
+- 2026-11-23-design-moodboard.md — desk-research · draft · tertiary · medium

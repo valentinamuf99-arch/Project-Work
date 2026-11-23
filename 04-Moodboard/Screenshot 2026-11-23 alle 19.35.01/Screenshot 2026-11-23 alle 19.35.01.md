@@ -1,0 +1,1 @@
+Di questa immagine mi piace il saluto all'utente, lo stile 

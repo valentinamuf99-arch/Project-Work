@@ -1,0 +1,1 @@
+Di questa immagine mi piace la mappa che indica dove si trova il pacco 

@@ -1,0 +1,1 @@
+Di questa immagine mi piace la searchbar, la domanda come titolo e i giorni

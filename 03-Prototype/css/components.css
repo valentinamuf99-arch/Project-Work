@@ -1,8 +1,8 @@
-/* Every selector starts with an mt- tag (spec 00, R4). */
+/* Every selector starts with an mt- tag (spec 00, R4). Style: Trenitalia app (04-Moodboard/2026-11-23-design-moodboard.md). */
+
+/* ---------- App frame ---------- */
 mt-app { display: block; }
-mt-app header { padding: var(--space-3); }
-mt-app header p { color: var(--color-muted); }
-mt-app main { padding: var(--space-3); }
+mt-app main { padding: var(--space-4) var(--space-3); display: grid; gap: var(--space-4); }
 mt-app .status-bar { display: none; }
 
 /* Wide screen: the app is drawn inside an iPhone 16 (393 x 852 screen), the facilitator beside it. */
@@ -44,10 +44,56 @@ mt-app .status-bar { display: none; }
     background: var(--color-text);
     transform: translateX(-50%);
   }
-  mt-app .status-bar { display: flex; flex: none; align-items: center; height: var(--phone-status-height); padding-inline: 36px; font-weight: 600; }
-  mt-app .screen { flex: 1; overflow-y: auto; padding-block-end: var(--space-4); }
+  /* Green like the Infomobilità header below it. */
+  mt-app .status-bar { display: flex; flex: none; align-items: center; height: var(--phone-status-height); padding-inline: 36px; font-weight: 600; background: var(--color-accent); color: var(--color-on-accent); }
+  mt-app .screen { flex: 1; overflow-y: auto; }
+  mt-app mt-tab-bar { padding-block-end: 20px; } /* room for the home indicator */
 }
 
+/* ---------- Shared buttons and fields ---------- */
+/* Secondary: white, grey border. Primary: red gradient (Trenitalia CTA). */
+:is(mt-my-trains, mt-train-setup, mt-train-summary, mt-warnings, mt-ticket) button {
+  font: inherit;
+  font-weight: 600;
+  min-height: 48px;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  color: var(--color-text);
+  cursor: pointer;
+}
+:is(mt-train-setup button[type="submit"], mt-warnings .buy) {
+  border: 0;
+  background: linear-gradient(90deg, var(--color-cta-start), var(--color-cta-end));
+  color: var(--color-on-cta);
+}
+:is(mt-train-setup, mt-ticket) :is(input, select) {
+  font: inherit;
+  min-height: 52px;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+:is(mt-my-trains, mt-warnings) h2 { font-size: 1.25rem; }
+
+/* ---------- Header (Infomobilità) ---------- */
+mt-header { display: block; background: var(--color-accent); color: var(--color-on-accent); }
+mt-header header { padding: var(--space-3) var(--space-3) var(--space-4); }
+mt-header h1 { font-size: 1.75rem; margin-block-end: var(--space-3); }
+mt-header ul { list-style: none; padding: 0; display: flex; gap: var(--space-2); overflow-x: auto; scrollbar-width: none; }
+mt-header li span { display: block; white-space: nowrap; padding: var(--space-2) var(--space-3); border-radius: var(--radius-pill); background: var(--color-accent-soft); }
+mt-header li [aria-current] { background: var(--color-accent-dark); font-weight: 700; }
+
+/* ---------- Bottom bar ---------- */
+mt-tab-bar { display: block; position: sticky; bottom: 0; flex: none; background: var(--color-bg); border-block-start: 1px solid var(--color-border); }
+mt-tab-bar ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); }
+mt-tab-bar span { display: grid; justify-items: center; gap: 2px; padding: var(--space-2) 2px; font-size: 0.6875rem; text-align: center; border-block-start: 3px solid transparent; }
+mt-tab-bar [aria-current] { color: var(--color-accent); font-weight: 600; border-block-start-color: var(--color-accent); }
+
+/* ---------- Facilitator (not part of the app) ---------- */
 mt-facilitator { display: block; padding: var(--space-3); background: var(--color-surface); border-bottom: 1px solid var(--color-border); }
 mt-facilitator section { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); }
 mt-facilitator h2 { width: 100%; font-size: var(--font-size-base); }
@@ -56,51 +102,93 @@ mt-facilitator .steps { display: flex; flex-wrap: wrap; gap: var(--space-2); }
 mt-facilitator button, mt-facilitator select { font: inherit; min-height: var(--target-min); padding: var(--space-1) var(--space-2); }
 mt-facilitator output { font-weight: bold; }
 
+/* ---------- My trains (spec 01) ---------- */
 mt-my-trains { display: block; }
-mt-my-trains h2 { margin-block-end: var(--space-2); }
+mt-my-trains h2 { margin-block-end: var(--space-3); }
 mt-my-trains ul { list-style: none; padding: 0; display: grid; gap: var(--space-3); margin-block-end: var(--space-3); }
-mt-my-trains .confirm:not(:empty) { margin-block-end: var(--space-3); font-weight: bold; }
-mt-my-trains button { font: inherit; min-height: var(--target-min); padding: var(--space-1) var(--space-3); }
+mt-my-trains .confirm:not(:empty) { margin-block-end: var(--space-3); padding: var(--space-3); border-radius: var(--radius-md); background: var(--color-info-soft); }
+mt-my-trains .add { width: 100%; }
 
-mt-train-summary { display: block; padding: var(--space-3); border: 1px solid var(--color-border); }
-mt-train-summary .number { font-weight: bold; }
+/* Saved train: card like a Trenitalia result, times large. */
+mt-train-summary { display: grid; gap: var(--space-1); padding: var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-md); }
+mt-train-summary .number { font-size: 0.875rem; color: var(--color-muted); font-weight: 600; }
+mt-train-summary .trip { font-size: 1.25rem; font-weight: 700; line-height: 1.3; }
+mt-train-summary .detail { color: var(--color-muted); }
+mt-train-summary .toggle { margin-block-start: var(--space-2); width: 100%; }
 
+/* Set-up: question as title, label above field, day circles. */
 mt-train-setup form { display: grid; gap: var(--space-2); }
+mt-train-setup h2 { font-size: 1.5rem; line-height: 1.25; margin-block-end: var(--space-2); }
+mt-train-setup h3 { font-size: var(--font-size-base); margin-block-start: var(--space-2); }
+mt-train-setup label, mt-train-setup legend { font-size: 0.875rem; color: var(--color-muted); }
 mt-train-setup .details { display: grid; gap: var(--space-2); }
 mt-train-setup .details[hidden] { display: none; }
 mt-train-setup .find { display: flex; gap: var(--space-2); }
-mt-train-setup input, mt-train-setup select, mt-train-setup button { font: inherit; min-height: var(--target-min); padding: var(--space-1) var(--space-2); }
 mt-train-setup #mt-setup-number { flex: 1; min-width: 0; }
-mt-train-setup .route { padding-inline-start: var(--space-4); color: var(--color-muted); }
-mt-train-setup fieldset { border: 1px solid var(--color-border); padding: var(--space-2) var(--space-3); }
-mt-train-setup .days { display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-3); }
-mt-train-setup .days label { display: flex; align-items: center; gap: var(--space-1); min-height: var(--target-min); }
+mt-train-setup .number-message:not(:empty), mt-train-setup .stops-message:not(:empty) { font-size: 0.875rem; }
+mt-train-setup fieldset { border: 0; margin: var(--space-2) 0 0; padding: var(--space-3); border-radius: var(--radius-md); background: var(--color-surface); }
+mt-train-setup legend { float: left; width: 100%; margin-block-end: var(--space-2); text-transform: uppercase; letter-spacing: 0.02em; }
+mt-train-setup .days { display: flex; flex-wrap: wrap; gap: var(--space-2); clear: both; }
+mt-train-setup .days label { position: relative; }
+mt-train-setup .days input { position: absolute; inset: 0; margin: 0; opacity: 0; cursor: pointer; }
+mt-train-setup .days .initial { display: grid; place-items: center; width: var(--target-min); height: var(--target-min); border-radius: 50%; background: var(--color-bg); border: 1px solid var(--color-border-strong); color: var(--color-text); font-size: 1rem; font-weight: 600; }
+mt-train-setup .days input:checked + .initial { background: var(--color-accent); border-color: var(--color-accent); color: var(--color-on-accent); }
+mt-train-setup .days input:focus-visible + .initial { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+mt-train-setup .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 mt-train-setup .save-message { color: var(--color-error); }
+mt-train-setup button[type="submit"], mt-train-setup .cancel { width: 100%; margin-block-start: var(--space-2); }
 
-mt-warnings { display: block; }
-mt-warnings section { margin-block-end: var(--space-4); }
-mt-warnings h2 { margin-block-end: var(--space-2); }
-mt-warnings ol { list-style: none; padding: 0; display: grid; gap: var(--space-3); }
-mt-warnings ol > li { padding: var(--space-3) var(--space-2); border: 1px solid var(--color-border); border-inline-start: 6px solid var(--color-error); display: grid; gap: var(--space-1); }
-mt-warnings ol > li.under { border-inline-start-color: var(--color-muted); }
-mt-warnings .first { font-weight: bold; }
-mt-warnings .mark { font-size: 0.875rem; font-weight: 600; color: var(--color-accent); }
-mt-warnings .sent { color: var(--color-muted); }
-mt-warnings button { font: inherit; min-height: var(--target-min); padding: var(--space-1) var(--space-3); justify-self: start; }
+/* ---------- Stop timelines (spec 01 route, spec 04 stops) ---------- */
+:is(mt-train-setup .route, mt-train-status .stops) { list-style: none; padding: 0; margin: 0; }
+:is(mt-train-setup .route, mt-train-status .stops) li { position: relative; padding: 0 0 var(--space-3) 30px; }
+:is(mt-train-setup .route, mt-train-status .stops) li::before { /* line to the next stop */
+  content: ""; position: absolute; left: 7px; top: 10px; bottom: -10px; width: 3px; background: var(--color-line);
+}
+:is(mt-train-setup .route, mt-train-status .stops) li:last-child::before { display: none; }
+:is(mt-train-setup .route, mt-train-status .stops) li::after { /* stop dot */
+  content: ""; position: absolute; left: 0; top: 4px; width: 11px; height: 11px; border-radius: 50%; border: 3px solid var(--color-line); background: var(--color-bg);
+}
+mt-train-setup .route li { color: var(--color-muted); padding-block-end: var(--space-2); }
 
-mt-train-summary .toggle { font: inherit; min-height: var(--target-min); padding: var(--space-1) var(--space-3); margin-block-start: var(--space-2); }
-mt-train-status { display: block; margin-block-start: var(--space-2); padding-block-start: var(--space-2); border-block-start: 1px solid var(--color-border); }
-mt-train-status { display: grid; gap: var(--space-1); }
+/* ---------- Train status (spec 04) ---------- */
+mt-train-status { display: grid; gap: var(--space-1); margin-block-start: var(--space-2); padding-block-start: var(--space-3); border-block-start: 1px solid var(--color-border); }
 mt-train-status .lead { font-weight: 600; }
-mt-train-status h3 { font-size: var(--font-size-base); margin-block-start: var(--space-2); }
-mt-train-status .stops { padding-inline-start: var(--space-4); display: grid; gap: var(--space-1); }
-mt-train-status .stops .times { color: var(--color-muted); }
-mt-train-status .stops .current .name, mt-train-status .stops .get-on .name { font-weight: 600; }
+mt-train-status h3 { font-size: 0.875rem; color: var(--color-muted); text-transform: uppercase; letter-spacing: 0.02em; margin-block: var(--space-3) var(--space-2); }
+mt-train-status .stops .name { display: block; }
+mt-train-status .stops .times { font-size: 0.875rem; color: var(--color-muted); }
+mt-train-status .stops .done { color: var(--color-muted); }
+mt-train-status .stops .done::after { background: var(--color-line); }
+mt-train-status .stops .current .name, mt-train-status .stops .get-on .name { font-weight: 700; color: var(--color-text); }
 mt-train-status .stops .current .times { color: var(--color-text); }
+mt-train-status .stops .current::after { left: -3px; top: 1px; width: 17px; height: 17px; background: var(--color-accent); border-color: var(--color-bg); box-shadow: 0 0 0 2px var(--color-accent); }
+mt-train-status .stops .cut::after { border-color: var(--color-error); }
+mt-train-status .stops .cut::before { background: repeating-linear-gradient(var(--color-error) 0 4px, transparent 4px 8px); }
+mt-train-status .stops .cut .times { color: var(--color-error); font-weight: 600; }
+
+/* ---------- Warnings (spec 02) ---------- */
+mt-warnings { display: block; }
+mt-warnings h2 { margin-block-end: var(--space-3); }
+mt-warnings ol { list-style: none; padding: 0; display: grid; gap: var(--space-3); }
+/* Card with a state stripe: red over the limit or cancelled, amber back under the limit. Text always says the state too. */
+mt-warnings ol > li { display: grid; gap: var(--space-1); padding: var(--space-3); border: 1px solid var(--color-border); border-inline-start: 6px solid var(--color-error); border-radius: var(--radius-md); }
+mt-warnings ol > li.under { border-inline-start-color: var(--color-warning); }
+mt-warnings ol > li.cancelled { background: var(--color-error-soft); }
+mt-warnings .first { font-size: 1.125rem; font-weight: 700; }
+mt-warnings .mark { justify-self: start; padding: 2px var(--space-2); border-radius: var(--radius-pill); background: var(--color-info-soft); font-size: 0.8125rem; font-weight: 600; color: var(--color-accent); }
+mt-warnings .sent { font-size: 0.875rem; color: var(--color-muted); }
+mt-warnings ol > li > button { margin-block-start: var(--space-2); width: 100%; }
 /* Read by screen readers only: the same warning is already in the list below. */
 mt-warnings .announce { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
-/* Push banner: over the top of the phone; on a real phone, over the top of the screen. */
+/* Spec 03: other ways under the newest warning */
+mt-warnings .ways { margin-block-start: var(--space-2); padding: var(--space-2) var(--space-3); border-radius: var(--radius-md); background: var(--color-surface); }
+mt-warnings .ways summary { font-weight: 700; cursor: pointer; min-height: var(--target-min); display: flex; align-items: center; }
+mt-warnings .ways ul { list-style: none; padding: 0; display: grid; }
+mt-warnings .ways li { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); padding-block: var(--space-2); border-block-start: 1px solid var(--color-border); font-size: 0.9375rem; }
+mt-warnings .ways .buy { flex: none; min-height: var(--target-min); padding: var(--space-1) var(--space-3); font-size: 0.875rem; }
+
+/* ---------- Push banner ---------- */
+/* Over the top of the phone; on a real phone, over the top of the screen. */
 mt-push { position: fixed; z-index: 2; top: var(--space-2); inset-inline: var(--space-2); }
 mt-push .banner { display: flex; align-items: flex-start; border-radius: var(--push-radius); background: var(--color-push); backdrop-filter: blur(20px); box-shadow: var(--push-shadow); animation: mt-push-in 0.3s ease-out; }
 mt-push .banner[hidden] { display: none; }
@@ -116,22 +204,17 @@ mt-push .close { min-width: var(--target-min); min-height: var(--target-min); bo
   mt-push { position: absolute; top: var(--phone-status-height); }
 }
 
-/* Spec 03: other ways under the newest warning */
-mt-warnings .ways { margin-block-start: var(--space-2); }
-mt-warnings .ways summary { font-weight: 600; cursor: pointer; min-height: var(--target-min); display: flex; align-items: center; }
-mt-warnings .ways ul { list-style: none; padding: 0; display: grid; gap: var(--space-1); }
-mt-warnings .ways li { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); font-size: 0.875rem; }
-mt-warnings .ways .buy { flex: none; padding: var(--space-1) var(--space-2); font-size: 0.875rem; }
-
-/* Spec 03, R4: ticket screen over the app */
+/* ---------- Ticket screen (spec 03, R4) ---------- */
+/* White header flow: large title, label above value, button at the bottom. */
 mt-ticket { position: fixed; z-index: 1; inset: 0; overflow-y: auto; padding: var(--space-4) var(--space-3); background: var(--color-bg); }
 mt-ticket[hidden] { display: none; }
-mt-ticket section { display: grid; gap: var(--space-3); }
-mt-ticket dl { display: grid; grid-template-columns: auto 1fr; gap: var(--space-2) var(--space-3); margin: 0; }
-mt-ticket dt { color: var(--color-muted); }
-mt-ticket dd { margin: 0; font-weight: 600; }
-mt-ticket .note { color: var(--color-muted); }
-mt-ticket button { font: inherit; min-height: var(--target-min); padding: var(--space-1) var(--space-3); justify-self: start; }
+mt-ticket section { display: grid; gap: var(--space-4); }
+mt-ticket h2 { font-size: 1.75rem; }
+mt-ticket dl { display: grid; gap: var(--space-2); margin: 0; }
+mt-ticket dt { font-size: 0.875rem; color: var(--color-muted); padding: var(--space-2) var(--space-3) 0; }
+mt-ticket dd { margin: 0; padding: 0 var(--space-3) var(--space-2); font-weight: 600; border-block-end: 1px solid var(--color-border); }
+mt-ticket .note { display: flex; gap: var(--space-2); padding: var(--space-3); border-radius: var(--radius-md); background: var(--color-info-soft); }
+mt-ticket .close { width: 100%; }
 @media (min-width: 500px) {
   mt-ticket { position: absolute; inset: var(--phone-status-height) 0 0; } /* keeps the status bar visible */
 }

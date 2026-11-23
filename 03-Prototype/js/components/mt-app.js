@@ -17,13 +17,12 @@ class MtApp extends HTMLElement {
         <div class="status-bar" aria-hidden="true"><span class="time"></span></div>
         <mt-push></mt-push>
         <div class="screen">
-          <header><h1></h1><p></p></header>
+          <mt-header></mt-header>
           <main><mt-warnings></mt-warnings><mt-my-trains></mt-my-trains></main>
         </div>
+        <mt-tab-bar></mt-tab-bar>
         <mt-ticket hidden></mt-ticket>
       </div>`;
-    this.querySelector('h1').textContent = app.title;
-    this.querySelector('header p').textContent = app.tagline;
     this.toggleFacilitator();
     addEventListener('hashchange', this.toggleFacilitator);
     this.addEventListener('open-train', this.openTrain);

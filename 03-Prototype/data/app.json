@@ -1,5 +1,5 @@
 {
-  "title": "My train",
+  "title": "Trenitalia",
   "tagline": "Prototype for testing the commute UI",
   "advanceSteps": [
     1,
@@ -7,5 +7,14 @@
     15
   ],
   "icon": "assets/icons/app-icon.svg",
-  "pushSeconds": 6
+  "pushSeconds": 6,
+  "headerTabs": ["N. Treno", "Tabellone", "Da/a", "Treni seguiti"],
+  "currentHeaderTab": "Treni seguiti",
+  "tabBar": [
+    { "label": "Home", "icon": "assets/icons/tab-home.svg" },
+    { "label": "I miei viaggi", "icon": "assets/icons/tab-trips.svg" },
+    { "label": "Acquista", "icon": "assets/icons/tab-buy.svg" },
+    { "label": "Infomobilità", "icon": "assets/icons/tab-infomobility.svg", "current": true },
+    { "label": "Carte fedeltà", "icon": "assets/icons/tab-cards.svg" }
+  ]
 }

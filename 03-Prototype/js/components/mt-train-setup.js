@@ -66,7 +66,7 @@ class MtTrainSetup extends HTMLElement {
     this.form.to.innerHTML = options;
     // R4 [open], decided here: the days the train runs, all ticked; the commuter can untick some.
     this.querySelector('.days').innerHTML = found.days.map(d =>
-      `<label><input type="checkbox" name="days" value="${d}" checked> ${store.text(`day.${d}`)}</label>`).join('');
+      `<label><input type="checkbox" name="days" value="${d}" checked><span class="initial" aria-hidden="true">${store.text(`dayInitial.${d}`)}</span><span class="sr-only">${store.text(`day.${d}`)}</span></label>`).join('');
     this.form.limit.value = ''; // R3: no proposed value
     this.querySelector('.stops-message').textContent = '';
     this.querySelector('.save-message').textContent = '';

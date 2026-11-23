@@ -113,5 +113,15 @@
   "stopScheduled": "scheduled {time}",
   "stopExpected": "expected {time}",
   "stopCurrent": "current position",
-  "hideTrain": "Hide train"
+  "hideTrain": "Hide train",
+  "headerTitle": "Infomobilità",
+  "headerTabsLabel": "Infomobilità sections",
+  "tabBarLabel": "Main menu",
+  "dayInitial.mon": "M",
+  "dayInitial.tue": "T",
+  "dayInitial.wed": "W",
+  "dayInitial.thu": "T",
+  "dayInitial.fri": "F",
+  "dayInitial.sat": "S",
+  "dayInitial.sun": "S"
 }

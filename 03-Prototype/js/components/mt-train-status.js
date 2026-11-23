@@ -67,12 +67,14 @@ class MtTrainStatus extends HTMLElement {
     const items = stops.slice(0, on + 1).map((s, i) => {
       const done = actual[s.stop];
       const notes = [];
-      if (cut && i >= cut[0] && i <= cut[1]) notes.push(t('stopCancelled'));
+      const isCut = cut && i >= cut[0] && i <= cut[1];
+      if (isCut) notes.push(t('stopCancelled'));
       else if (done) notes.push(done.arrived ? t('stopArrivedLeft', done) : t('stopLeft', done));
       else if (i === on) notes.push(t('stopScheduled', { time: s.depart }) + (expected ? ' · ' + t('stopExpected', { time: expected }) : ''));
       else notes.push(t('stopScheduled', { time: s.arrive ?? s.depart }));
       if (i === current) notes.push(t('stopCurrent'));
-      return `<li class="${i === current ? 'current' : ''}${i === on ? ' get-on' : ''}"${i === current ? ' aria-current="location"' : ''}>
+      const classes = [i === current && 'current', i === on && 'get-on', done && i !== current && 'done', isCut && 'cut'].filter(Boolean).join(' ');
+      return `<li class="${classes}"${i === current ? ' aria-current="location"' : ''}>
         <span class="name">${s.stop}</span> <span class="times">${notes.join(' · ')}</span></li>`;
     });
     return `<h3>${t('stopsTitle')}</h3><ol class="stops">${items.join('')}</ol>`;

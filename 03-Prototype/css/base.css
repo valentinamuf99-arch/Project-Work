@@ -2,13 +2,29 @@
 body, h1, h2, h3, p, ul, ol { margin: 0; }
 
 :root {
+  /* Trenitalia app style (04-Moodboard/2026-11-23-design-moodboard.md); values estimated from screenshots. */
   --color-bg: #ffffff;
   --color-text: #1a1a1a;
-  --color-muted: #5c5c5c;
-  --color-accent: #0b5cad;
-  --color-surface: #f2f2f2;
-  --color-border: #c4c4c4;
-  --color-error: #a4161a;
+  --color-muted: #5c5f66;
+  --color-accent: #00504f;          /* petrol green: header, active states, links */
+  --color-accent-dark: #163a39;     /* selected chip on the green header */
+  --color-accent-soft: rgb(255 255 255 / 0.18); /* unselected chip on the green header */
+  --color-on-accent: #ffffff;
+  --color-cta-start: #8a1a2b;       /* red CTA gradient */
+  --color-cta-end: #e3173a;
+  --color-on-cta: #ffffff;
+  --color-surface: #f2f3f5;         /* section background, thick dividers */
+  --color-border: #d9dce1;          /* cards */
+  --color-border-strong: #8a9099;   /* inputs and secondary buttons: 3:1 on white */
+  --color-error: #a4161a;           /* over the limit, cancelled */
+  --color-error-soft: #fff5f6;
+  --color-warning: #f5a623;         /* under the limit */
+  --color-warning-soft: #fdefd3;
+  --color-info-soft: #eaf0fb;
+  --color-line: #3f8f2a;            /* Regionale line in the stop timeline */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-pill: 999px;
   --target-min: 44px;
   --color-desk: #dcdfe3;
   --color-frame: #111111;
@@ -25,7 +41,8 @@ body, h1, h2, h3, p, ul, ol { margin: 0; }
   --space-2: 8px;
   --space-3: 16px;
   --space-4: 24px;
-  --font-body: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --space-5: 32px;
+  --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif; /* Figtree only if installed: no font file in assets/fonts yet */
   --font-size-base: 1rem;
 }
 

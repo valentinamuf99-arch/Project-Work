@@ -2,7 +2,7 @@
 title: "Design · Moodboard: the Trenitalia app style as the base, and interaction ideas from the commented references, for the prototype"
 date: 2026-11-23
 activity: desk-research
-source: "Author's moodboard: 13 screenshots in 04-Moodboard/references/ with the author's comment in a .md file next to each, and 8 screenshots of the Trenitalia app in 04-Moodboard/reference-trenitalia/ (two of them identical to IMG_3407 and IMG_3408 in references/). The 5 screenshots in 04-Moodboard/ with an empty comment file were left out. Images read by the AI; colour values estimated from the screenshots."
+source: "Author's moodboard: 13 screenshots in 04-Moodboard/references/ with the author's comment in a .md file next to each, and 8 screenshots of the Trenitalia app in 04-Moodboard/reference-trenitalia/ (two of them identical to IMG_3407 and IMG_3408 in references/). The 5 screenshots in 04-Moodboard/ with an empty comment file were left out. Added on 2026-11-23: 8 screenshots of the Trenitalia Smart Caring flow in 04-Moodboard/reference-trenitalia/smart-caring/, taken by the author on 2026-11-23 on train 16403 (Bassano–Venezia), with the author's comment that Smart Caring is close to the prototype's warning and that the prototype's advantage is giving the alternatives when something goes wrong. Images read by the AI; colour values estimated from the screenshots."
 author: "Eugenia Valentina Muffolini"
 channel: web
 method: visual analysis of the commented references, drafted by AI from the author's comments
@@ -73,6 +73,35 @@ The prototype reuses these Trenitalia components as they are.
 - **Warning modal**: centred icon in a coloured circle, large title, one sentence, two stacked buttons.
 - **Info banner**: light blue card with "i" icon, bold title and text; external link with icon.
 - **Day selector** in results: row of dates ("Sab 21", "Dom 22", "Lun 23") with the active day white and underlined.
+
+## Trenitalia Smart Caring · the existing notification feature
+
+Smart Caring is the Trenitalia feature that comes closest to the prototype's warning: the commuter follows a train and receives notifications about it. Screenshots in [reference-trenitalia/smart-caring/](reference-trenitalia/smart-caring/), taken on train 16403 (Bassano–Venezia, 21:20).
+
+- **Train detail** ([01](reference-trenitalia/smart-caring/01-train-detail.png)): white header "Infomobilità" with an X. Regionale logo + train number, date, and a soft grey button "Attiva notifiche smart caring" with a bell. A status card ("Non partito" in a grey chip with an "i"). Then the stops as a vertical list: a thin grey line on the left, a table icon per stop, stop name in bold, platform badge ("BIN 4", filled when it is the current stop, outlined otherwise), and for each stop "Programmata" times in grey and "Stimata" times in petrol green, joined by a dotted bracket. Secondary button "Vedi notifiche Smart Caring" at the bottom.
+- **Follow set-up** ([02](reference-trenitalia/smart-caring/02-follow-setup.png), [03](reference-trenitalia/smart-caring/03-follow-setup-stops.png)): bottom sheet "Segui treno e attiva notifiche". A toggle "Voglio ricevere le notifiche in app". Grey uppercase section headers: "RICEVI NOTIFICHE APP NEI GIORNI:" with **day circles L M M G V S D** (selected filled petrol green, others light grey), "A QUEST'ORA:" with an hour/minute wheel (selected values in petrol pills), "FINO A:" with a radio list ("Intero percorso" or one stop). "Annulla" (secondary) and "Conferma" (red) side by side, fixed at the bottom.
+- **Confirmation** ([04](reference-trenitalia/smart-caring/04-follow-confirmed.png)): bottom sheet with a check in a soft petrol circle, title "Notifica registrata", one sentence, red "Ok" button. Same pattern as the "Attenzione" warning modal, with a success icon.
+- **Followed train card** ([05](reference-trenitalia/smart-caring/05-followed-trains-card.png)): under the "Treni seguiti" chip. Card with a header row (Regionale logo, number, trash icon) and a body like a result card: departure and arrival stations, **large times** (21:20, 22:39) with the duration between two dots, then "Modifica" with a bell (petrol link), platform badge and status chip "Non partito".
+- **Smart Caring updates** ([06](reference-trenitalia/smart-caring/06-smart-caring-list.png), [07](reference-trenitalia/smart-caring/07-smart-caring-open.png), [08](reference-trenitalia/smart-caring/08-smart-caring-open-two.png)): bottom sheet "Smart Caring" with an accordion, newest first. Each row is only "Aggiornamento - ore 18:35" with a chevron; the text appears only when opened.
+
+## Smart Caring · what it lacks and what the prototype adds
+
+What the screenshots show about Smart Caring, read against the prototype. This is the author's positioning plus the AI's reading of 8 screenshots, not evidence from participants.
+
+- **The title says nothing.** Every update is "Aggiornamento - ore …": the commuter must open each one to know whether it matters. The prototype's warning puts the fact in the first line ("06:02 Bassano: 35 min late").
+- **Generic, repeated text.** The updates opened (18:35 and 18:32) carry the same long notice about works at Venezia Mestre from 13 December, not about the followed train today, and the notice arrived before the train was followed (updates 18:25 to 18:35, train at 21:20). The prototype warns only about the commuter's own train and only past the commuter's limit.
+- **No alternative.** Smart Caring sends the commuter to "trenitalia.com, biglietterie e assistenza in stazione, call center". **The prototype's advantage, in the author's words, is giving the alternatives when something goes wrong**: the next train or bus, with "Buy ticket" in place.
+- **No personal limit.** Smart Caring asks days, a start time and "until which stop"; it does not ask how much delay matters. The prototype asks for the limit.
+
+## Smart Caring · what the prototype takes: style only
+
+The author's decision: flows and behaviour follow the specifications 01 to 05, not Smart Caring. The Smart Caring screenshots are used only for the general style, and some of it can be improved.
+
+- **Not taken**: Smart Caring's flow (bottom-sheet set-up with a time wheel and "until which stop", confirmation sheet, "Aggiornamento" accordion). The set-up, the warnings and the other ways stay as the specifications describe them.
+- **Followed train card**: taken as a style base and improved. A header row with the train number above a divider, departure and arrival stations with **large times** at the two ends joined by a line, then the limit and the days as small grey chips (in place of the platform and status chips).
+- **Stop list**: estimated times in petrol green, scheduled times in grey, as in the Smart Caring train detail.
+- **Day circles**: same look as Smart Caring (selected petrol green); letters stay those of the prototype's language.
+- [open] **Line colour of the stop timeline.** Trenitalia's own list uses a thin grey line; the moodboard reference 19.37.51 suggests a line in the train's colour. The prototype uses the Regionale green line for now; the author decides.
 
 ## References · structure and navigation
 
@@ -192,3 +221,4 @@ Reading, not evidence: how the moodboard ideas map to the specifications in `02-
 - **Specification 04 · Following my train stop by stop**: vertical timeline as the main view, coloured train line, map with draggable bottom sheet as the secondary view.
 - **Specification 05 · Why it is late**: the light blue info banner and the "Information / cause" state.
 - The entry point for all of them is the "Treni seguiti" chip in Infomobilità, so the bottom bar stays as it is.
+- **Smart Caring as the baseline**: specifications 02 and 03 improve on an existing Trenitalia feature rather than adding a new one. The difference to test is a warning that says what happened to the own train in its first line and offers the other ways in place, against Smart Caring's "Aggiornamento - ore …" rows with generic text and no alternative.

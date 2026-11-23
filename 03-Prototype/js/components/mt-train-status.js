@@ -70,7 +70,7 @@ class MtTrainStatus extends HTMLElement {
       const isCut = cut && i >= cut[0] && i <= cut[1];
       if (isCut) notes.push(t('stopCancelled'));
       else if (done) notes.push(done.arrived ? t('stopArrivedLeft', done) : t('stopLeft', done));
-      else if (i === on) notes.push(t('stopScheduled', { time: s.depart }) + (expected ? ' · ' + t('stopExpected', { time: expected }) : ''));
+      else if (i === on) notes.push(t('stopScheduled', { time: s.depart }) + (expected ? ` · <span class="expected">${t('stopExpected', { time: expected })}</span>` : ''));
       else notes.push(t('stopScheduled', { time: s.arrive ?? s.depart }));
       if (i === current) notes.push(t('stopCurrent'));
       const classes = [i === current && 'current', i === on && 'get-on', done && i !== current && 'done', isCut && 'cut'].filter(Boolean).join(' ');

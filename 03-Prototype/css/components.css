@@ -109,12 +109,22 @@ mt-my-trains ul { list-style: none; padding: 0; display: grid; gap: var(--space-
 mt-my-trains .confirm:not(:empty) { margin-block-end: var(--space-3); padding: var(--space-3); border-radius: var(--radius-md); background: var(--color-info-soft); }
 mt-my-trains .add { width: 100%; }
 
-/* Saved train: card like a Trenitalia result, times large. */
-mt-train-summary { display: grid; gap: var(--space-1); padding: var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-md); }
-mt-train-summary .number { font-size: 0.875rem; color: var(--color-muted); font-weight: 600; }
-mt-train-summary .trip { font-size: 1.25rem; font-weight: 700; line-height: 1.3; }
-mt-train-summary .detail { color: var(--color-muted); }
-mt-train-summary .toggle { margin-block-start: var(--space-2); width: 100%; }
+/* Saved train: card in the style of the Trenitalia "Treni seguiti" card. Number row, stations with large times at both ends, chips. */
+mt-train-summary { display: grid; gap: var(--space-2); padding: var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-md); }
+mt-train-summary .number { margin: calc(-1 * var(--space-3)) calc(-1 * var(--space-3)) var(--space-1); padding: var(--space-2) var(--space-3); border-block-end: 1px solid var(--color-border); font-weight: 700; }
+mt-train-summary .trip { display: grid; grid-template-columns: auto 1fr auto; align-items: end; gap: var(--space-2); }
+mt-train-summary .trip .end { display: grid; }
+mt-train-summary .trip .end:last-of-type { text-align: end; }
+mt-train-summary .trip .stop { font-size: 0.9375rem; }
+mt-train-summary .trip .time { font-size: 1.875rem; font-weight: 700; line-height: 1.1; }
+mt-train-summary .trip .line { position: relative; height: 2px; margin-block-end: 0.8rem; background: var(--color-border); }
+mt-train-summary .trip .line::before, mt-train-summary .trip .line::after { content: ""; position: absolute; top: -3px; width: 8px; height: 8px; border-radius: 50%; background: var(--color-text); }
+mt-train-summary .trip .line::before { left: 0; }
+mt-train-summary .trip .line::after { right: 0; }
+mt-train-summary .details { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+mt-train-summary .details span { padding: 2px var(--space-2); border-radius: var(--radius-sm); background: var(--color-surface); font-size: 0.875rem; color: var(--color-accent); }
+mt-train-summary .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+mt-train-summary .toggle { margin-block-start: var(--space-1); width: 100%; }
 
 /* Set-up: question as title, label above field, day circles. */
 mt-train-setup form { display: grid; gap: var(--space-2); }
@@ -156,6 +166,7 @@ mt-train-status .lead { font-weight: 600; }
 mt-train-status h3 { font-size: 0.875rem; color: var(--color-muted); text-transform: uppercase; letter-spacing: 0.02em; margin-block: var(--space-3) var(--space-2); }
 mt-train-status .stops .name { display: block; }
 mt-train-status .stops .times { font-size: 0.875rem; color: var(--color-muted); }
+mt-train-status .stops .expected { color: var(--color-accent); font-weight: 600; } /* estimated time in petrol, as in Trenitalia */
 mt-train-status .stops .done { color: var(--color-muted); }
 mt-train-status .stops .done::after { background: var(--color-line); }
 mt-train-status .stops .current .name, mt-train-status .stops .get-on .name { font-weight: 700; color: var(--color-text); }

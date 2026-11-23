@@ -11,9 +11,16 @@ class MtTrainSummary extends HTMLElement {
     const at = name => stops.find(s => s.stop === name);
     this.innerHTML = `
       <p class="number">${store.text('summaryTrain', { number: saved.number })}</p>
-      <p class="trip">${store.text('summaryStops', { from: saved.from, depart: at(saved.from).depart, to: saved.to, arrive: at(saved.to).arrive })}</p>
-      <p class="detail">${store.text('summaryLimit', { minutes: saved.limit })}</p>
-      <p class="detail">${store.text('summaryDays', { days: saved.days.map(d => store.text(`dayShort.${d}`)).join(', ') })}</p>
+      <p class="trip">
+        <span class="sr-only">${store.text('summaryStops', { from: saved.from, depart: at(saved.from).depart, to: saved.to, arrive: at(saved.to).arrive })}</span>
+        <span class="end" aria-hidden="true"><span class="stop">${saved.from}</span><span class="time">${at(saved.from).depart}</span></span>
+        <span class="line" aria-hidden="true"></span>
+        <span class="end" aria-hidden="true"><span class="stop">${saved.to}</span><span class="time">${at(saved.to).arrive}</span></span>
+      </p>
+      <p class="details">
+        <span>${store.text('summaryLimit', { minutes: saved.limit })}</span>
+        <span>${store.text('summaryDays', { days: saved.days.map(d => store.text(`dayShort.${d}`)).join(', ') })}</span>
+      </p>
       <button type="button" class="toggle" aria-expanded="false">${store.text('showTrain')}</button>`;
     this.querySelector('.toggle').addEventListener('click', () => this.toggleAttribute('open'));
     this.attributeChangedCallback();

@@ -4,6 +4,13 @@ const DAYS = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 const toMinutes = hhmm => { const [h, m] = hhmm.split(':').map(Number); return h * 60 + m; };
 const toTime = m => `${String(Math.floor(m / 60) % 24).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
 
+// A cancellation touches the trip a..b (stop indexes) when it is whole, or its part overlaps it (spec 04, R4).
+const cancels = (e, stops, a, b) => {
+  if (!e?.cancelled) return false;
+  if (!e.cancelledFrom) return true;
+  const i = name => stops.findIndex(s => s.stop === name);
+  return i(e.cancelledFrom) <= b && (e.cancelledTo ? i(e.cancelledTo) : stops.length - 1) >= a;
+};
 // localStorage may be blocked: then everything stays in memory and is lost on reload (R8).
 function read(key) { try { return JSON.parse(localStorage.getItem(key)); } catch { return null; } }
 function write(key, value) { try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* memory only */ } }
@@ -93,7 +100,9 @@ class Store extends EventTarget {
           if (!watched.has(e.train)) continue;
           const time = this.data.trains.find(t => t.number === e.train).stops.find(s => s.stop === saved.from).depart;
           const way = { at: e.at, board: false, time, reason: null, updated: null };
-          if (e.cancelled) send({ ...way, kind: 'wayCancelled' });
+          const wayStops = this.data.trains.find(t => t.number === e.train).stops;
+          const wa = wayStops.findIndex(s => s.stop === saved.from), wb = wayStops.findIndex(s => s.stop === saved.to);
+          if (cancels(e, wayStops, wa, wb)) send({ ...way, kind: 'wayCancelled' });
           else if (e.delay >= saved.limit && e.delay !== watched.get(e.train)) send({ ...way, kind: 'wayLate', minutes: e.delay });
           else if (e.delay != null) watched.set(e.train, e.delay);
           continue;
@@ -105,7 +114,7 @@ class Store extends EventTarget {
         reason = e.reason ?? reason; // a reason left out is not a reason withdrawn
         const facts = { at: e.at, reason, updated: null };
         const update = { ...last, ...facts, updated: previous ? 'changed' : 'added' }; // spec 05, R3
-        if (e.cancelled || cancelled) { // R2
+        if (cancels(e, stops, on, off) || cancelled) { // R2
           if (!cancelled) send({ ...facts, kind: 'cancelled', board, stop: saved.from, time: stops[on].depart });
           else if (reason !== previous) send(update);
           cancelled = true;
@@ -138,7 +147,7 @@ class Store extends EventTarget {
       const a = t.stops.findIndex(s => s.stop === saved.from), b = t.stops.findIndex(s => s.stop === saved.to);
       if (!t.days.includes(this.now.day) || a < 0 || b <= a) continue;
       const state = this.stateOf(t.number, at);
-      if (state?.cancelled) continue;
+      if (cancels(state, t.stops, a, b)) continue;
       const leaves = toMinutes(t.stops[a].depart) + (state?.delay ?? 0);
       if (leaves < at) continue; // already left
       trains.push({
@@ -160,15 +169,24 @@ class Store extends EventTarget {
     return { trains: shown, others };
   }
 
-  // The sentences of one warning; the first holds the train and the minutes only (spec 02, appearance).
+  // The sentences of one warning (spec 05, appearance): the "Updated" mark above the first line,
+  // the first line (train and minutes only), the reason line directly under it, then the rest.
   warningLines(w) {
     const kind = w.kind[0].toUpperCase() + w.kind.slice(1);
-    return [
-      ...this.text((w.board ? 'warnBoard' : 'warn') + kind, w).split('\n'),
-      w.reached && this.text('warnFromReached', w),
-      w.updated && this.text(w.updated === 'added' ? 'warnUpdatedAdded' : 'warnUpdatedChanged'),
-      !w.kind.startsWith('way') && (w.reason ? this.text('reasonLine', { reason: w.reason }) : this.text('reasonMissing')),
-    ].filter(Boolean);
+    const [first, ...more] = this.text((w.board ? 'warnBoard' : 'warn') + kind, w).split('\n');
+    const reason = !w.kind.startsWith('way') && (w.reason ? this.text('reasonLine', { reason: w.reason }) : this.text('reasonMissing'));
+    return {
+      mark: w.updated && this.text(w.updated === 'added' ? 'warnUpdatedAdded' : 'warnUpdatedChanged'),
+      first,
+      rest: [reason, ...more, w.reached && this.text('warnFromReached', w)].filter(Boolean),
+    };
+  }
+
+  // Spec 04: every running event of one train up to the clock, oldest first.
+  runningOf(train) {
+    return this.#events()
+      .filter(e => e.train === train && toMinutes(e.at) <= this.minutes)
+      .sort((a, b) => toMinutes(a.at) - toMinutes(b.at));
   }
 
   // Interface sentence from texts.json, with {placeholders} filled (R6).

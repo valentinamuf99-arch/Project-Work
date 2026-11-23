@@ -27,16 +27,16 @@ class MtWarnings extends HTMLElement {
     const warnings = store.warnings();
     const moved = e?.detail === 'clock' || e?.detail === 'running';
     if (moved && warnings.length === this.shown) return; // nothing new; keep the last announcement
-    const lines = w => store.warningLines(w);
     const announce = this.querySelector('.announce');
-    announce.textContent = moved ? warnings.slice(this.shown).map(w => lines(w).join(' ')).join(' ') : '';
+    announce.textContent = moved ? warnings.slice(this.shown).map(w => { const { mark, first, rest } = store.warningLines(w); return [mark, first, ...rest].filter(Boolean).join(' '); }).join(' ') : '';
     this.shown = warnings.length;
     this.querySelector('section').hidden = !warnings.length;
     const latest = new Set();
     this.querySelector('ol').innerHTML = warnings.slice().reverse().map(w => {
-      const [first, ...rest] = lines(w);
+      const { mark, first, rest } = store.warningLines(w);
       const isLatest = !latest.has(w.number) && latest.add(w.number); // other ways only under the newest warning of a train
       return `<li class="${w.kind}">
+        ${mark ? `<p class="mark">${mark}</p>` : ''}
         <p class="first">${first}</p>
         ${rest.map(l => `<p>${l}</p>`).join('')}
         <p class="sent">${store.text('warnSentAt', { time: w.at })}</p>

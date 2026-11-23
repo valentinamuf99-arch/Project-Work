@@ -44,9 +44,9 @@ class MtPush extends HTMLElement {
     this.shown = warnings.length;
     if (!moved) return this.hide(); // scenario switched or reset, or trains changed
     if (!fresh) return;
-    const [title, ...body] = store.warningLines(warnings.at(-1));
-    this.querySelector('.title').textContent = title;
-    this.querySelector('.body').textContent = body.join(' ');
+    const { mark, first, rest } = store.warningLines(warnings.at(-1));
+    this.querySelector('.title').textContent = first;
+    this.querySelector('.body').textContent = [mark, ...rest].filter(Boolean).join(' ');
     this.banner.hidden = false;
     this.later();
   };

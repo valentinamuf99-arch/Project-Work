@@ -24,6 +24,7 @@ class MtTrainSummary extends HTMLElement {
     if (!button) return; // not rendered yet
     const open = this.hasAttribute('open');
     button.setAttribute('aria-expanded', open);
+    button.textContent = store.text(open ? 'hideTrain' : 'showTrain');
     const status = this.querySelector('mt-train-status');
     if (open && !status) this.insertAdjacentHTML('beforeend', `<mt-train-status number="${this.getAttribute('number')}"></mt-train-status>`);
     if (!open) status?.remove();

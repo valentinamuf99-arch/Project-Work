@@ -51,6 +51,7 @@ mt-app .status-bar { display: none; }
 mt-facilitator { display: block; padding: var(--space-3); background: var(--color-surface); border-bottom: 1px solid var(--color-border); }
 mt-facilitator section { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); }
 mt-facilitator h2 { width: 100%; font-size: var(--font-size-base); }
+mt-facilitator label, mt-facilitator select { max-width: 100%; }
 mt-facilitator .steps { display: flex; flex-wrap: wrap; gap: var(--space-2); }
 mt-facilitator button, mt-facilitator select { font: inherit; min-height: var(--target-min); padding: var(--space-1) var(--space-2); }
 mt-facilitator output { font-weight: bold; }
@@ -83,12 +84,19 @@ mt-warnings ol { list-style: none; padding: 0; display: grid; gap: var(--space-3
 mt-warnings ol > li { padding: var(--space-3) var(--space-2); border: 1px solid var(--color-border); border-inline-start: 6px solid var(--color-error); display: grid; gap: var(--space-1); }
 mt-warnings ol > li.under { border-inline-start-color: var(--color-muted); }
 mt-warnings .first { font-weight: bold; }
+mt-warnings .mark { font-size: 0.875rem; font-weight: 600; color: var(--color-accent); }
 mt-warnings .sent { color: var(--color-muted); }
 mt-warnings button { font: inherit; min-height: var(--target-min); padding: var(--space-1) var(--space-3); justify-self: start; }
 
 mt-train-summary .toggle { font: inherit; min-height: var(--target-min); padding: var(--space-1) var(--space-3); margin-block-start: var(--space-2); }
 mt-train-status { display: block; margin-block-start: var(--space-2); padding-block-start: var(--space-2); border-block-start: 1px solid var(--color-border); }
-mt-train-status .sent { color: var(--color-muted); }
+mt-train-status { display: grid; gap: var(--space-1); }
+mt-train-status .lead { font-weight: 600; }
+mt-train-status h3 { font-size: var(--font-size-base); margin-block-start: var(--space-2); }
+mt-train-status .stops { padding-inline-start: var(--space-4); display: grid; gap: var(--space-1); }
+mt-train-status .stops .times { color: var(--color-muted); }
+mt-train-status .stops .current .name, mt-train-status .stops .get-on .name { font-weight: 600; }
+mt-train-status .stops .current .times { color: var(--color-text); }
 /* Read by screen readers only: the same warning is already in the list below. */
 mt-warnings .announce { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 

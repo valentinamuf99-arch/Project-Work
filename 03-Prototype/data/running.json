@@ -6,7 +6,8 @@
     "stop": "Bassano",
     "delay": 10,
     "cancelled": false,
-    "reason": null
+    "reason": null,
+    "expected": "06:12"
   },
   {
     "scenario": "s2",
@@ -15,7 +16,8 @@
     "stop": "Bassano",
     "delay": 35,
     "cancelled": false,
-    "reason": "Signal fault between Bassano and Castelfranco"
+    "reason": "a signal fault between Bassano and Castelfranco",
+    "expected": "06:37"
   },
   {
     "scenario": "s2",
@@ -24,7 +26,8 @@
     "stop": "Bassano",
     "delay": 40,
     "cancelled": false,
-    "reason": "Signal fault between Bassano and Castelfranco"
+    "reason": "a signal fault between Bassano and Castelfranco",
+    "expected": "06:42"
   },
   {
     "scenario": "s3",
@@ -39,7 +42,7 @@
     "at": "06:00",
     "stop": "Bassano",
     "cancelled": true,
-    "reason": "Train out of service for a technical fault"
+    "reason": "the train is out of service for a technical fault"
   },
   {
     "scenario": "s3",
@@ -57,7 +60,8 @@
     "stop": "Bassano",
     "delay": 25,
     "cancelled": false,
-    "reason": "Signal fault between Bassano and Castelfranco"
+    "reason": "a signal fault between Bassano and Castelfranco",
+    "expected": "06:27"
   },
   {
     "scenario": "s5",
@@ -86,7 +90,7 @@
     "stop": "Piombino Dese",
     "delay": 35,
     "cancelled": false,
-    "reason": "Train stopped by a broken-down train ahead"
+    "reason": "a broken-down train ahead"
   },
   {
     "scenario": "s5",
@@ -122,7 +126,7 @@
     "stop": "Bassano",
     "delay": 40,
     "cancelled": false,
-    "reason": "Signal fault between Bassano and Castelfranco"
+    "reason": "a signal fault between Bassano and Castelfranco"
   },
   {
     "scenario": "s2",
@@ -147,7 +151,7 @@
     "stop": "Bassano",
     "delay": 15,
     "cancelled": false,
-    "reason": "Late connecting train"
+    "reason": "a late connecting train"
   },
   {
     "scenario": "s8",
@@ -155,7 +159,7 @@
     "at": "05:50",
     "stop": "Bassano",
     "cancelled": true,
-    "reason": "Staff shortage"
+    "reason": "a staff shortage"
   },
   {
     "scenario": "s9",
@@ -163,6 +167,144 @@
     "at": "05:50",
     "stop": "Bassano",
     "cancelled": true,
-    "reason": "Staff shortage"
+    "reason": "a staff shortage"
+  },
+  {
+    "scenario": "s10",
+    "train": "2215",
+    "at": "12:21",
+    "reached": "Verona",
+    "left": "12:21",
+    "stop": "Verona",
+    "delay": 1
+  },
+  {
+    "scenario": "s10",
+    "train": "2215",
+    "at": "12:41",
+    "reached": "San Bonifacio",
+    "arrived": "12:39",
+    "left": "12:41",
+    "stop": "San Bonifacio",
+    "delay": 2
+  },
+  {
+    "scenario": "s10",
+    "train": "2215",
+    "at": "13:12",
+    "reached": "Vicenza",
+    "arrived": "13:08",
+    "left": "13:12",
+    "stop": "Padova",
+    "delay": 3,
+    "expected": "13:37"
+  },
+  {
+    "scenario": "s10",
+    "train": "2215",
+    "at": "13:37",
+    "reached": "Padova",
+    "arrived": "13:35",
+    "left": "13:37",
+    "stop": "Mestre",
+    "delay": 3
+  },
+  {
+    "scenario": "s11",
+    "train": "20811",
+    "at": "05:55",
+    "stop": "Bassano",
+    "delay": 0
+  },
+  {
+    "scenario": "s12",
+    "train": "20701",
+    "at": "05:50",
+    "cancelled": true,
+    "cancelledFrom": "Bassano",
+    "cancelledTo": "Rossano Veneto",
+    "reason": "works on the line between Bassano and Rossano Veneto"
+  },
+  {
+    "scenario": "s12",
+    "train": "20701",
+    "at": "06:23",
+    "reached": "Castelfranco",
+    "left": "06:23",
+    "stop": "Piombino Dese",
+    "delay": 1
+  },
+  {
+    "scenario": "s13",
+    "train": "20961",
+    "at": "18:00",
+    "stop": "Padova",
+    "delay": 10,
+    "expected": "18:19"
+  },
+  {
+    "scenario": "s13",
+    "train": "20961",
+    "at": "18:04",
+    "stop": "Padova",
+    "delay": 10,
+    "expected": "18:19",
+    "reason": "a fault on the line"
+  },
+  {
+    "scenario": "s13",
+    "train": "20961",
+    "at": "18:07",
+    "stop": "Padova",
+    "delay": 10,
+    "expected": "18:19",
+    "reason": "a train ahead with a fault"
+  },
+  {
+    "scenario": "s14",
+    "train": "20961",
+    "at": "18:09",
+    "stop": "Padova",
+    "delay": 0,
+    "expected": "18:09"
+  },
+  {
+    "scenario": "s14",
+    "train": "20961",
+    "at": "18:10",
+    "reached": "Padova",
+    "left": "18:10",
+    "stop": "Terme Euganee",
+    "delay": 1
+  },
+  {
+    "scenario": "s14",
+    "train": "20961",
+    "at": "18:20",
+    "reached": "Padova",
+    "left": "18:10",
+    "stop": "Terme Euganee",
+    "delay": 12
+  },
+  {
+    "scenario": "s14",
+    "train": "20961",
+    "at": "18:24",
+    "reached": "Padova",
+    "left": "18:10",
+    "stop": "Terme Euganee",
+    "delay": 12,
+    "reason": "a person on the tracks near Terme Euganee"
+  },
+  {
+    "scenario": "s14",
+    "train": "20961",
+    "at": "18:46",
+    "reached": "Monselice",
+    "arrived": "18:44",
+    "left": "18:46",
+    "stop": "Rovigo",
+    "delay": 13,
+    "reason": "a fault on the line"
   }
 ]

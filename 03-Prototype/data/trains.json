@@ -179,5 +179,80 @@
         "arrive": "07:00"
       }
     ]
+  },
+  {
+    "number": "2215",
+    "days": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri"
+    ],
+    "stops": [
+      {
+        "stop": "Verona",
+        "depart": "12:20"
+      },
+      {
+        "stop": "San Bonifacio",
+        "arrive": "12:38",
+        "depart": "12:39"
+      },
+      {
+        "stop": "Vicenza",
+        "arrive": "13:05",
+        "depart": "13:09"
+      },
+      {
+        "stop": "Padova",
+        "arrive": "13:32",
+        "depart": "13:34"
+      },
+      {
+        "stop": "Mestre",
+        "arrive": "13:50",
+        "depart": "13:52"
+      },
+      {
+        "stop": "Venezia",
+        "arrive": "14:02"
+      }
+    ]
+  },
+  {
+    "number": "20961",
+    "days": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri"
+    ],
+    "stops": [
+      {
+        "stop": "Padova",
+        "depart": "18:09"
+      },
+      {
+        "stop": "Terme Euganee",
+        "arrive": "18:18",
+        "depart": "18:19"
+      },
+      {
+        "stop": "Battaglia Terme",
+        "arrive": "18:24",
+        "depart": "18:25"
+      },
+      {
+        "stop": "Monselice",
+        "arrive": "18:31",
+        "depart": "18:32"
+      },
+      {
+        "stop": "Rovigo",
+        "arrive": "18:50"
+      }
+    ]
   }
 ]

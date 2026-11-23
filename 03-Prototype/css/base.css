@@ -6,6 +6,9 @@ body, h1, h2, h3, p, ul, ol { margin: 0; }
   --color-text: #1a1a1a;
   --color-muted: #5c5c5c;
   --color-accent: #0b5cad;
+  --color-surface: #f2f2f2;
+  --color-border: #c4c4c4;
+  --target-min: 44px;
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 16px;
@@ -22,9 +25,10 @@ body {
   background: var(--color-bg);
 }
 
-main { padding: var(--space-3); }
+body { overflow-wrap: anywhere; }
+:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
 
 /* mobile first: wider screens only center the content */
 @media (min-width: 768px) {
-  main, .app-header { max-width: 720px; margin-inline: auto; }
+  mt-app > * { max-width: 720px; margin-inline: auto; }
 }

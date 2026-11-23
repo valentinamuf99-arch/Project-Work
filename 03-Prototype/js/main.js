@@ -1,6 +1,18 @@
 import { loadData } from './data.js';
+import { store } from './store.js';
 
-const app = await loadData('app');
-document.title = app.title;
-document.getElementById('app-title').textContent = app.title;
-document.getElementById('app-tagline').textContent = app.tagline;
+const FILES = ['app', 'texts', 'trains', 'running', 'alternatives', 'scenarios'];
+const COMPONENTS = ['mt-app', 'mt-facilitator'];
+
+const results = await Promise.allSettled(FILES.map(loadData));
+const data = Object.fromEntries(FILES.map((name, i) => [name, results[i].value]));
+const missing = FILES.filter((_, i) => results[i].status === 'rejected');
+
+if (missing.length) {
+  store.data = data; // so the error can still use texts.json if that one was read
+  document.querySelector('mt-app').setAttribute('missing', missing.map(f => `data/${f}.json`).join(', '));
+} else {
+  store.init(data);
+}
+// Components are registered only now, so they always start from a loaded store.
+await Promise.all(COMPONENTS.map(name => import(`./components/${name}.js`)));

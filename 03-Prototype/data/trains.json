@@ -1,0 +1,40 @@
+[
+  {
+    "number": "20701",
+    "days": ["mon", "tue", "wed", "thu", "fri"],
+    "stops": [
+      { "stop": "Bassano", "depart": "06:02" },
+      { "stop": "Rossano Veneto", "arrive": "06:08", "depart": "06:09" },
+      { "stop": "Castelfranco", "arrive": "06:20", "depart": "06:22" },
+      { "stop": "Piombino Dese", "arrive": "06:31", "depart": "06:32" },
+      { "stop": "Noale-Scorzè", "arrive": "06:41", "depart": "06:42" },
+      { "stop": "Maerne", "arrive": "06:49", "depart": "06:50" },
+      { "stop": "Mestre", "arrive": "06:58", "depart": "07:00" },
+      { "stop": "Venezia", "arrive": "07:10" }
+    ]
+  },
+  {
+    "number": "20705",
+    "days": ["mon", "tue", "wed", "thu", "fri"],
+    "stops": [
+      { "stop": "Bassano", "depart": "06:32" },
+      { "stop": "Rossano Veneto", "arrive": "06:38", "depart": "06:39" },
+      { "stop": "Castelfranco", "arrive": "06:50", "depart": "06:52" },
+      { "stop": "Piombino Dese", "arrive": "07:01", "depart": "07:02" },
+      { "stop": "Noale-Scorzè", "arrive": "07:11", "depart": "07:12" },
+      { "stop": "Maerne", "arrive": "07:19", "depart": "07:20" },
+      { "stop": "Mestre", "arrive": "07:28", "depart": "07:30" },
+      { "stop": "Venezia", "arrive": "07:40" }
+    ]
+  },
+  {
+    "number": "20811",
+    "days": ["mon", "tue", "wed", "thu", "fri", "sat"],
+    "stops": [
+      { "stop": "Bassano", "depart": "06:10" },
+      { "stop": "Cittadella", "arrive": "06:24", "depart": "06:25" },
+      { "stop": "Camposampiero", "arrive": "06:40", "depart": "06:41" },
+      { "stop": "Padova", "arrive": "07:00" }
+    ]
+  }
+]

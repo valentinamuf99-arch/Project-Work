@@ -1,0 +1,8 @@
+[
+  { "scenario": "s2", "train": "20701", "at": "05:50", "stop": "Bassano", "delay": 10, "cancelled": false, "reason": null },
+  { "scenario": "s2", "train": "20701", "at": "05:55", "stop": "Bassano", "delay": 35, "cancelled": false, "reason": "Signal fault between Bassano and Castelfranco" },
+  { "scenario": "s2", "train": "20701", "at": "06:10", "stop": "Bassano", "delay": 40, "cancelled": false, "reason": "Signal fault between Bassano and Castelfranco" },
+  { "scenario": "s3", "train": "20701", "at": "05:50", "stop": "Bassano", "cancelled": true },
+  { "scenario": "s3", "train": "20701", "at": "06:00", "stop": "Bassano", "cancelled": true, "reason": "Train out of service for a technical fault" },
+  { "scenario": "s3", "train": "20705", "at": "06:00", "stop": "Bassano", "delay": 0, "cancelled": false, "reason": null }
+]

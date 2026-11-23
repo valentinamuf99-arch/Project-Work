@@ -1,2 +1,12 @@
-.app-header { padding: var(--space-3); }
-.app-header p { color: var(--color-muted); }
+/* Every selector starts with an mt- tag (spec 00, R4). */
+mt-app { display: block; }
+mt-app > header { padding: var(--space-3); }
+mt-app > header p { color: var(--color-muted); }
+mt-app > main { padding: var(--space-3); }
+
+mt-facilitator { display: block; padding: var(--space-3); background: var(--color-surface); border-bottom: 1px solid var(--color-border); }
+mt-facilitator section { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); }
+mt-facilitator h2 { width: 100%; font-size: var(--font-size-base); }
+mt-facilitator .steps { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+mt-facilitator button, mt-facilitator select { font: inherit; min-height: var(--target-min); padding: var(--space-1) var(--space-2); }
+mt-facilitator output { font-weight: bold; }

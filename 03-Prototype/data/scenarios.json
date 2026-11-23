@@ -1,0 +1,9 @@
+[
+  { "id": "s1", "name": "1 · Calm morning, nothing saved", "day": "mon", "time": "05:30", "saved": [] },
+  { "id": "s2", "name": "2 · Late beyond the limit", "day": "tue", "time": "05:40",
+    "saved": [{ "number": "20701", "from": "Bassano", "to": "Mestre", "limit": 30, "days": ["mon", "tue", "wed", "thu", "fri"] }] },
+  { "id": "s3", "name": "3 · Cancelled, with another way", "day": "wed", "time": "05:40",
+    "saved": [{ "number": "20701", "from": "Bassano", "to": "Mestre", "limit": 30, "days": ["mon", "tue", "wed", "thu", "fri"] }] },
+  { "id": "s4", "name": "4 · No news", "day": "thu", "time": "05:40",
+    "saved": [{ "number": "20701", "from": "Bassano", "to": "Mestre", "limit": 30, "days": ["mon", "tue", "wed", "thu", "fri"] }] }
+]

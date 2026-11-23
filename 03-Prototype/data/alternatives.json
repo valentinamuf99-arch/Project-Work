@@ -1,0 +1,4 @@
+[
+  { "from": "Bassano", "to": "Mestre", "kind": "train", "train": "20705" },
+  { "from": "Bassano", "to": "Mestre", "kind": "bus", "name": "Regional bus", "depart": "06:15", "arrive": "07:35" }
+]

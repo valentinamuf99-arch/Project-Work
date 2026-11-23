@@ -13,7 +13,7 @@ class MtApp extends HTMLElement {
     document.title = app.title;
     this.innerHTML = `
       <header><h1></h1><p></p></header>
-      <main><div class="alerts" role="alert"></div></main>`;
+      <main><div class="alerts" role="alert"></div><mt-my-trains></mt-my-trains></main>`;
     this.querySelector('h1').textContent = app.title;
     this.querySelector('header p').textContent = app.tagline;
     this.toggleFacilitator();

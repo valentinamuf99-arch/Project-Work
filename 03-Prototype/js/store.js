@@ -151,7 +151,7 @@ class Store extends EventTarget {
       const leaves = toMinutes(t.stops[a].depart) + (state?.delay ?? 0);
       if (leaves < at) continue; // already left
       trains.push({
-        number: t.number, own: t.number === saved.number, delay: state?.delay,
+        number: t.number, own: t.number === saved.number, delay: state?.delay, image: t.image,
         depart: t.stops[a].depart, arrive: t.stops[b].arrive, from: saved.from, to: saved.to,
         leaves, arrives: toMinutes(t.stops[b].arrive) + (state?.delay ?? 0),
       });

@@ -49,12 +49,13 @@ class MtWarnings extends HTMLElement {
   // Spec 03: trains first, then other means of transport; "Buy ticket" only where a ticket is sold.
   ways({ trains, others }) {
     const t = (key, values) => store.text(key, values);
-    const row = (text, ticket) => `<li><span>${text}</span>${ticket ? `<button type="button" class="buy"
+    // Train rows carry a decorative train picture (moodboard: alternatives with the vehicle image).
+    const row = (text, ticket, image) => `<li class="${image ? 'train' : ''}"><span>${text}</span>${image ? `<img src="${image}" alt="" width="98" height="72">` : ''}${ticket ? `<button type="button" class="buy"
       data-from="${ticket.from}" data-to="${ticket.to}" data-depart="${ticket.depart}" data-means="${ticket.means}"
       aria-label="${t('buyTicketLabel', ticket)}">${t('buyTicket')}</button>` : ''}</li>`;
     const items = trains.map(w => row(
       `${t(`wayRole.${w.role}`)} ${t(w.own ? 'wayOwn' : 'wayTrain', w)}${w.delay ? ' ' + t('wayDelay', { minutes: w.delay }) : ''}`,
-      !w.own && { ...w, means: t('ticketMeansTrain', w) }));
+      !w.own && { ...w, means: t('ticketMeansTrain', w) }, w.image));
     if (!trains.length && others.length) items.push(row(t('wayNoTrain')));
     items.push(...others.map(o => row(t(o.depart ? 'wayOther' : 'wayTaxi', o), o.ticket && { ...o, means: o.name })));
     if (!items.length) items.push(row(t('wayNothing')));

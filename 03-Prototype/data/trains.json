@@ -47,7 +47,8 @@
         "stop": "Venezia",
         "arrive": "07:10"
       }
-    ]
+    ],
+    "image": "assets/images/train-orange-1.png"
   },
   {
     "number": "20703",
@@ -97,7 +98,8 @@
         "stop": "Venezia",
         "arrive": "07:52"
       }
-    ]
+    ],
+    "image": "assets/images/train-orange-2.png"
   },
   {
     "number": "20705",
@@ -147,7 +149,8 @@
         "stop": "Venezia",
         "arrive": "07:40"
       }
-    ]
+    ],
+    "image": "assets/images/train-blue.png"
   },
   {
     "number": "20811",
@@ -178,7 +181,8 @@
         "stop": "Padova",
         "arrive": "07:00"
       }
-    ]
+    ],
+    "image": "assets/images/train-italo.png"
   },
   {
     "number": "2215",
@@ -218,7 +222,8 @@
         "stop": "Venezia",
         "arrive": "14:02"
       }
-    ]
+    ],
+    "image": "assets/images/train-italo.png"
   },
   {
     "number": "20961",
@@ -253,6 +258,7 @@
         "stop": "Rovigo",
         "arrive": "18:50"
       }
-    ]
+    ],
+    "image": "assets/images/train-italo.png"
   }
 ]

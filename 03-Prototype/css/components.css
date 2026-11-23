@@ -185,6 +185,11 @@ mt-warnings .ways { margin-block-start: var(--space-2); padding: var(--space-2) 
 mt-warnings .ways summary { font-weight: 700; cursor: pointer; min-height: var(--target-min); display: flex; align-items: center; }
 mt-warnings .ways ul { list-style: none; padding: 0; display: grid; }
 mt-warnings .ways li { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); padding-block: var(--space-2); border-block-start: 1px solid var(--color-border); font-size: 0.9375rem; }
+/* Train row: card with the train picture on the right, button below. */
+mt-warnings .ways li.train { display: grid; grid-template-columns: 1fr auto; align-items: center; margin-block: var(--space-2); padding: var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-bg); font-size: 1rem; font-weight: 600; }
+mt-warnings .ways li.train + li { border-block-start: 0; }
+mt-warnings .ways li.train img { width: 98px; height: auto; margin-inline-end: calc(-1 * var(--space-3)); }
+mt-warnings .ways li.train .buy { grid-column: 1 / -1; width: 100%; }
 mt-warnings .ways .buy { flex: none; min-height: var(--target-min); padding: var(--space-1) var(--space-3); font-size: 0.875rem; }
 
 /* ---------- Push banner ---------- */

@@ -1,8 +1,127 @@
 [
-  { "scenario": "s2", "train": "20701", "at": "05:50", "stop": "Bassano", "delay": 10, "cancelled": false, "reason": null },
-  { "scenario": "s2", "train": "20701", "at": "05:55", "stop": "Bassano", "delay": 35, "cancelled": false, "reason": "Signal fault between Bassano and Castelfranco" },
-  { "scenario": "s2", "train": "20701", "at": "06:10", "stop": "Bassano", "delay": 40, "cancelled": false, "reason": "Signal fault between Bassano and Castelfranco" },
-  { "scenario": "s3", "train": "20701", "at": "05:50", "stop": "Bassano", "cancelled": true },
-  { "scenario": "s3", "train": "20701", "at": "06:00", "stop": "Bassano", "cancelled": true, "reason": "Train out of service for a technical fault" },
-  { "scenario": "s3", "train": "20705", "at": "06:00", "stop": "Bassano", "delay": 0, "cancelled": false, "reason": null }
+  {
+    "scenario": "s2",
+    "train": "20701",
+    "at": "05:50",
+    "stop": "Bassano",
+    "delay": 10,
+    "cancelled": false,
+    "reason": null
+  },
+  {
+    "scenario": "s2",
+    "train": "20701",
+    "at": "05:55",
+    "stop": "Bassano",
+    "delay": 35,
+    "cancelled": false,
+    "reason": "Signal fault between Bassano and Castelfranco"
+  },
+  {
+    "scenario": "s2",
+    "train": "20701",
+    "at": "06:10",
+    "stop": "Bassano",
+    "delay": 40,
+    "cancelled": false,
+    "reason": "Signal fault between Bassano and Castelfranco"
+  },
+  {
+    "scenario": "s3",
+    "train": "20701",
+    "at": "05:50",
+    "stop": "Bassano",
+    "cancelled": true
+  },
+  {
+    "scenario": "s3",
+    "train": "20701",
+    "at": "06:00",
+    "stop": "Bassano",
+    "cancelled": true,
+    "reason": "Train out of service for a technical fault"
+  },
+  {
+    "scenario": "s3",
+    "train": "20705",
+    "at": "06:00",
+    "stop": "Bassano",
+    "delay": 0,
+    "cancelled": false,
+    "reason": null
+  },
+  {
+    "scenario": "s2",
+    "train": "20701",
+    "at": "06:20",
+    "stop": "Bassano",
+    "delay": 25,
+    "cancelled": false,
+    "reason": "Signal fault between Bassano and Castelfranco"
+  },
+  {
+    "scenario": "s5",
+    "train": "20701",
+    "at": "06:00",
+    "stop": "Bassano",
+    "delay": 0,
+    "cancelled": false,
+    "reason": null
+  },
+  {
+    "scenario": "s5",
+    "train": "20701",
+    "at": "06:03",
+    "reached": "Bassano",
+    "stop": "Rossano Veneto",
+    "delay": 1,
+    "cancelled": false,
+    "reason": null
+  },
+  {
+    "scenario": "s5",
+    "train": "20701",
+    "at": "06:25",
+    "reached": "Castelfranco",
+    "stop": "Piombino Dese",
+    "delay": 35,
+    "cancelled": false,
+    "reason": "Train stopped by a broken-down train ahead"
+  },
+  {
+    "scenario": "s5",
+    "train": "20701",
+    "at": "06:40",
+    "reached": "Castelfranco",
+    "stop": "Castelfranco",
+    "delay": 38,
+    "cancelled": false
+  },
+  {
+    "scenario": "s5",
+    "train": "20701",
+    "at": "07:15",
+    "reached": "Noale-Scorzè",
+    "stop": "Maerne",
+    "delay": 20,
+    "cancelled": false
+  },
+  {
+    "scenario": "s5",
+    "train": "20701",
+    "at": "07:35",
+    "reached": "Mestre",
+    "stop": "Venezia",
+    "delay": 45,
+    "cancelled": false
+  },
+  {
+    "scenario": "s6",
+    "train": "20701",
+    "at": "05:50",
+    "stop": "Bassano",
+    "delay": 40,
+    "cancelled": false,
+    "reason": "Signal fault between Bassano and Castelfranco"
+  }
 ]

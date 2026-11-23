@@ -10,6 +10,14 @@ body, h1, h2, h3, p, ul, ol { margin: 0; }
   --color-border: #c4c4c4;
   --color-error: #a4161a;
   --target-min: 44px;
+  --color-desk: #dcdfe3;
+  --color-frame: #111111;
+  --phone-width: 393px;
+  --phone-height: 852px;
+  --phone-bezel: 12px;
+  --phone-radius: 60px;
+  --phone-status-height: 54px;
+  --phone-shadow: 0 20px 50px rgb(0 0 0 / 0.25);
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 16px;
@@ -29,7 +37,7 @@ body {
 body { overflow-wrap: anywhere; }
 :focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
 
-/* mobile first: wider screens only center the content */
-@media (min-width: 768px) {
-  mt-app > * { max-width: 720px; margin-inline: auto; }
+/* mobile first: on a wide screen the app is shown inside a phone (components.css, mt-app) */
+@media (min-width: 500px) {
+  body { background: var(--color-desk); }
 }

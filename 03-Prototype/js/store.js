@@ -66,6 +66,52 @@ class Store extends EventTarget {
     return last;
   }
 
+  // Spec 02 and 05: every warning sent up to the clock, oldest first, rebuilt from the running events.
+  // An event's "stop" is the stop its delay is given for; "reached" is the last stop the train has left.
+  warnings() {
+    const out = [];
+    for (const saved of this.saved) {
+      if (!saved.days.includes(this.now.day)) continue; // only on a trip day (R1)
+      const stops = this.data.trains.find(t => t.number === saved.number).stops;
+      const index = name => stops.findIndex(s => s.stop === name);
+      const on = index(saved.from), off = index(saved.to);
+      const events = this.#events()
+        .filter(e => e.train === saved.number && toMinutes(e.at) <= this.minutes)
+        .sort((a, b) => toMinutes(a.at) - toMinutes(b.at));
+      let board = false, over = false, cancelled = false, delay, reason = null, last = null;
+      const send = w => { last = { number: saved.number, ...w }; out.push(last); };
+      for (const e of events) {
+        const reached = e.reached ? index(e.reached) : -1;
+        if (reached >= off || index(e.stop) > off) break; // at or past the get-off stop: silent (R5)
+        if (!board && reached >= on) { board = true; over = false; delay = undefined; }
+        const previous = reason;
+        reason = e.reason ?? reason; // a reason left out is not a reason withdrawn
+        const facts = { at: e.at, reason, updated: null };
+        const update = { ...last, ...facts, updated: previous ? 'changed' : 'added' }; // spec 05, R3
+        if (e.cancelled || cancelled) { // R2
+          if (!cancelled) send({ ...facts, kind: 'cancelled', board, stop: saved.from, time: stops[on].depart });
+          else if (reason !== previous) send(update);
+          cancelled = true;
+          continue;
+        }
+        if (e.delay == null) continue;
+        if (!board && e.stop !== saved.from) continue; // before boarding only the delay at the get-on stop counts
+        const fromReached = board && e.stop === e.reached; // no delay given for the next stop
+        const next = board ? (fromReached ? reached + 1 : index(e.stop)) : on;
+        const place = board
+          ? { board, stop: stops[next].stop, time: stops[next].arrive, reached: fromReached ? e.reached : null }
+          : { board, stop: saved.from, time: stops[on].depart };
+        const nowOver = e.delay >= saved.limit, changed = e.delay !== delay;
+        if (nowOver && changed) send({ ...facts, ...place, kind: over ? 'again' : 'late', minutes: e.delay });
+        else if (nowOver && reason !== previous) send(update);
+        else if (!nowOver && over) send({ ...facts, ...place, kind: 'under', minutes: e.delay });
+        over = nowOver;
+        delay = e.delay;
+      }
+    }
+    return out.sort((a, b) => toMinutes(a.at) - toMinutes(b.at));
+  }
+
   // Interface sentence from texts.json, with {placeholders} filled (R6).
   text(key, values = {}) {
     return (this.data.texts[key] ?? key).replace(/\{(\w+)\}/g, (m, k) => values[k] ?? m);

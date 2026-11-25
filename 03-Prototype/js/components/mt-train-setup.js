@@ -64,10 +64,10 @@ class MtTrainSetup extends HTMLElement {
       found.stops.map((s, i) => `<option value="${i}">${s.stop}</option>`).join('');
     this.form.from.innerHTML = options;
     this.form.to.innerHTML = options;
-    // R4 [open], decided here: the days the train runs, all ticked; the commuter can untick some.
+    // R4 [open], decided here: the days the train runs, none ticked; the commuter picks them.
     this.querySelector('.days').innerHTML = found.days.map(d =>
-      `<label><input type="checkbox" name="days" value="${d}" checked><span class="initial" aria-hidden="true">${store.text(`dayInitial.${d}`)}</span><span class="sr-only">${store.text(`day.${d}`)}</span></label>`).join('');
-    this.form.limit.value = ''; // R3: no proposed value
+      `<label><input type="checkbox" name="days" value="${d}"><span class="initial" aria-hidden="true">${store.text(`dayInitial.${d}`)}</span><span class="sr-only">${store.text(`day.${d}`)}</span></label>`).join('');
+    this.form.limit.value = store.data.app.defaultLimit; // user choice 2026-11-25, departs from R3 "no default"
     this.querySelector('.stops-message').textContent = '';
     this.querySelector('.save-message').textContent = '';
     this.querySelector('.details').hidden = false;

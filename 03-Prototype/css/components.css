@@ -158,7 +158,7 @@ mt-train-setup button[type="submit"], mt-train-setup .cancel { width: 100%; marg
 }
 :is(mt-train-setup .route, mt-train-status .stops) li:last-child::before { display: none; }
 :is(mt-train-setup .route, mt-train-status .stops) li::after { /* stop dot */
-  content: ""; position: absolute; left: 0; top: 4px; width: 11px; height: 11px; border-radius: 50%; border: 3px solid var(--color-line); background: var(--color-bg);
+  content: ""; position: absolute; left: 3px; top: 4px; width: 11px; height: 11px; border-radius: 50%; border: 3px solid var(--color-line); background: var(--color-bg);
 }
 mt-train-setup .route li { color: var(--color-muted); padding-block-end: var(--space-2); }
 
@@ -173,7 +173,7 @@ mt-train-status .stops .done { color: var(--color-muted); }
 mt-train-status .stops .done::after { background: var(--color-line); }
 mt-train-status .stops .current .name, mt-train-status .stops .get-on .name { font-weight: 700; color: var(--color-text); }
 mt-train-status .stops .current .times { color: var(--color-text); }
-mt-train-status .stops .current::after { left: -3px; top: 1px; width: 17px; height: 17px; background: var(--color-accent); border-color: var(--color-bg); box-shadow: 0 0 0 2px var(--color-accent); }
+mt-train-status .stops .current::after { left: 0; top: 1px; width: 17px; height: 17px; background: var(--color-accent); border-color: var(--color-bg); box-shadow: 0 0 0 2px var(--color-accent); }
 mt-train-status .stops .cut::after { border-color: var(--color-error); }
 mt-train-status .stops .cut::before { background: repeating-linear-gradient(var(--color-error) 0 4px, transparent 4px 8px); }
 mt-train-status .stops .cut .times { color: var(--color-error); font-weight: 600; }

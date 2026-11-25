@@ -7,7 +7,9 @@
     15
   ],
   "icon": "assets/icons/app-icon.svg",
-  "pushSeconds": 6,  "headerTabs": ["N. Treno", "Tabellone", "Da/a", "Treni seguiti"],
+  "pushSeconds": 6,
+  "defaultLimit": 5,
+  "headerTabs": ["N. Treno", "Tabellone", "Da/a", "Treni seguiti"],
   "currentHeaderTab": "Treni seguiti",
   "tabBar": [
     { "label": "Home", "icon": "assets/icons/tab-home.svg" },

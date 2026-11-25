@@ -215,7 +215,7 @@ mt-push img { grid-row: span 3; border-radius: 9px; }
 mt-push .head { display: flex; justify-content: space-between; gap: var(--space-2); font-weight: 700; }
 mt-push .when { font-weight: 400; color: var(--color-on-push-muted); }
 mt-push .title { font-weight: 600; } /* the fact stays bold: the prototype's change over the Trenitalia push */
-mt-push .body { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+mt-push .body { display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 mt-push .close { min-width: var(--target-min); min-height: var(--target-min); border: 0; background: none; font: inherit; font-size: 1.25rem; color: var(--color-on-push-muted); cursor: pointer; }
 @keyframes mt-push-in { from { transform: translateY(-120%); opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { mt-push .banner { animation: none; } }

@@ -2,7 +2,7 @@
 title: "Design · Moodboard: the Trenitalia app style as the base, and interaction ideas from the commented references, for the prototype"
 date: 2026-11-23
 activity: desk-research
-source: "Author's moodboard: 13 screenshots in 04-Moodboard/references/ with the author's comment in a .md file next to each, and 8 screenshots of the Trenitalia app in 04-Moodboard/reference-trenitalia/ (two of them, 01-recover-ticket.png and 02-infomobility-train-number.png, identical to IMG_3407 and IMG_3408 in references/; files renamed on 2026-11-25 after what they show). The 5 screenshots in 04-Moodboard/ with an empty comment file were left out. Added on 2026-11-23: 8 screenshots of the Trenitalia Smart Caring flow in 04-Moodboard/reference-trenitalia/smart-caring/, taken by the author on 2026-11-23 on train 16403 (Bassano–Venezia), with the author's comment that Smart Caring is close to the prototype's warning and that the prototype's advantage is giving the alternatives when something goes wrong. Images read by the AI; colour values estimated from the screenshots."
+source: "Author's moodboard: 13 screenshots in 04-Moodboard/references/ with the author's comment in a .md file next to each, and 8 screenshots of the Trenitalia app in 04-Moodboard/reference-trenitalia/ (two of them, 01-recover-ticket.png and 02-infomobility-train-number.png, identical to 01-trenitalia-recover-ticket-tabs and 02-trenitalia-infomobility-tab-bar in references/; files in both folders renamed on 2026-11-25 after what they show). The 5 screenshots in 04-Moodboard/ with an empty comment file were left out. Added on 2026-11-23: 8 screenshots of the Trenitalia Smart Caring flow in 04-Moodboard/reference-trenitalia/smart-caring/, taken by the author on 2026-11-23 on train 16403 (Bassano–Venezia), with the author's comment that Smart Caring is close to the prototype's warning and that the prototype's advantage is giving the alternatives when something goes wrong. Images read by the AI; colour values estimated from the screenshots."
 author: "Eugenia Valentina Muffolini"
 channel: web
 method: visual analysis of the commented references, drafted by AI from the author's comments
@@ -107,32 +107,32 @@ The author's decision: flows and behaviour follow the specifications 01 to 05, n
 
 For each reference: the author's comment, what the prototype takes and how it is adapted to the Trenitalia style.
 
-**[IMG_3407](references/IMG_3407/IMG_3407.png) · Recupera biglietto (Trenitalia)**
+**[01-trenitalia-recover-ticket-tabs](references/01-trenitalia-recover-ticket-tabs/01-trenitalia-recover-ticket-tabs.png) · Recupera biglietto (Trenitalia)**
 - Comment: the author likes the tab at the top.
 - Taken: the grey pill segmented control to switch between two views of the same page (e.g. "Outbound / Return" of the usual train, or "Route / Details").
 
-**[IMG_3408](references/IMG_3408/IMG_3408.png) · Infomobilità (Trenitalia)**
+**[02-trenitalia-infomobility-tab-bar](references/02-trenitalia-infomobility-tab-bar/02-trenitalia-infomobility-tab-bar.png) · Infomobilità (Trenitalia)**
 - Comment: the author likes the bottom bar because it is the Trenitalia app one.
 - Taken: the same bottom bar, with "Infomobilità" active. The "Treni seguiti" chip is the natural entry point for the prototype's features.
 
 ## References · home and personalisation
 
-**[19.35.01](references/Screenshot%202026-11-23%20alle%2019.35.01/Screenshot%202026-11-23%20alle%2019.35.01.png) · Ride app, "Good morning, Alex"**
+**[05-ride-app-greeting](references/05-ride-app-greeting/05-ride-app-greeting.png) · Ride app, "Good morning, Alex"**
 - Comment: the author likes the greeting to the user and the style.
 - Taken: a personal greeting at the top ("Good morning, Giulia") and, below it, a contextual suggestion ("Your 7:42 train"). A large card with the most important information of the moment.
 - Adaptation: no black and lime green. Large black title on white, card with petrol green header, red CTA.
 
-**[19.45.45](references/Screenshot%202026-11-23%20alle%2019.45.45/Screenshot%202026-11-23%20alle%2019.45.45.png) · Trendora, "Hello Tavorian"**
+**[11-trendora-greeting-search](references/11-trendora-greeting-search/11-trendora-greeting-search.png) · Trendora, "Hello Tavorian"**
 - Comment: the author likes the greeting, the search bar and the confirm button.
 - Taken: greeting + short subtitle, pill search bar with an action button built in on the right, filter chips below.
 - Adaptation: the search bar follows the Trenitalia From/To block with the round red button (see Trenitalia Home, [04-home](reference-trenitalia/04-home.png)).
 
-**[19.26.25](references/Screenshot%202026-11-23%20alle%2019.26.25/Screenshot%202026-11-23%20alle%2019.26.25.png) · Train App UI Kit, "Go Every Where?"**
+**[04-train-app-search-question](references/04-train-app-search-question/04-train-app-search-question.png) · Train App UI Kit, "Go Every Where?"**
 - Comment: the author likes the search bar, the question as a title and the days.
 - Taken: **question as title** to guide the user ("Which train do you usually take?", "When do you travel?"); **strip of days** with weekday + number, active day highlighted; search bar with action icon.
 - Adaptation: active day in petrol green (not yellow), shapes consistent with Trenitalia chips.
 
-**[19.51.34](references/Screenshot%202026-11-23%20alle%2019.51.34/Screenshot%202026-11-23%20alle%2019.51.34.png) · Edit session, weekdays**
+**[13-weekday-picker](references/13-weekday-picker/13-weekday-picker.png) · Edit session, weekdays**
 - Comment: the author likes the way the weekday is chosen.
 - Taken: days as circles with the initial (M T W T F S S), multiple selection, inside a block with an uppercase label ("EVERY", "TIME"). Then "From / To" fields side by side and a "Repeat" toggle.
 - Use in the prototype: setting up the **usual train** (days of travel, time slot, acceptable delay limit).
@@ -140,28 +140,28 @@ For each reference: the author's comment, what the prototype takes and how it is
 
 ## References · train tracking
 
-**[19.35.57](references/Screenshot%202026-11-23%20alle%2019.35.57/Screenshot%202026-11-23%20alle%2019.35.57.png) · Parcel tracking on a map**
+**[06-parcel-tracking-map](references/06-parcel-tracking-map/06-parcel-tracking-map.png) · Parcel tracking on a map**
 - Comment: the author likes the map showing where the parcel is.
 - Taken: light, desaturated map, dashed route, start and end markers, summary card at the bottom overlapping the map.
 
-**[19.36.26](references/Screenshot%202026-11-23%20alle%2019.36.26/Screenshot%202026-11-23%20alle%2019.36.26.png) · Location Tracking**
+**[07-location-tracking-map](references/07-location-tracking-map/07-location-tracking-map.png) · Location Tracking**
 - Comment: the author likes the map and the way the parcel is tracked.
 - Taken: map at the top, **draggable bottom sheet** below with status ("In transit"), dotted progress between stops, departure and estimated arrival on either side.
 - Adaptation: white bottom sheet as in Trenitalia (not black), status badge with the train state colours (see "Train states").
 
-**[19.47.57](references/Screenshot%202026-11-23%20alle%2019.47.57/Screenshot%202026-11-23%20alle%2019.47.57.png) · Schedule, vertical timeline**
+**[12-schedule-vertical-timeline](references/12-schedule-vertical-timeline/12-schedule-vertical-timeline.png) · Schedule, vertical timeline**
 - Comment: the author likes being able to follow the train or parcel vertically too, not only on the map, so more information can be written.
 - Taken: **vertical timeline** with a continuous line on the left, a dot for each stop, a card for each stop with time, badge and details. Collapsible groups ("Past stops", "Next stops").
 - Use in the prototype: main view to **follow the own train stop by stop**. The map becomes a secondary view (segmented control "Stops / Map").
 
-**[19.37.51](references/Screenshot%202026-11-23%20alle%2019.37.51/Screenshot%202026-11-23%20alle%2019.37.51.png) · Italo line map**
+**[08-italo-line-map](references/08-italo-line-map/08-italo-line-map.png) · Italo line map**
 - Comment: the author likes that the line following the train and its stops recalls the style of the train itself.
 - Taken: the route line in the **train's colour** (e.g. red for Frecce, green for Regionale) and stops as white circles with a thick border; main stations larger.
 - Adaptation: no Italo style. The prototype uses the Trenitalia category colours, applied to the line of the vertical timeline and of the map.
 
 ## References · alternatives and images
 
-**[19.26.10](references/Screenshot%202026-11-23%20alle%2019.26.10/Screenshot%202026-11-23%20alle%2019.26.10.png) · Train App, "AI Results"**
+**[03-train-app-ai-results](references/03-train-app-ai-results/03-train-app-ai-results.png) · Train App, "AI Results"**
 - Comment: the author likes the train images, useful to show alternatives.
 - Taken: cards with a **cut-out train image** sticking out on the right, info chips at the top (line, duration), title, pill CTA.
 - Use in the prototype: list of **alternatives to make the same trip** (another train, replacement bus, etc.), each card shows the vehicle with a recognisable image.
@@ -169,7 +169,7 @@ For each reference: the author's comment, what the prototype takes and how it is
 
 ## References · buttons
 
-**[19.39.04](references/Screenshot%202026-11-23%20alle%2019.39.04/Screenshot%202026-11-23%20alle%2019.39.04.png) · Train booking, "Search Trains"** and **[19.44.15](references/Screenshot%202026-11-23%20alle%2019.44.15/Screenshot%202026-11-23%20alle%2019.44.15.png) · Flights, chips and buttons**
+**[09-train-booking-buttons](references/09-train-booking-buttons/09-train-booking-buttons.png) · Train booking, "Search Trains"** and **[10-flights-chips-buttons](references/10-flights-chips-buttons/10-flights-chips-buttons.png) · Flights, chips and buttons**
 - Comment: the author likes the button style in both.
 - Taken: solid, soft buttons; **pill chips** for quick choices (e.g. "Fastest / Fewest changes / Nearest"); small selectable cards for dates; "recent searches" rows with an icon in a soft circle + chevron.
 - Adaptation: main buttons stay Trenitalia ones (red gradient, ~12px corners). The pill style is used only for chips and filters, as Trenitalia already does in the Infomobilità header.

@@ -2,7 +2,7 @@
 title: "Design · Moodboard: the Trenitalia app style as the base, and interaction ideas from the commented references, for the prototype"
 date: 2026-11-23
 activity: desk-research
-source: "Author's moodboard: 13 screenshots in 04-Moodboard/references/ with the author's comment in a .md file next to each, and 8 screenshots of the Trenitalia app in 04-Moodboard/reference-trenitalia/ (two of them identical to IMG_3407 and IMG_3408 in references/). The 5 screenshots in 04-Moodboard/ with an empty comment file were left out. Added on 2026-11-23: 8 screenshots of the Trenitalia Smart Caring flow in 04-Moodboard/reference-trenitalia/smart-caring/, taken by the author on 2026-11-23 on train 16403 (Bassano–Venezia), with the author's comment that Smart Caring is close to the prototype's warning and that the prototype's advantage is giving the alternatives when something goes wrong. Images read by the AI; colour values estimated from the screenshots."
+source: "Author's moodboard: 13 screenshots in 04-Moodboard/references/ with the author's comment in a .md file next to each, and 8 screenshots of the Trenitalia app in 04-Moodboard/reference-trenitalia/ (two of them, 01-recover-ticket.png and 02-infomobility-train-number.png, identical to IMG_3407 and IMG_3408 in references/; files renamed on 2026-11-25 after what they show). The 5 screenshots in 04-Moodboard/ with an empty comment file were left out. Added on 2026-11-23: 8 screenshots of the Trenitalia Smart Caring flow in 04-Moodboard/reference-trenitalia/smart-caring/, taken by the author on 2026-11-23 on train 16403 (Bassano–Venezia), with the author's comment that Smart Caring is close to the prototype's warning and that the prototype's advantage is giving the alternatives when something goes wrong. Images read by the AI; colour values estimated from the screenshots."
 author: "Eugenia Valentina Muffolini"
 channel: web
 method: visual analysis of the commented references, drafted by AI from the author's comments
@@ -125,7 +125,7 @@ For each reference: the author's comment, what the prototype takes and how it is
 **[19.45.45](references/Screenshot%202026-11-23%20alle%2019.45.45/Screenshot%202026-11-23%20alle%2019.45.45.png) · Trendora, "Hello Tavorian"**
 - Comment: the author likes the greeting, the search bar and the confirm button.
 - Taken: greeting + short subtitle, pill search bar with an action button built in on the right, filter chips below.
-- Adaptation: the search bar follows the Trenitalia From/To block with the round red button (see Trenitalia Home, [IMG_3410](reference-trenitalia/IMG_3410.PNG)).
+- Adaptation: the search bar follows the Trenitalia From/To block with the round red button (see Trenitalia Home, [04-home](reference-trenitalia/04-home.png)).
 
 **[19.26.25](references/Screenshot%202026-11-23%20alle%2019.26.25/Screenshot%202026-11-23%20alle%2019.26.25.png) · Train App UI Kit, "Go Every Where?"**
 - Comment: the author likes the search bar, the question as a title and the days.

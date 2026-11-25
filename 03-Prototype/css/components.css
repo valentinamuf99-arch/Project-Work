@@ -101,6 +101,8 @@ mt-facilitator label, mt-facilitator select { max-width: 100%; }
 mt-facilitator .steps { display: flex; flex-wrap: wrap; gap: var(--space-2); }
 mt-facilitator button, mt-facilitator select { font: inherit; min-height: var(--target-min); padding: var(--space-1) var(--space-2); }
 mt-facilitator output { font-weight: bold; }
+mt-facilitator section + section { margin-block-start: var(--space-3); padding-block-start: var(--space-3); border-block-start: 1px solid var(--color-border); }
+mt-facilitator .trains { width: 100%; padding-inline-start: var(--space-3); font-size: 0.875rem; display: grid; gap: var(--space-1); }
 
 /* ---------- My trains (spec 01) ---------- */
 mt-my-trains { display: block; }

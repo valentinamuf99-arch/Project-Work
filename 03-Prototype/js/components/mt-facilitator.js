@@ -14,6 +14,16 @@ class MtFacilitator extends HTMLElement {
         <div class="steps">${store.data.app.advanceSteps.map(m =>
           `<button type="button" data-minutes="${m}">${t('advance', { minutes: m })}</button>`).join('')}</div>
         <button type="button" class="reset">${t('reset')}</button>
+      </section>
+      <section aria-labelledby="mt-facilitator-trains">
+        <h2 id="mt-facilitator-trains">${t('facilitatorTrainsTitle')}</h2>
+        <ul class="trains">${store.data.trains.map(train => {
+          const first = train.stops[0], last = train.stops.at(-1);
+          return `<li>${t('facilitatorTrain', {
+            number: train.number, from: first.stop, depart: first.depart, to: last.stop, arrive: last.arrive,
+            days: train.days.map(d => t(`dayShort.${d}`)).join(', '),
+          })}</li>`;
+        }).join('')}</ul>
       </section>`;
     this.querySelector('select').addEventListener('change', e => store.startScenario(e.target.value));
     this.querySelector('.steps').addEventListener('click', e => {

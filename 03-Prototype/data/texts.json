@@ -6,6 +6,8 @@
   "clockValue": "{day} {time}",
   "advance": "+{minutes} min",
   "reset": "Reset scenario",
+  "facilitatorTrainsTitle": "Trains you can try",
+  "facilitatorTrain": "{number} · {from} {depart} → {to} {arrive} · {days}",
   "day.mon": "Monday",
   "day.tue": "Tuesday",
   "day.wed": "Wednesday",

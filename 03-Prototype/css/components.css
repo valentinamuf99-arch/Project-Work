@@ -113,7 +113,8 @@ mt-my-trains .add { width: 100%; }
 
 /* Saved train: card in the style of the Trenitalia "Treni seguiti" card. Number row, stations with large times at both ends, chips. */
 mt-train-summary { display: grid; gap: var(--space-2); padding: var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-md); }
-mt-train-summary .number { margin: calc(-1 * var(--space-3)) calc(-1 * var(--space-3)) var(--space-1); padding: var(--space-2) var(--space-3); border-block-end: 1px solid var(--color-border); font-weight: 700; }
+mt-train-summary .number { display: flex; align-items: center; justify-content: space-between; margin: calc(-1 * var(--space-3)) calc(-1 * var(--space-3)) var(--space-1); padding: var(--space-1) var(--space-3); border-block-end: 1px solid var(--color-border); font-weight: 700; }
+mt-train-summary .remove { display: grid; place-items: center; min-width: var(--target-min); min-height: var(--target-min); margin-inline-end: calc(-1 * var(--space-2)); border: 0; border-radius: var(--radius-sm); background: none; cursor: pointer; }
 mt-train-summary .trip { display: grid; grid-template-columns: auto 1fr auto; align-items: end; gap: var(--space-2); }
 mt-train-summary .trip .end { display: grid; }
 mt-train-summary .trip .end:last-of-type { text-align: end; }

@@ -9,6 +9,7 @@ class MtMyTrains extends HTMLElement {
     store.addEventListener('change', this.onStore);
     this.addEventListener('train-saved', this.onSaved);
     this.addEventListener('setup-cancelled', this.onCancelled);
+    this.addEventListener('train-removed', this.onRemoved);
     this.addEventListener('click', this.onClick);
   }
 
@@ -21,6 +22,15 @@ class MtMyTrains extends HTMLElement {
     store.saveTrain(e.detail);
     const confirm = this.querySelector('.confirm');
     confirm.textContent = store.text('limitMeaning', { minutes: e.detail.limit });
+    confirm.focus();
+  };
+
+  // Focus goes to the message, or to the set-up when no train is left, so it is not lost with the removed card.
+  onRemoved = e => {
+    store.removeTrain(e.detail);
+    const confirm = this.querySelector('.confirm');
+    if (!confirm) return this.querySelector('mt-train-setup input').focus();
+    confirm.textContent = store.text('trainRemoved', { number: e.detail });
     confirm.focus();
   };
 
